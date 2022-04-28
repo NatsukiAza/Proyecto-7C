@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.encabezado{
+    height: 37px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.publi{
+    margin-left: 5%;
+    background-color: rgb(0, 0, 255);
+    margin-top: 6%;
+    float: left;
+    height: 800px;
+    width: 800px;
+}
+
+.titulos{
+    color: rgb(255, 255, 255);
+    padding: 9px 6px 9px 10px;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    float: left;
+    top: 0;
+    margin-right: 5%;
+    font-size: 15px;
+    text-decoration:none;
+    height: 19px;
+}
+
+h1{
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 15%;
+    padding-left: 2%;
+}
+
+.linkabezado{
+    color: rgb(255, 255, 255);
+    padding: 9px 6px 9px 10px;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    float: right;
+    top: 0;
+    font-size: 15px;
+    text-decoration:none
+}
+
+.filtros{
+    background-color: rgb(255, 0, 0);
+    margin-left: -20%;
+    height: 150%;
+    width: 20%;
+    position: absolute;
+}
+
+.publicaciones{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.publicacion{
+    margin-left: 5%;
+    background-color: rgb(0, 0, 255);
+    margin-top: 6%;
+    float: left;
+    height: 300px;
+    width: 300px;
+}
+
+#first{
+    margin-left: 11%;
+}
+
+#last{
+    margin-right: 11%;
+}
