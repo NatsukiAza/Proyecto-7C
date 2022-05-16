@@ -3,21 +3,13 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-image: url("../img/fondo.webp");
+    
   }
 
 .encabezado{
     height: 37px;
     width: 100%;
     background-color: rgb(0, 0, 0);
-}
-
-.publi{
-    margin-left: 5%;
-    background-color: rgb(0, 0, 255);
-    margin-top: 6%;
-    float: left;
-    height: 600px;
-    width: 800px;
 }
 
 .titulos{
@@ -51,7 +43,7 @@ h1{
 
 
 .encabezado a:hover{
-    color: rgb(0, 204, 255);
+    color: rgb(191, 128, 255)
 }
 
 .logueate{
@@ -79,11 +71,12 @@ h1{
 
 .publicacion{
     margin-left: 5%;
-    background-color: rgb(0, 0, 255);
     margin-top: 6%;
     float: left;
     height: 300px;
     width: 300px;
+	backdrop-filter: blur(10px);
+	background-color: rgb(217, 179, 255, 0.5);
 }
 
 .comen{
