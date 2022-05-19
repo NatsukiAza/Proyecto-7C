@@ -8,6 +8,9 @@
 </head>
 <body>
 
+	<form action="crearcuentaUsuario.php" method="POST" id="form-singup" onsubmit="return verificarPass();">
+	</form>
+
 <main>
 	<!-- caja atras del formulario -->
 	<div class="contenedor__todo">
@@ -26,18 +29,18 @@
 
 		<!-- formulario -->
 		<div class="contenedor__login-register">
-			<form class="formulario__login">
+			<form action="crearcuentaUsuario.php" method="POST" id="form-singup" onsubmit="return verificarPass();" class="formulario__login">
 				<h2>iniciar sesion</h2>
-				<input type="text" placeholder="Correo Electronico">
+				<input type="text" placeholder="Nombre de usuario">
 				<input type="password" placeholder="Contraseña">
 				<button>entrar</button>
 			</form>
 
-			<form action="" class="formulario__register">
+			<form action="login.php" method="POST" id="form-login" onsubmit="return verificarPass();" class="formulario__register">
 				<h2>registrate</h2>
 				<input type="text" placeholder="Nombre de usuario">
-				<input type="text" placeholder="Correo Electronico">
-				<input type="password" placeholder="Contraseña">
+				<input type="text" placeholder="Contraseña">
+				<input type="password" placeholder="Confirmar contraseña">
 				<button>registrarse</button>
 			</form>
 		</div>
