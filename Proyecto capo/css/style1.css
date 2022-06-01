@@ -107,3 +107,47 @@ h1{
     margin-top: 35%;
 }
 
+.card{
+    background: linear-gradient(to bottom, rgba(245,246,252,0.52), rgba(117,19,93,0.73)),url("../img/perfume.webp")no-repeat center;
+    border-radius: 10px 50px;
+    background-color: #fff;
+    width: 80%;
+    height: 550px;
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    margin: 1em;
+    box-shadow: 4px 4px 8px 2px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card div{
+    height: 100%;
+}
+
+.card h2 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.card i{
+    display: none;
+}
+
+.card h2{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+hr{
+    border: 1px solid #fffdca;
+    margin: .5em auto;
+    width: 30%;
+}
+
+main{
+    margin-top: 400px;
+}
