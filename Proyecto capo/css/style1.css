@@ -10,6 +10,7 @@ body {
     height: 37px;
     width: 100%;
     background-color: rgb(0, 0, 0);
+    display: inline-block;
 }
 
 .titulos{
@@ -150,4 +151,18 @@ hr{
 
 main{
     margin-top: 400px;
+}
+
+.barrab{
+    padding: 0.45% 0px 0px 0px;
+    margin-left: 50%;
+}
+
+.buscar{
+    height: 25px;
+    width: 55%;
+}
+
+.boton-buscar{
+    height: 25px;
 }
