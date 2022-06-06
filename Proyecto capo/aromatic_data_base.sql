@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-05-2022 a las 22:42:02
+-- Tiempo de generación: 06-06-2022 a las 21:34:03
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -68,6 +68,20 @@ CREATE TABLE `login` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `publicaciones`
+--
+
+CREATE TABLE `publicaciones` (
+  `descripción` text NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `stock` int(11) NOT NULL,
+  `imagenes` text NOT NULL,
+  `id_producto` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `respuestas`
 --
 
@@ -122,6 +136,12 @@ ALTER TABLE `login`
   ADD KEY `usuarios_ibfk_1` (`id_rol`);
 
 --
+-- Indices de la tabla `publicaciones`
+--
+ALTER TABLE `publicaciones`
+  ADD PRIMARY KEY (`id_producto`);
+
+--
 -- Indices de la tabla `respuestas`
 --
 ALTER TABLE `respuestas`
@@ -154,6 +174,12 @@ ALTER TABLE `foro`
 --
 ALTER TABLE `login`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de la tabla `publicaciones`
+--
+ALTER TABLE `publicaciones`
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `respuestas`
