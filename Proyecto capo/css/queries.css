@@ -1,0 +1,93 @@
+@media screen and (max-width:760px){
+    .contenedor{
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .intro .contenedor{
+        align-items: flex-start;
+    }
+
+    .intro h1{
+        font-size: 3.7em;
+    }
+
+    .intro p{
+        font-size: 1.4em;
+        line-height: 2em;
+    }
+
+    .card{
+        width: 90%;
+        min-height: 400px;
+        max-height: 400px;
+    }
+
+    .card i{
+        display: inline;
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .content{
+        padding: 0 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .toggler{
+        display: none;
+    }
+
+    .mainnav{
+        display: inline-block !important;
+        position: relative;
+        height: 10vh;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .mainnav ul li{
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    .mainnav ul{
+        position: relative;
+        top: 0;
+        left: 25%;
+    }
+
+    .mainnav ul li a:hover{
+        color: #e4f39a;
+    }
+
+    .contenedor{
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .intro .contenedor{
+        flex-flow: column;
+    }
+
+    .intro h1{
+        font-size: 5em;
+    }
+
+    #cuentos{
+        height: 100vh;
+    }
+
+    .card i{
+        font-size: 1.5em;
+    }
+
+    .card h2 a:hover{
+        color: #fffdca;
+        font-size: 1.2em;
+    }
+}
