@@ -27,7 +27,14 @@
         display: inline;
         font-size: 2.5em;
     }
+
+    .publicaciones{
+        flex-direction: column;
+        padding: 0px 0px 0px 46px;
+    }
+    
 }
+
 
 @media screen and (max-width:1024px){
     .content{
@@ -90,4 +97,14 @@
         color: #fffdca;
         font-size: 1.2em;
     }
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .publicaciones{
+        flex-direction: column;
+        padding: 0px 0px 0px 46px;
+    }
+
 }
