@@ -34,9 +34,20 @@
         display: inline;
         font-size: 2.5em;
     }
+
+    .publicaciones{
+        flex-direction: column;
+        padding: 0px 0px 0px 46px;
+    }
+    
 }
 
+<<<<<<< HEAD
 @media screen and (min-width:1024px){
+=======
+
+@media screen and (max-width:1024px){
+>>>>>>> 72076e60be8f8266230104d77d1308ef67a5c006
     .content{
         padding: 0 50px;
         display: flex;
@@ -97,6 +108,7 @@
         color: #fffdca;
         font-size: 1.2em;
     }
+<<<<<<< HEAD
 
     .separador{
         padding: 2px 20px;
@@ -104,5 +116,16 @@
         width: 100%;
         height: 46px;
         }
+=======
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .publicaciones{
+        flex-direction: column;
+        padding: 0px 0px 0px 46px;
+    }
+>>>>>>> 72076e60be8f8266230104d77d1308ef67a5c006
 
 }
