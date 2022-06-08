@@ -32,7 +32,6 @@ body {
 
 .fotorama,
 .fotorama img{
-    margin: 0;
     width: 1366px;
     height: 400px;
     padding: 0;
