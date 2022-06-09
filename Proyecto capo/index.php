@@ -16,10 +16,8 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-
-    <div class="tapadera"></div>
-
-    <header> 
+    
+    <header>
         <div class="content">
             <a class="logo" href="#">Aromatic</a>
             <div class="toggler">
@@ -35,12 +33,46 @@
         </div>
     </header>
 
-    <div class="perfil">
-    <img class="img2" src="img/usericon.png">
-    <h1>Usuario: Pepito</h1>
-    <h2>Mail: pepito@gmail.com</h2>
-    </div>
+    <div class="separador"></div>
 
+    <div class="fotorama"  data-autoplay="true"  data-loop="true"  data-width="100%">
+        <img src="https://s.fotorama.io/1.jpg">
+        <img src="https://s.fotorama.io/2.jpg">
+    </div>  
+
+        <main class="grupos">
+
+            <a href="productos.html" class="grupo">
+            <section class="card">
+            <div>
+                <h2>Perfume</h2>
+                <hr>
+                <p>Productos de perfumeria</p>
+            </div>       
+            </section>
+            </a>
+
+            <a href="productos.html" class="grupo">
+            <section class="card">
+            <div>
+                <h2>Perfume</h2>
+                <hr>
+                <p>Productos de perfumeria</p>
+            </div>       
+            </section>
+            </a>
+
+            <a href="productos.html" class="grupo">
+            <section class="card">
+            <div>
+                <h2>Perfume</h2>
+                <hr>
+                <p>Productos de perfumeria</p>
+            </div>       
+            </section>
+            </a>
+        
+        </main>
         <script>
             $(function(){
                 $(".toggler").click(function(){
