@@ -1,0 +1,40 @@
+body{
+    background-image: url(../img/background.png);
+}
+
+.navbar{
+    background-image: url(../img/navback.png);
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 1em;
+    transition: all .5s;
+}
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #fff;
+  color: rgba(210, 86, 226);
+}
+
+@media screen and (min-width:992px) {
+.navbar{
+    padding: 0 !important;
+}
+
+.navbar{
+    background-image: url(../img/navback.png);
+}
+}
+
+@media screen and (max-width:991px) {
+    .navbar-brand{
+        padding-left: 1em;
+    }
+
+    .navbar{
+        background-image: url(../img/navback2.png);
+    }  
+    }
+
+.container-fluid{
+    padding-right: 0 !important;
+}
