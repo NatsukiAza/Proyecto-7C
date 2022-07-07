@@ -40,8 +40,28 @@ body{
 }
 
 .info{
-    padding: 10px 0px 10px 20px;
+    padding: 10px 10px 10px 20px;
     line-height: 30px;
     color: white;
     background-color: rgba(0,0,0,0.8);
+}
+
+#izq{
+
+    margin-left: 66%;
+    margin-top: 6%;
+    margin-bottom: 10%;
+
+}
+
+#der{
+
+    margin-left: 12%;
+    margin-top: 6%;
+    margin-bottom: 10%;
+
+}
+
+.licencia{
+    margin-bottom: 0;
 }
