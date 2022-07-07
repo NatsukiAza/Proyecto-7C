@@ -38,3 +38,10 @@ body{
 .container-fluid{
     padding-right: 0 !important;
 }
+
+.info{
+    padding: 10px 0px 10px 20px;
+    line-height: 30px;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+}
