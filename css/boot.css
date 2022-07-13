@@ -40,7 +40,6 @@ body{
 }
 
 .info{
-    margin-top: 37%;
     padding: 10px 10px 10px 20px;
     line-height: 30px;
     color: white;
@@ -125,12 +124,51 @@ body{
     word-spacing: 100px;
 }
 
+.pani{
+    background-color: #cfcfcf;
+    width: 20%;
+    height: 883px;
+}
+
+.botonadmin{
+    width: 50%;
+    position: absolute;
+    margin-left: 36%;
+    background-color: rgba(210, 86, 226,0.8);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: .4s;
+}
+
+.botonadmin:hover{
+    background-color: rgb(255,255,255);
+    color: rgba(210, 86, 226,0.8);
+}
+
+#pos1{
+    margin-top: 10%;
+}
+
+#pos2{
+    margin-top: 20%;
+}
+
+#pos3{
+    margin-top: 30%;
+}
+
 @media screen and (max-width: 1366px) {
 
 
-    .info{
-        margin-top: 37%;
+    .pani{
+        width: 20%;
+        height: 569px;
     }
-
 }
 
