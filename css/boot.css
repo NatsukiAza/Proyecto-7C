@@ -40,25 +40,30 @@ body{
 }
 
 .info{
-    margin-top: 35%;
+    margin-top: 37%;
     padding: 10px 10px 10px 20px;
     line-height: 30px;
     color: white;
     background-color: rgba(0,0,0,0.8);
 }
 
+.card{
+    width: 35% !important; 
+    height: 395px !important;
+}
+
 #izq{
 
-    margin-left: 66%;
-    margin-top: 25%;
+    margin-left: 55%;
+    margin-top: 17%;
     margin-bottom: 10%;
 
 }
 
 #der{
 
-    margin-left: 12%;
-    margin-top: 20%;
+    margin-left: 10%;
+    margin-top: 14%;
     margin-bottom: 10%;
 
 }
@@ -66,6 +71,7 @@ body{
 .licencia{
     margin-bottom: 0;
 }
+
 
 .backg{
     width: 100%;
@@ -97,12 +103,12 @@ body{
 
 
 .imag2{
-    width: 635px;
-    height: 635px;
+    width: 620px;
+    height: 620px;
     z-index: 999;
     position: absolute;
-    margin-top: 6.6%;
-    margin-left: 2.49% ;
+    margin-top: 6.89%;
+    margin-left: 2.7% ;
 }
 
 .imag1{
@@ -110,15 +116,21 @@ body{
     height: 450px;
     z-index: 999;
     position: absolute;
-    margin-top: -3.5169%;
-    margin-left: 58.4% ;
+    margin-top: -4.15%;
+    margin-left: 57.75% ;
+}
+
+#espacio{
+    text-align: center;
+    word-spacing: 100px;
 }
 
 @media screen and (max-width: 1366px) {
 
 
     .info{
-        margin-top: 27%;
+        margin-top: 37%;
     }
 
 }
+
