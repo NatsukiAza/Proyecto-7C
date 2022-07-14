@@ -33,12 +33,12 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Contacto
+                 Tienda
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">WhatsApp</a></li>
-                  <li><a class="dropdown-item" href="#">Instagram</a></li>
-                  <li><a class="dropdown-item" href="#">Facebook</a></li>
+                  <li><a class="dropdown-item" href="pedido.php">Pedidos</a></li>
+                  <li><a class="dropdown-item" href="carrito.php">Carrito</a></li>
+                  <li><a class="dropdown-item" href="historial.php">Historial</a></li>
                 </ul>
               </li>
             </ul>
@@ -58,11 +58,13 @@
 	
 	<div class="main-content">
 		<div class="content-page">
-			<div class="title-section">amogus</div>
 			<div class="products-list" id="space-list">
 			</div>
 		</div>
 	</div>
+
+
+
 	<footer style="text-align: center;" class="info">
       <p class="licencia">El contenido esta disponible bajo la licencia de Gragus Corp a menos que se indique lo contrario</p>
       <a style="margin-right: 5%;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Facebook</a>
@@ -70,6 +72,7 @@
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Twitter</a>
       <p style="margin-bottom: 0;">+54 9 11 5506 8746</p>
     </footer>
+
 	<script type="text/javascript" src="js/main-scripts.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){

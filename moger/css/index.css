@@ -94,11 +94,19 @@ input:placeholder{
 	font-family: 'Sen', sans-serif;
 }
 .content-page{
-	margin: auto;
+	margin-left: 6.5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 	padding: 10px;
 	width: calc(100% - 20px);
 	max-width: 1180px;
 }
+
+.content1 section{
+	display: flex;
+	background: #fff;
+}
+
 .content-page section{
 	display: flex;
 	background: #fff;
@@ -128,7 +136,6 @@ input:placeholder{
 	font-size: 45px;
 }
 .part2 h1 span{
-	color: #c71212;
 	font-size: 30px;
 }
 .part2 h3{
@@ -140,7 +147,7 @@ button{
 	border-radius: 5px;
 	padding: 13px 20px;
 	color: #fff;
-	background: #c71212;
+	background: rgba(210, 86, 226, 0.8);
 	cursor: pointer;
 	font-size: 16px;
 }
@@ -149,7 +156,7 @@ button{
 	border-radius: 5px;
 	padding: 13px 20px;
 	color: #fff;
-	background: #c71212;
+	background: rgba(210, 86, 226, 0.8);
 	cursor: pointer;
 	font-size: 16px;
 }
@@ -160,13 +167,14 @@ button{
 	font-family: 'Sen', sans-serif;
 }
 .products-list{
+	margin-left: 4.3%;
 	display: table;
 	width: 100%;
 }
 .product-box{
 	display: inline-table;
 	padding: 10px;
-	width: calc(100%/5 - 20px);
+	width: 30%;
 }
 .product-box a{
 	text-decoration: none;
