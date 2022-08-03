@@ -19,7 +19,7 @@ button{
 }
 .body-nav-bar{
 	width: 200px;
-	background: rgba(210, 86, 226, 0.6);
+	background: rgba(232,170,240,255);
 	height: 100%;
 	padding: 10px;
 	color: #fff;
@@ -28,21 +28,22 @@ button{
 	padding: 20px 0;
 	width: 100%;
 }
-.body-nav-bar ul li{
+.body-nav-bar a{
 	display: flex;
+	padding: 10px 10px 10px 10px;
+	color: white;
+	font-weight: 600;
+	transition: 0.3s;
+	border-radius: 4px;
 }
+
+.body-nav-bar a:hover{
+	color: rgb(232,170,240);
+	background: rgb(255, 255, 255);
+}
+
 .mt10{
 	margin-top: 10px;
-}
-.body-nav-bar ul li a{
-	padding: 10px;
-	width: 100%;
-	text-decoration: none;
-	color: #fff;
-}
-.body-nav-bar ul li a:hover{
-	color: #ccc;
-	background: rgb(255, 255, 255);
 }
 
 .body-page{
@@ -59,7 +60,8 @@ th,td{
 	border: 1px solid #666;
 }
 th{
-	background: rgba(210, 86, 226);
+	border-bottom: 1px solid black !important;
+	background: rgba(232,170,240,255);
 	color: #fff;
 }
 .td-option{
@@ -124,4 +126,40 @@ select{
 }
 .body-modal .div-flex select{
 	width: calc(100% - 100px);
+}
+
+.agregar{
+	background-color: rgb(255, 255, 255);
+	border: 1px solid;
+	padding: 10px !important;
+	border-radius: 7px !important;
+	transition: 0.3s;
+}
+
+#minib{
+	border: 1px solid;
+	padding: 5px 5px 5px 5px;
+	border-radius: 7px;
+	transition: 0.3s;
+}
+
+.agregar:hover{
+	background-color: rgb(232,170,240);
+}
+
+#minib:hover{
+	background-color: rgb(232,170,240);
+}
+
+#rosa{
+	background-color: rgba(232,170,240,255);
+}
+
+#maldito{
+	border: 1px solid;
+	margin-top: 45px !important;
+}
+
+.cuadritosnashei{
+	width: 10%;
 }

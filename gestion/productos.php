@@ -27,20 +27,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="../adminpag.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Chats</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Tienda
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="../moger/pedido.php">Pedidos</a></li>
-                  <li><a class="dropdown-item" href="../moger/carrito.php">Carrito</a></li>
-                  <li><a class="dropdown-item" href="../moger/historial.php">Historial</a></li>
-                </ul>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -49,7 +39,7 @@
             </form>
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="login.html" id="login">Iniciar sesion</a>
+                <a class="nav-link active" aria-current="page" href="main.php" id="login">Admin</a>
               </li>
             </ul>
           </div>
@@ -124,15 +114,15 @@
 	<div class="main-container">
 		<?php include("layout/_directorios.php"); ?>
 		<div class="body-page">
-			<h2>Mis productos</h2>
-			<table class="mt10">
+			<h2 style="text-align: center; padding: 20px 0px 20px 0px,"><b>Mis productos</b></h2>
+			<table id="maldito" class="mt10">
 				<thead>
 					<tr>
-						<th>Código</th>
-						<th>Nombre</th>
-						<th>Descripción</th>
-						<th>Precio</th>
-						<th class="td-option">Opciones</th>
+						<th style="text-align: center; width: 7%;">Código</th>
+						<th style="text-align: center; width: 15%">Nombre</th>
+						<th style="text-align: center;">Descripción</th>
+						<th style="text-align: center; width: 4%">Precio</th>
+						<th style="text-align: center; width: 3%" class="td-option">Opciones</th>
 					</tr>
 				</thead>				
 				<tbody>
@@ -142,14 +132,14 @@
 						while ($row=mysqli_fetch_array($resultado)) {
 							echo 
 					'<tr>
-						<td>'.$row['codpro'].'</td>
-						<td>'.$row['nompro'].'</td>
-						<td>'.$row['despro'].'</td>
-						<td>'.$row['prepro'].'</td>
-						<td class="td-option">
-							<div class="div-flex div-td-button">
-								<button onclick="edit_product('.$row['codpro'].')"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-								<button onclick="delete_product('.$row['codpro'].')"><i class="fa fa-trash" aria-hidden="true"></i></button>
+						<td style="text-align: center;" id="rosa">'.$row['codpro'].'</td>
+						<td style="padding-left: 10px">'.$row['nompro'].'</td>
+						<td style="padding-left: 10px" id="rosa">'.$row['despro'].'</td>
+						<td style="padding-left: 10px">'.$row['prepro'].'</td>
+						<td style="padding-left: 11px" id="rosa" class="td-option">
+							<div style="margin-right: 0%;" class="div-flex div-td-button">
+								<button id="minib" onclick="edit_product('.$row['codpro'].')"><i class="fa fa-pencil"  aria-hidden="true"></i></button>
+								<button id="minib" onclick="delete_product('.$row['codpro'].')"><i class="fa fa-trash" aria-hidden="true"></i></button>
 							</div>
 						</td>
 					</tr>';
@@ -157,7 +147,8 @@
 					?>
 				</tbody>
 			</table>
-			<button class="mt10" onclick="show_modal('modal-producto')">Agregar nuevo</button>
+			<hr>
+			<button class="agregar" onclick="show_modal('modal-producto')">Agregar nuevo</button>
 		</div>
 	</div>
 	<script type="text/javascript">
