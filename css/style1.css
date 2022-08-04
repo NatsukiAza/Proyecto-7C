@@ -234,3 +234,20 @@ a{
 .logo:hover{
     color: rgb(210, 223, 39);
 }
+
+.titulo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin-top: 3%;
+    font-size: 32px !important;
+    font-weight: bold;
+    color: black;
+}
+
+.subt{
+    font-weight: lighter;
+    color: rgb(128, 103, 131);
+    text-align: center;
+    padding: 0px 250px 0px 250px;
+}

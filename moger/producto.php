@@ -49,7 +49,7 @@
             </form>
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="login.html" id="login">Iniciar sesion</a>
+                <a class="nav-link active" aria-current="page" href="login.php" id="login">Iniciar sesion</a>
               </li>
             </ul>
           </div>
