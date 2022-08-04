@@ -27,20 +27,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="../adminpag.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Chats</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Tienda
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="../moger/pedido.php">Pedidos</a></li>
-                  <li><a class="dropdown-item" href="../moger/carrito.php">Carrito</a></li>
-                  <li><a class="dropdown-item" href="../moger/historial.php">Historial</a></li>
-                </ul>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -49,7 +39,7 @@
             </form>
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="login.html" id="login">Iniciar sesion</a>
+                <a class="nav-link active" aria-current="page" href="main.php" id="login">Admin</a>
               </li>
             </ul>
           </div>
@@ -59,18 +49,18 @@
 	<div class="main-container">
 		<?php include("layout/_directorios.php"); ?>
 		<div class="body-page">
-			<h2>Inicio / Pendientes de despacho</h2>
-			<table class="mt10">
+			<h2 style="text-align: center; margin-top: 1.7%;">Inicio / Pendientes de despacho</h2>
+			<table id="maldito" class="mt10">
 				<thead>
 					<tr>
-						<th>Código</th>
-						<th>Usuario</th>
-						<th>Producto</th>
-						<th>Fecha</th>
-						<th>Estado</th>
-						<th>Dirección</th>
-						<th>Teléfono</th>
-						<th>Opciones</th>
+						<th style="text-align: center; width: 6%;">Código</th>
+						<th style="text-align: center; width: 15%;">Usuario</th>
+						<th style="text-align: center; width: 20%;">Producto</th>
+						<th style="text-align: center; width: 15%;">Fecha</th>
+						<th style="text-align: center; width: 9%;">Estado</th>
+						<th style="text-align: center; width: 12%;">Dirección</th>
+						<th style="text-align: center;">Teléfono</th>
+						<th style="text-align: center; width: 6%;">Opciones</th>
 					</tr>
 				</thead>				
 				<tbody>
@@ -98,13 +88,13 @@
 						while ($row=mysqli_fetch_array($resultado)) {
 							echo 
 					'<tr>
-						<td>'.$row['codped'].'</td>
+						<td style="text-align: center;" id="rosa">'.$row['codped'].'</td>
 						<td>'.$row['codusu'].' - '.$row['nomusu'].'</td>
-						<td>'.$row['codpro'].' - '.$row['nompro'].'</td>
-						<td>'.$row['fecped'].'</td>
-						<td>'.$row['estadotexto'].'</td>
+						<td id="rosa">'.$row['codpro'].' - '.$row['nompro'].'</td>
+						<td style="text-align: center;">'.$row['fecped'].'</td>
+						<td id="rosa" style="text-align: center;">'.$row['estadotexto'].'</td>
 						<td>'.$row['dirusuped'].'</td>
-						<td>'.$row['telusuped'].'</td>';
+						<td id="rosa">'.$row['telusuped'].'</td>';
 						if ($row['estadoped']==4) {
 							echo
 						'<td class="td-option">
