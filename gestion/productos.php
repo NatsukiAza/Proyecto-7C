@@ -9,7 +9,6 @@
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
-	<link rel="stylesheet" type="text/css" href="../css/boot.css">
     <link rel="stylesheet" href="../css/style1.css">
     <link rel="stylesheet" href="../css/queries.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -114,7 +113,7 @@
 	<div class="main-container">
 		<?php include("layout/_directorios.php"); ?>
 		<div class="body-page">
-			<h2 style="text-align: center; margin-top: 1.7%;"><b>Mis productos</b></h2>
+			<h2 style="text-align: center; margin-top: 1.7%; color: #A13D63;"><b>Mis productos</b></h2>
 			<table id="maldito" class="mt10">
 				<thead>
 					<tr>

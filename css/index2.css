@@ -6,7 +6,7 @@
 }
 body{
 	width: 100%;
-	background: #eee;
+	background-color: #F5E9EF !important;
 }
 button{
 	padding: 10px;
@@ -18,28 +18,29 @@ button{
 	height: 100vh;
 }
 .body-nav-bar{
-	width: 200px;
-	background: rgba(232,170,240,255);
+	background: #EBA6A9;
 	height: 100%;
 	padding: 10px;
-	color: #fff;
+	color: #1E1014;
 }
 .body-nav-bar img{
 	padding: 20px 0;
 	width: 100%;
 }
 .body-nav-bar a{
+	margin-top: 5%;
+	border: 2px solid #1E1014 !important;	
 	display: flex;
 	padding: 10px 10px 10px 10px;
-	color: white;
+	color:#1E1014;
 	font-weight: 600;
 	transition: 0.3s;
 	border-radius: 4px;
 }
 
 .body-nav-bar a:hover{
-	color: rgb(232,170,240);
-	background: rgb(255, 255, 255);
+	color: #EBA6A9;
+	background:#1E1014;
 }
 
 .mt10{
@@ -55,14 +56,22 @@ table{
 	width: 100%;
 	border-collapse: collapse;
 }
+
+table tbody tr{	
+	color: #F5E9EF;
+	background-color: #121619;
+}
+
 th,td{
 	padding: 5px;
-	border: 1px solid #666;
+	border: 1px solid #121619;
 }
+
+
 th{
-	border-bottom: 1px solid black !important;
-	background: rgba(232,170,240,255);
-	color: #fff;
+	border-bottom: 1px solid #121619 !important;
+	background: #EBA6A9;
+	color: #F5E9EF;
 }
 .td-option{
 	width: 60px;
@@ -144,15 +153,11 @@ select{
 }
 
 .agregar:hover{
-	background-color: rgb(232,170,240);
+	background-color: #EBA6A9;
 }
 
 #minib:hover{
-	background-color: rgb(232,170,240);
-}
-
-#rosa{
-	background-color: rgba(232,170,240,255);
+	background-color: #EBA6A9;
 }
 
 #maldito{
@@ -163,3 +168,71 @@ select{
 .cuadritosnashei{
 	width: 10%;
 }
+
+.container{
+
+	display: flex;
+	flex-direction: column;
+}
+
+.card-text{
+	padding: 10px 0px 5px 0px;
+}
+
+.card-link{
+	float: right;
+}
+
+.card{
+	background-color: #121619 !important;
+	color: #F5FCEF !important;
+	border-width: 2px !important;
+	border-color: #A13D63 !important;
+	margin-left: 10.5%;
+	margin-top: 8%;
+	height: 220px !important;
+	width: 80% !important;
+}
+
+.card a{
+	color: #A13D63 !important;
+}
+
+.card h6{
+	color: #747474;
+}
+
+
+
+.navbar{
+    background-image: url(../img/navback.png);
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 1em;
+    transition: all .5s;
+}
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #fff;
+  color: rgba(210, 86, 226);
+}
+
+@media screen and (min-width:992px) {
+.navbar{
+    padding: 0 !important;
+}
+
+.navbar{
+    background-image: url(../img/navback.png);
+}
+}
+
+@media screen and (max-width:991px) {
+    .navbar-brand{
+        padding-left: 1em;
+    }
+
+    .navbar{
+        background-image: url(../img/navback2.png);
+    }  
+    }
