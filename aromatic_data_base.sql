@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-06-2022 a las 19:14:12
+-- Tiempo de generación: 10-08-2022 a las 21:08:33
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -18,81 +18,53 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `aromatic_data_base`
+-- Base de datos: `chatapp`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `entrada`
+-- Estructura de tabla para la tabla `messages`
 --
 
-CREATE TABLE `entrada` (
-  `id` int(11) NOT NULL,
-  `titulo` varchar(200) NOT NULL,
-  `mensaje` text NOT NULL,
-  `fecha` datetime NOT NULL,
-  `idusuario` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `foro`
---
-
-CREATE TABLE `foro` (
-  `id` int(11) NOT NULL,
-  `titulo` varchar(200) NOT NULL,
-  `mensaje` text NOT NULL,
-  `fecha` datetime NOT NULL,
-  `respuestas` int(11) NOT NULL,
-  `identificador` int(11) NOT NULL,
-  `ult_respuesta` date NOT NULL,
-  `autor` varchar(30) NOT NULL
+CREATE TABLE `messages` (
+  `msg_id` int(11) NOT NULL,
+  `incoming_msg_id` int(255) NOT NULL,
+  `outgoing_msg_id` int(255) NOT NULL,
+  `msg` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `login`
+-- Estructura de tabla para la tabla `pedido`
 --
 
-CREATE TABLE `login` (
-  `username` text NOT NULL,
-  `id` int(11) NOT NULL,
-  `id_rol` int(2) NOT NULL,
-  `password` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `publicaciones`
---
-
-CREATE TABLE `publicaciones` (
-  `descripcion` text NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `stock` int(11) NOT NULL,
-  `imagenes` text NOT NULL,
-  `id_producto` int(11) NOT NULL,
-  `precio` float NOT NULL
+CREATE TABLE `pedido` (
+  `codped` int(11) NOT NULL,
+  `codusu` int(11) NOT NULL,
+  `codpro` int(11) NOT NULL,
+  `fecped` datetime NOT NULL,
+  `estado` int(11) NOT NULL,
+  `dirusuped` varchar(50) NOT NULL,
+  `telusuped` varchar(12) NOT NULL,
+  `token` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `respuestas`
+-- Estructura de tabla para la tabla `producto`
 --
 
-CREATE TABLE `respuestas` (
-  `id` int(11) NOT NULL,
-  `fecha` datetime NOT NULL,
-  `mensaje` text NOT NULL,
-  `idusuario` int(11) NOT NULL,
-  `ide` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `producto` (
+  `codpro` int(11) NOT NULL,
+  `nompro` varchar(50) DEFAULT NULL,
+  `despro` varchar(100) DEFAULT NULL,
+  `prepro` varchar(62) DEFAULT NULL,
+  `estado` int(11) DEFAULT NULL,
+  `rutimapro` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -105,48 +77,44 @@ CREATE TABLE `roles` (
   `id_rol` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
 --
--- Volcado de datos para la tabla `roles`
+-- Estructura de tabla para la tabla `users`
 --
 
-INSERT INTO `roles` (`rol`, `id_rol`) VALUES
-('Admin', 1),
-('Usuario_normal', 2);
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL,
+  `unique_id` int(255) NOT NULL,
+  `fname` varchar(255) NOT NULL,
+  `lname` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `status` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `entrada`
+-- Indices de la tabla `messages`
 --
-ALTER TABLE `entrada`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`msg_id`);
 
 --
--- Indices de la tabla `foro`
+-- Indices de la tabla `pedido`
 --
-ALTER TABLE `foro`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `pedido`
+  ADD PRIMARY KEY (`codped`);
 
 --
--- Indices de la tabla `login`
+-- Indices de la tabla `producto`
 --
-ALTER TABLE `login`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `usuarios_ibfk_1` (`id_rol`);
-
---
--- Indices de la tabla `publicaciones`
---
-ALTER TABLE `publicaciones`
-  ADD PRIMARY KEY (`id_producto`);
-
---
--- Indices de la tabla `respuestas`
---
-ALTER TABLE `respuestas`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `producto`
+  ADD PRIMARY KEY (`codpro`);
 
 --
 -- Indices de la tabla `roles`
@@ -155,54 +123,44 @@ ALTER TABLE `roles`
   ADD PRIMARY KEY (`id_rol`);
 
 --
+-- Indices de la tabla `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`user_id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `entrada`
+-- AUTO_INCREMENT de la tabla `messages`
 --
-ALTER TABLE `entrada`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `messages`
+  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `foro`
+-- AUTO_INCREMENT de la tabla `pedido`
 --
-ALTER TABLE `foro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `pedido`
+  MODIFY `codped` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `login`
+-- AUTO_INCREMENT de la tabla `producto`
 --
-ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT de la tabla `publicaciones`
---
-ALTER TABLE `publicaciones`
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `respuestas`
---
-ALTER TABLE `respuestas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `producto`
+  MODIFY `codpro` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id_rol` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_rol` int(2) NOT NULL AUTO_INCREMENT;
 
 --
--- Restricciones para tablas volcadas
+-- AUTO_INCREMENT de la tabla `users`
 --
-
---
--- Filtros para la tabla `login`
---
-ALTER TABLE `login`
-  ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles` (`id_rol`);
+ALTER TABLE `users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
