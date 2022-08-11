@@ -63,6 +63,10 @@
 				<input type="number" id="precio">
 			</div>
 			<div class="div-flex">
+				<label>Stock</label>
+				<input type="number" id="stock">
+			</div>
+			<div class="div-flex">
 				<label>Estado</label>
 				<select id="estado">
 					<option value="1">Activo</option>
@@ -95,6 +99,9 @@
 				<label>Precio</label>
 				<input type="number" id="precio-e">
 			</div>
+			<div class="div-flex">
+				<label>Stock</label>
+				<input type="text" id="stock-e">
 			<input type="text" id="rutimapro-aux" style="display: none;">
 			<div class="div-flex">
 				<label>Estado</label>
@@ -106,6 +113,7 @@
 			<img id="rutimapro" src="" style="width: 200px;margin: 5px auto;">
 			<div class="div-flex">
 				<input type="file" id="imagen-e">
+			</div>
 			</div>
 			<button onclick="update_producto()">Actualizar</button>
 		</div>
@@ -121,6 +129,7 @@
 						<th style="text-align: center; width: 15%">Nombre</th>
 						<th style="text-align: center;">Descripción</th>
 						<th style="text-align: center; width: 4%">Precio</th>
+						<th style="text-align: center; width: 4%">Stock</th>
 						<th style="text-align: center; width: 3%" class="td-option">Opciones</th>
 					</tr>
 				</thead>				
@@ -135,6 +144,7 @@
 						<td style="padding-left: 10px">'.$row['nompro'].'</td>
 						<td style="padding-left: 10px" id="rosa">'.$row['despro'].'</td>
 						<td style="padding-left: 10px">'.$row['prepro'].'</td>
+						<td style="padding-left: 10px">'.$row['prodst'].'</td>
 						<td style="padding-left: 11px" id="rosa" class="td-option">
 							<div style="margin-right: 0%;" class="div-flex div-td-button">
 								<button id="minib" onclick="edit_product('.$row['codpro'].')"><i class="fa fa-pencil"  aria-hidden="true"></i></button>
@@ -165,6 +175,7 @@
 			fd.append('precio',document.getElementById('precio').value);
 			fd.append('estado',document.getElementById('estado').value);
 			fd.append('imagen',document.getElementById('imagen').files[0]);
+			fd.append('stock',document.getElementById('stock').value);
 			let request=new XMLHttpRequest();
 			request.open('POST','api/producto_save.php',true);
 			request.onload=function(){
@@ -220,6 +231,7 @@
 					document.getElementById("estado-e").value=response.product.estado;
 					document.getElementById("rutimapro").src="../sistema-ecommerce/assets/products/"+response.product.rutimapro;
 					document.getElementById("rutimapro-aux").value=response.product.rutimapro;
+					document.getElementById("stock-e").value=response.product.prodst;
 					show_modal('modal-producto-edit');
 					//imagen-e
 				}
@@ -233,6 +245,7 @@
 			fd.append('nombre',document.getElementById('nombre-e').value);
 			fd.append('descripcion',document.getElementById('descripcion-e').value);
 			fd.append('precio',document.getElementById('precio-e').value);
+			fd.append('stock',document.getElementById('stock-e').value);
 			fd.append('estado',document.getElementById('estado-e').value);
 			fd.append('imagen',document.getElementById('imagen-e').files[0]);
 			fd.append('rutimapro',document.getElementById("rutimapro-aux").value);

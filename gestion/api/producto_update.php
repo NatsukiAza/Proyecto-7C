@@ -9,11 +9,12 @@
 	$prepro=$_POST['precio'];
 	$estado=$_POST['estado'];
 	$rutimapro=$_POST['rutimapro'];
+	$prodst=$_POST['stock'];
 
 	if(isset($_FILES['imagen'])){
 		$nombre_imagen = date("YmdHis").".jpg";  
 		$sql="update producto set nompro='$nompro',despro='$despro',
-		estado=$estado,prepro=$prepro,rutimapro='$nombre_imagen'
+		estado=$estado,prepro=$prepro,rutimapro='$nombre_imagen',prodst=$prodst
 		where codpro=$codpro";
 		$result=mysqli_query($con,$sql);
 		if ($result) {			
@@ -28,13 +29,13 @@
 				$response->state=false;
 				$response->detail="Hubo un error al cargar la imagen";
 			}
-		}else{
+		}else{ 	
 			$response->state=false;
 			$response->detail="No se pudo actualizar el producto";
 		}
 	}else{
 		$sql="update producto set nompro='$nompro',despro='$despro',
-		estado=$estado,prepro=$prepro
+		estado=$estado,prepro=$prepro,prodst=$prodst
 		where codpro=$codpro";
 		$result=mysqli_query($con,$sql);
 		if ($result) {

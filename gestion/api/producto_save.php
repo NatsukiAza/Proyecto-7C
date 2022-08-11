@@ -8,6 +8,8 @@
 	$descripcion=$_POST['descripcion'];
 	$precio=$_POST['precio'];
 	$estado=$_POST['estado'];
+	$stock=$_POST['stock'];
+	
 
 	if ($nombre=="") {
 		$response->state=false;
@@ -21,8 +23,8 @@
 				//TU TAREA ES CAPTURAR LA FECHA Y HORA DEL SISTEMA
 				//$nombre_imagen="20201011090730.jpg";
 				$nombre_imagen = date("YmdHis").".jpg";  
-				$sql="INSERT INTO producto (nompro,despro,prepro,estado,rutimapro)
-				VALUES ('$nombre','$descripcion',$precio,$estado,'$nombre_imagen')";
+				$sql="INSERT INTO producto (nompro,despro,prepro,estado,rutimapro,prodst)
+				VALUES ('$nombre','$descripcion',$precio,$estado,'$nombre_imagen',$stock)";
 				$result=mysqli_query($con,$sql);
 				if ($result) {
 					//RECUERDA QUE MUEVE QUE NECESITES MENOS RETORNOS DE DIRECTORIO, es decir el "../"

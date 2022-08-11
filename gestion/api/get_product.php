@@ -12,6 +12,7 @@
 	$obj->prepro=$row['prepro'];
 	$obj->estado=$row['estado'];
 	$obj->rutimapro=$row['rutimapro'];
+	$obj->prodst=$row['prodst'];
 	$response->product=$obj;
 
 	echo json_encode($response);

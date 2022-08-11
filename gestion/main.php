@@ -5,11 +5,12 @@
 <html>
 <head>
 <title>Mi sistema E-Commerce</title>
-	<meta charset="utf-8">
+<meta charset="utf-8">
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
-	<link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/queries.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
@@ -48,14 +49,32 @@
 
 		<?php include("layout/_directorios.php"); ?>
 
-		<div class="container">
-			<div class="card">
-  				<div class="card-body">
-    				<h5 class="card-title">Nuevos Pedidos</h5>
-    				<h6 class="card-subtitle mb-2">Ejemplo</h6>
-    				<p class="card-text">Ejemplo</p>
-					<p class="card-text">Ejemplo</p>
-    				<a href="pedidos.php" class="card-link">Ver mas</a>
+		<div class="body-page">
+			<table id="maldito" class="mt10" style="max-with: 10%">
+				<thead>
+					<tr>
+						<th style="text-align: center; width: 7%;">Código</th>
+						<th style="text-align: center; width: 15%">Nombre</th>
+						<th style="text-align: center; width: 4%">Precio</th>
+					</tr>
+				</thead>				
+				<tbody>
+					<?php
+						$sql="SELECT * from producto";
+						$resultado=mysqli_query($con,$sql);
+						while ($row=mysqli_fetch_array($resultado)) {
+							echo 
+					'<tr>
+						<td style="text-align: center;" id="rosa">'.$row['codpro'].'</td>
+						<td style="padding-left: 10px">'.$row['nompro'].'</td>
+						<td style="padding-left: 10px">'.$row['prepro'].'</td>
+						<td style="padding-left: 11px" id="rosa" class="td-option">
+						</td>
+					</tr>';
+						}
+					?>
+				</tbody>
+			</table>
   				</div>
 			</div>
 
