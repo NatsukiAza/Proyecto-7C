@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-08-2022 a las 19:28:44
+-- Tiempo de generación: 11-08-2022 a las 19:50:14
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -42,7 +42,7 @@ CREATE TABLE `messages` (
 
 CREATE TABLE `pedido` (
   `codped` int(11) NOT NULL,
-  `codusu` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `codpro` int(11) NOT NULL,
   `fecped` datetime NOT NULL,
   `estado` int(11) NOT NULL,
