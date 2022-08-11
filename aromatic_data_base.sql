@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-08-2022 a las 19:50:14
+-- Tiempo de generación: 11-08-2022 a las 22:59:19
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `chatapp`
+-- Base de datos: `aromatic_data_base`
 --
 
 -- --------------------------------------------------------
@@ -64,8 +64,16 @@ CREATE TABLE `producto` (
   `prepro` varchar(62) DEFAULT NULL,
   `estado` int(11) DEFAULT NULL,
   `rutimapro` varchar(100) DEFAULT NULL,
-  `stock` int(11) NOT NULL
+  `prodst` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`codpro`, `nompro`, `despro`, `prepro`, `estado`, `rutimapro`, `prodst`) VALUES
+(16, 'por fa', 'mano', '23', 1, '20220811213543.jpg', 2245345),
+(19, 'tumadre', 'boludo', '54754', 1, '20220811223517.jpg', 455);
 
 -- --------------------------------------------------------
 
@@ -149,7 +157,7 @@ ALTER TABLE `pedido`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `codpro` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `codpro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
