@@ -1,5 +1,5 @@
 :root{
-	--main-red:rgba(210, 86, 226);
+	--main-red: #f48fb1;
 }
 
 body,html{
@@ -147,7 +147,7 @@ button{
 	border-radius: 5px;
 	padding: 13px 20px;
 	color: #fff;
-	background: rgba(210, 86, 226, 0.8);
+	background: #f48fb1;
 	cursor: pointer;
 	font-size: 16px;
 }
@@ -156,7 +156,7 @@ button{
 	border-radius: 5px;
 	padding: 13px 20px;
 	color: #fff;
-	background: rgba(210, 86, 226, 0.8);
+	background: #f48fb1;
 	cursor: pointer;
 	font-size: 16px;
 }
@@ -209,7 +209,7 @@ button{
 .detail-price{
 	text-align: center;
 	font-size: 25px;
-	color: rgba(210, 86, 226);
+	color: #f48fb1;
 	padding: 5px;
 	width: calc(100% - 10px);
 }

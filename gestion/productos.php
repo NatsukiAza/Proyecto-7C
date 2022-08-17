@@ -121,7 +121,7 @@
 	<div class="main-container">
 		<?php include("layout/_directorios.php"); ?>
 		<div class="body-page">
-			<h2 style="text-align: center; margin-top: 1.7%; color: #A13D63;"><b>Mis productos</b></h2>
+			<h2 style="text-align: center; margin-top: 1.7%; color: #bf5f82;"><b>Mis productos</b></h2>
 			<table id="maldito" class="mt10">
 				<thead>
 					<tr>

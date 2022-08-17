@@ -15,10 +15,10 @@ button{
 .main-container{
 	display: flex;
 	width: 100%;
-	height: 100vh;
+	height: 94.2vh;
 }
 .body-nav-bar{
-	background: #EBA6A9;
+	background: #ffc1e3;
 	height: 100%;
 	padding: 10px;
 	color: #1E1014;
@@ -29,7 +29,7 @@ button{
 }
 .body-nav-bar a{
 	margin-top: 5%;
-	border: 2px solid #1E1014 !important;	
+	border: 2px solid #bf5f82 !important;	
 	display: flex;
 	padding: 10px 10px 10px 10px;
 	color:#1E1014;
@@ -39,8 +39,8 @@ button{
 }
 
 .body-nav-bar a:hover{
-	color: #EBA6A9;
-	background:#1E1014;
+	color: #ffffff;
+	background:#bf5f82;
 }
 
 .mt10{
@@ -58,8 +58,8 @@ table{
 }
 
 table tbody tr{	
-	color: #F5E9EF;
-	background-color: #121619;
+	color: #121619;
+	background-color: #ffc1e3;
 }
 
 th,td{
@@ -70,7 +70,7 @@ th,td{
 
 th{
 	border-bottom: 1px solid #121619 !important;
-	background: #EBA6A9;
+	background: #f48fb1;
 	color: #F5E9EF;
 }
 .td-option{
@@ -138,7 +138,7 @@ select{
 }
 
 .agregar{
-	background-color: rgb(255, 255, 255);
+	background-color: #F5E9EF;
 	border: 1px solid;
 	padding: 10px !important;
 	border-radius: 7px !important;
@@ -153,11 +153,11 @@ select{
 }
 
 .agregar:hover{
-	background-color: #EBA6A9;
+	background-color: #ffc1e3;
 }
 
 #minib:hover{
-	background-color: #EBA6A9;
+	background-color: #ffc1e3;
 }
 
 #maldito{
@@ -169,8 +169,8 @@ select{
 	width: 10%;
 }
 
-.container{
-
+.containerr{
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 }
@@ -184,55 +184,69 @@ select{
 }
 
 .card{
-	background-color: #121619 !important;
-	color: #F5FCEF !important;
+	background-color: #f48fb1 !important;
+	color: #121619 !important;
 	border-width: 2px !important;
-	border-color: #A13D63 !important;
+	border-color: #bf5f82 !important;
 	margin-left: 10.5%;
 	margin-top: 8%;
+	z-index: -2;
 	height: 220px !important;
 	width: 80% !important;
 }
 
+.tit{
+	height: 70px !important;
+	width: 100% !important;
+	z-index: -1 !important;
+	position: absolute;
+	padding: 10px 5px 5px 5px;
+	background-color: #bf5f82;
+}
+
 .card a{
-	color: #A13D63 !important;
+	padding: 0px 15px 0px 0px;
+	color: #1E1014 !important;
 }
 
 .card h6{
-	color: #747474;
+	padding: 0px 0px 0px 15px;
+	color: #ffffff;
+}
+
+.card-body{
+	padding: 0px !important;
+}
+
+.card-body h5, .card-body p{
+	padding: 13px 0px 0px 15px;
+}
+
+.adminb{
+	color: #000000;
+	background-color: #bf5f82;
+	border-radius: 5px;
+	padding: 0px 5px 0px 5px;
 }
 
 
+@media screen and (min-width:1337px) {
 
-.navbar{
-    background-image: url(../img/navback.png);
-}
+	.card{
+		height: 350px !important;
+	}
 
-.navbar .navbar-nav .nav-link {
-    padding: 1em;
-    transition: all .5s;
-}
-.navbar .navbar-nav .nav-link:hover {
-  background-color: #fff;
-  color: rgba(210, 86, 226);
-}
+	.abajo{	
+		position:relative;
+		width:100px;
+		height:150px;
+		float:right;
+		margin-right:5px;
+	}
 
-@media screen and (min-width:992px) {
-.navbar{
-    padding: 0 !important;
+	.abajo span{
+		position:absolute;
+		bottom:0;
+		right:0;
+	}
 }
-
-.navbar{
-    background-image: url(../img/navback.png);
-}
-}
-
-@media screen and (max-width:991px) {
-    .navbar-brand{
-        padding-left: 1em;
-    }
-
-    .navbar{
-        background-image: url(../img/navback2.png);
-    }  
-    }

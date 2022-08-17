@@ -49,64 +49,63 @@
 
 		<?php include("layout/_directorios.php"); ?>
 
-		<div class="body-page">
-			<table id="maldito" class="mt10" style="max-with: 10%">
-				<thead>
-					<tr>
-						<th style="text-align: center; width: 7%;">Código</th>
-						<th style="text-align: center; width: 15%">Nombre</th>
-						<th style="text-align: center; width: 4%">Precio</th>
-					</tr>
-				</thead>				
-				<tbody>
-					<?php
-						$sql="SELECT * from producto";
-						$resultado=mysqli_query($con,$sql);
-						while ($row=mysqli_fetch_array($resultado)) {
-							echo 
-					'<tr>
-						<td style="text-align: center;" id="rosa">'.$row['codpro'].'</td>
-						<td style="padding-left: 10px">'.$row['nompro'].'</td>
-						<td style="padding-left: 10px">'.$row['prepro'].'</td>
-						<td style="padding-left: 11px" id="rosa" class="td-option">
-						</td>
-					</tr>';
-						}
-					?>
-				</tbody>
-			</table>
+
+		<div class="containerr">
+		<div class="card">
+  				<div class="card-body">
+				  <div class="tit">
+				  </div>	
+					<h5 class="card-title">Nuevos Pedidos</h5>
+    				<h6 class="card-subtitle mb-2">Ejemplo</h6>
+    				<p class="card-text">Ejemplo</p>
+					<p class="card-text">Ejemplo</p>
+    				<div class="abajo">
+						<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+					</div>
   				</div>
 			</div>
 
 			<div class="card">
   				<div class="card-body">
+				  <div class="tit">
+				  </div>	
 				  <h5 class="card-title">Ventas Hechas</h5>
     				<h6 class="card-subtitle mb-2">Ejemplo</h6>
     				<p class="card-text">Ejemplo</p>
 					<p class="card-text">Ejemplo</p>
-    				<a href="pedidos.php" class="card-link">Ver mas</a>
+					<div class="abajo">
+						<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+					</div>
   				</div>
 			</div>
 		</div>
 		
-		<div class="container">
+		<div class="containerr">
 			<div class="card">
   				<div class="card-body">
+				  <div class="tit">
+				  </div>	
 				  <h5 class="card-title">Productos con poco stock</h5>
     				<h6 class="card-subtitle mb-2">Ejemplo</h6>
     				<p class="card-text">Ejemplo</p>
 					<p class="card-text">Ejemplo</p>
-    				<a href="pedidos.php" class="card-link">Ver mas</a>
+    				<div class="abajo">
+						<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+					</div>
   				</div>
 			</div>
 
 			<div class="card">
   				<div class="card-body">
+				  <div class="tit">
+				  </div>	
 				  <h5 class="card-title">Ventas realizadas en el Mes</h5>
     				<h6 class="card-subtitle mb-2">Ejemplo</h6>
     				<p class="card-text">Ejemplo</p>
 					<p class="card-text">Ejemplo</p>
-    				<a href="pedidos.php" class="card-link">Ver mas</a>
+    				<div class="abajo">
+						<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+					</div>
   				</div>
 			</div>
 		</div>

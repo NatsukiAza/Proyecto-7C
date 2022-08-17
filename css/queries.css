@@ -1,5 +1,10 @@
+body{
+    background-color: #fff;
+}
+
 .navbar{
-    background-image: url(../img/navback.png);
+    color: #fff !important;
+    background-color: #f48fb1;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -8,7 +13,7 @@
 }
 .navbar .navbar-nav .nav-link:hover {
   background-color: #fff;
-  color: rgba(210, 86, 226);
+  color: #f48fb1;
 }
 
 @media screen and (min-width:992px) {
@@ -16,19 +21,12 @@
     padding: 0 !important;
 }
 
-.navbar{
-    background-image: url(../img/navback.png);
-}
 }
 
 @media screen and (max-width:991px) {
     .navbar-brand{
         padding-left: 1em;
     }
-
-    .navbar{
-        background-image: url(../img/navback2.png);
-    }  
     }
 
 .container-fluid{
@@ -42,13 +40,8 @@
     background-color: rgba(0,0,0,0.8);
 }
 
-.card{
-    width: 35% !important; 
-    height: 395px !important;
-}
-
 #izq{
-
+    width: 40% !important;
     margin-left: 55%;
     margin-top: 17%;
     margin-bottom: 10%;
@@ -56,7 +49,7 @@
 }
 
 #der{
-
+    width: 40% !important;
     margin-left: 10%;
     margin-top: 14%;
     margin-bottom: 10%;
@@ -71,8 +64,8 @@
 .backg{
     width: 100%;
     height: 1532px;
-    background: rgb(230,230,230);
-    background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(217,159,227,1) 16%, rgba(210,122,226,1) 35%, rgba(210,122,226,1) 64%, rgba(216,157,227,1) 84%, rgba(230,230,230,1) 100%);
+    background: #F5E9EF;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(248,186,207,1) 21%, rgba(244,143,177,1) 47%, rgba(247,175,199,1) 73%, rgba(255,255,255,1) 100%);
     position: absolute;
 }
 
@@ -157,7 +150,6 @@
 }
 
 @media screen and (max-width: 1366px) {
-
 
     .pani{
         width: 20%;
@@ -291,3 +283,42 @@
 
 }
 
+@media screen and (min-width:1337px) {
+
+    #izq{
+        width: 30% !important;
+    }
+
+    #der{
+        width: 30% !important;
+        margin-top: 20% !important;
+        margin-left: 15%;
+    }
+
+    .imag2{
+        width: 820px;
+        height: 820px;
+        margin-top: 3.3%;
+        margin-left: 3.15%;
+    }
+
+    .imag1{
+        width: 620px;
+        height: 620px;
+        margin-top: -3.6%;
+        margin-left: 58.2%;
+    }
+
+    .circulo{
+        width: 700px;
+        height: 700px;
+    }
+
+    .backg{
+        height: 1800px;
+    }
+
+    #ciz{
+        margin-top: 8% !important;
+    }
+}
