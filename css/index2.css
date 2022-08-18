@@ -230,7 +230,7 @@ select{
 }
 
 
-@media screen and (min-width:1337px) {
+@media screen and (max-width:1336px) {
 
 	.card{
 		height: 350px !important;
