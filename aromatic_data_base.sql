@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-08-2022 a las 22:59:19
+-- Tiempo de generación: 18-08-2022 a las 20:26:25
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -72,8 +72,9 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`codpro`, `nompro`, `despro`, `prepro`, `estado`, `rutimapro`, `prodst`) VALUES
-(16, 'por fa', 'mano', '23', 1, '20220811213543.jpg', 2245345),
-(19, 'tumadre', 'boludo', '54754', 1, '20220811223517.jpg', 455);
+(20, 'Aceite Esencial Patchouly', 'Construido entorno a un patchouly con facetas verdes y madera, que evoluciona hacia notas balsámicas', '155.00', 1, '20220818193111.jpg', 60),
+(21, 'Aceite Esencial Palo Santo', 'Embriagadora fragancia amaderada con mezcla de notas balsámicas y orientales que energiza y sorprend', '155.00', 1, '20220818193146.jpg', 60),
+(22, 'Aceite Esencial Nag Champa', 'Una fragancia exuberante, con una salida de patchouly que cede progresivamente hacia un fondo que re', '155.00', 1, '20220818193212.jpg', 60);
 
 -- --------------------------------------------------------
 
@@ -157,7 +158,7 @@ ALTER TABLE `pedido`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `codpro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `codpro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
