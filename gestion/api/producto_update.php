@@ -20,11 +20,11 @@
 		if ($result) {			
 			//recuerda que debes redireccionar al nombre de proyecto correcto
 			// ejm: sistema-ecommerce-master
-			if(move_uploaded_file($_FILES['imagen']['tmp_name'], "../../sistema-ecommerce/assets/products/".$nombre_imagen)){
+			if(move_uploaded_file($_FILES['imagen']['tmp_name'], "../moger/assets/products/".$nombre_imagen)){
 				$response->state=true;
 				//recuerda que debes redireccionar al nombre de proyecto correcto
 				// ejm: sistema-ecommerce-master
-				unlink("../../sistema-ecommerce/assets/products/".$rutimapro);
+				unlink("../moger/assets/products/".$rutimapro);
 			}else{
 				$response->state=false;
 				$response->detail="Hubo un error al cargar la imagen";

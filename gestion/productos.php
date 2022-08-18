@@ -29,7 +29,7 @@
                 <a class="nav-link active" aria-current="page" href="../adminpag.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="../ChatTReal/vistas/index.php">Chats</a>
+                <a class="nav-link active" href="#">Chats</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -122,6 +122,8 @@
 		<?php include("layout/_directorios.php"); ?>
 		<div class="body-page">
 			<h2 style="text-align: center; margin-top: 1.7%; color: #bf5f82;"><b>Mis productos</b></h2>
+			<input id="searchbar" onkeyup="search_animal()" type="text"
+        name="search" placeholder="Buscar un producto"></li>
 			<table id="maldito" class="mt10">
 				<thead>
 					<tr>
@@ -140,15 +142,15 @@
 						while ($row=mysqli_fetch_array($resultado)) {
 							echo 
 					'<tr>
-						<td style="text-align: center;" id="rosa">'.$row['codpro'].'</td>
-						<td style="padding-left: 10px">'.$row['nompro'].'</td>
-						<td style="padding-left: 10px" id="rosa">'.$row['despro'].'</td>
-						<td style="padding-left: 10px">'.$row['prepro'].'</td>
-						<td style="padding-left: 10px">'.$row['prodst'].'</td>
-						<td style="padding-left: 11px" id="rosa" class="td-option">
-							<div style="margin-right: 0%;" class="div-flex div-td-button">
-								<button id="minib" onclick="edit_product('.$row['codpro'].')"><i class="fa fa-pencil"  aria-hidden="true"></i></button>
-								<button id="minib" onclick="delete_product('.$row['codpro'].')"><i class="fa fa-trash" aria-hidden="true"></i></button>
+						<td class="gorod"; style="text-align: center;" id="rosa">'.$row['codpro'].'</td>
+						<td class="animals"; style="padding-left: 10px">'.$row['nompro'].'</td>
+						<td class="krovi"; style="padding-left: 10px" id="rosa">'.$row['despro'].'</td>
+						<td class="der"; style="padding-left: 10px">'.$row['prepro'].'</td>
+						<td class="sendra"; style="padding-left: 10px">'.$row['prodst'].'</td>
+						<td class="zetsubo"; style="padding-left: 11px" id="rosa" class="td-option">
+							<div class="revelation"; style="margin-right: 0%;" class="div-flex div-td-button">
+								<button class="monn"; id="minib" onclick="edit_product('.$row['codpro'].')"><i class="fa fa-pencil"  aria-hidden="true"></i></button>
+								<button class="nuketon"; id="minib" onclick="delete_product('.$row['codpro'].')"><i class="fa fa-trash" aria-hidden="true"></i></button>
 							</div>
 						</td>
 					</tr>';
@@ -267,5 +269,6 @@
 		}
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="animals.js"></script>
 </body>
 </html>

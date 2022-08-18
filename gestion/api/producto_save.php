@@ -28,7 +28,7 @@
 				$result=mysqli_query($con,$sql);
 				if ($result) {
 					//RECUERDA QUE MUEVE QUE NECESITES MENOS RETORNOS DE DIRECTORIO, es decir el "../"
-					if(move_uploaded_file($_FILES['imagen']['tmp_name'], "../../sistema-ecommerce/assets/products/".$nombre_imagen)){
+					if(move_uploaded_file($_FILES['imagen']['tmp_name'], "../moger/assets/products/".$nombre_imagen)){
 						$response->state=true;
 					}else{
 						$response->state=false;
@@ -36,7 +36,7 @@
 					}
 				}else{
 					$response->state=false;
-					$response->detail="No se pudo guardar el producto";
+					$response->detail="No s	oducto";
 				}
 			}else{
 				$response->state=false;
