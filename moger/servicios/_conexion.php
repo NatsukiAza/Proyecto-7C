@@ -1,5 +1,5 @@
 <?php
-	$con=mysqli_connect('localhost','root','','sistema_ecommerce');
+	$con=mysqli_connect('localhost','root','','aromatic_data_base');
 	/*
 	$con=mysqli_connect(
 	'ubicacion de la BD',
