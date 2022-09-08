@@ -8,7 +8,8 @@ body,html{
 }
 
 body{
-    background-color: #f3f3f3;
+    background-color: #F5E9EF !important;
+	font-family: sans-serif !important;
 }
 
 header{
@@ -91,10 +92,9 @@ input:placeholder{
 }
 .main-content{
 	width: 100%;
-	font-family: 'Sen', sans-serif;
 }
 .content-page{
-	margin-left: 6.5%;
+	margin-left: 11%;
 	margin-top: 2%;
 	margin-bottom: 2%;
 	padding: 10px;
@@ -125,7 +125,6 @@ input:placeholder{
 }
 .part2 *{
 	margin: 10px 0;
-	font-family: 'Sen', sans-serif;
 }
 .part2 h2{
 	color: #333;
@@ -164,7 +163,6 @@ button{
 	padding: 10px 0; 
 	font-size: 20px;
 	color: #666;
-	font-family: 'Sen', sans-serif;
 }
 .products-list{
 	margin-left: 4.3%;
@@ -184,7 +182,6 @@ button{
 	border-radius: 10px;
 	box-shadow: 0 0 8px 3px #ccc;
 	background-color: #fff;
-	font-family: 'Sen', sans-serif;
 }
 .product img{
 	width: 100%;

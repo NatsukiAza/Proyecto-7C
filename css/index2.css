@@ -5,6 +5,7 @@
 	font-family: sans-serif;
 }
 body{
+	font-family: sans-serif !important;
 	width: 100%;
 	background-color: #F5E9EF !important;
 }

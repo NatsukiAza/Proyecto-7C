@@ -1,39 +1,38 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <link rel="stylesheet" href="css/boot.css">
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/queries.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
 
     <nav class="navbar navbar-expand-sm">
       <div class="container-fluid">
-          <span class="navbar-brand mb-0 me-4 h1">Aromatic</span>
+          <span class="navbar-brand mb-0 me-4 h1"><a class="tots" href="index.html">Aromatic</a></span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link active" href="moger/index.php">Tienda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="ChatTReal/vistas/index.php">Chats</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Tienda
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="moger/pedido.php">Pedidos</a></li>
-                <li><a class="dropdown-item" href="moger/carrito.php">Carrito</a></li>
-                <li><a class="dropdown-item" href="moger/historial.php">Historial</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link active" href="moger/pedido.php">Pedidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="moger/historial.php">Historial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="moger/carrito.php">Carrito</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -120,12 +119,15 @@
       </div>
     </div>
 
-    <div style="margin-top: 35%;"> </div>
+    <a class="bt" href="moger/index.php">¡Empeza a mirar nuestros productos ahora!</a>
+
+    <div style="margin-top: 30%;"> </div>
     <footer style="text-align: center;" class="info">
       <p class="licencia">El contenido esta disponible bajo la licencia de Gragus Corp a menos que se indique lo contrario</p>
-      <a style="margin-right: 5%;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Facebook</a>
-      <a style="margin-right: 5%;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Instagram</a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Twitter</a>
+      <section class="buttons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+    </section>
       <p style="margin-bottom: 0;">+54 9 11 5506 8746</p>
     </footer>
 

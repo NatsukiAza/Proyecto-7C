@@ -19,30 +19,29 @@
 <body>
 
 <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 me-4 h1">Aromatic</span>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Chats</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Tienda
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="pedido.php">Pedidos</a></li>
-                  <li><a class="dropdown-item" href="carrito.php">Carrito</a></li>
-                  <li><a class="dropdown-item" href="historial.php">Historial</a></li>
-                </ul>
-              </li>
-            </ul>
+              <div class="container-fluid">
+          <span class="navbar-brand mb-0 me-4 h1"><a class="tots" href="../index.html">Aromatic</a></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.php">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="ChatTReal/vistas/index.php">Chats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pedido.php">Pedidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="historial.php">Historial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="carrito.php">Carrito</a>
+            </li>
+          </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Escribe algo.." aria-label="Search">
               <button class="btn btn-outline-light me-5" type="submit">Buscar</button>
