@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mi sistema E-Commerce</title>
+<title>Mi sistema E-Commerce</title>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -17,6 +17,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 me-4 h1">Aromatic</span>
@@ -48,22 +49,20 @@
             </form>
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../ChatTReal/index.php" id="login">Iniciar sesion</a>
+                <a class="nav-link active" aria-current="page" href="login.php" id="login">Iniciar sesion</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-	
-	
+
 	<div class="main-content">
 		<div class="content-page">
+			<div class="title-section">Resultados para <strong>"<?php echo $_GET['text']; ?>"</strong></div>
 			<div class="products-list" id="space-list">
 			</div>
 		</div>
 	</div>
-
-
 
 	<footer style="text-align: center;" class="info">
       <p class="licencia">El contenido esta disponible bajo la licencia de Gragus Corp a menos que se indique lo contrario</p>
@@ -75,11 +74,14 @@
 
 	<script type="text/javascript" src="js/main-scripts.js"></script>
 	<script type="text/javascript">
+		var text="<?php echo $_GET['text']; ?>";
 		$(document).ready(function(){
 			$.ajax({
-				url:'servicios/producto/get_all_products.php',
+				url:'servicios/producto/get_all_results.php',
 				type:'POST',
-				data:{},
+				data:{
+					text:text
+				},
 				success:function(data){
 					console.log(data);
 					let html='';
@@ -96,7 +98,11 @@
 							'</a>'+
 						'</div>';
 					}
-					document.getElementById("space-list").innerHTML=html;
+					if (html=='') {
+						document.getElementById("space-list").innerHTML="No hay resultados";
+					}else{
+						document.getElementById("space-list").innerHTML=html;
+					}
 				},
 				error:function(err){
 					console.error(err);

@@ -1,10 +1,13 @@
 <?php
 	session_start();
+	if (!isset($_SESSION['codusu'])) {
+		header('location: index.php');
+	}
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mi sistema E-Commerce</title>
+<title>Mi sistema E-Commerce</title>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -17,6 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 me-4 h1">Aromatic</span>
@@ -48,22 +52,26 @@
             </form>
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../ChatTReal/index.php" id="login">Iniciar sesion</a>
+                <a class="nav-link active" aria-current="page" href="login.php" id="login">Iniciar sesion</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-	
-	
+
 	<div class="main-content">
 		<div class="content-page">
-			<div class="products-list" id="space-list">
+			<h3>Mis pedidos</h3>
+			<div class="body-pedidos" id="space-list">
 			</div>
+			<h3>Datos de pago</h3>
+			<div class="p-line"><div>MONTO TOTAL:</div>S/.&nbsp;<span id="montototal"></span></div>
+			<div class="p-line"><div>Banco:</div>BCP</div>
+			<div class="p-line"><div>N° de Cuenta:</div>191-45678945-006</div>
+			<div class="p-line"><div>Representante:</div>Encargado de ventas</div>
+			<p><b>NOTA:</b> Para confirmar la compra debe realizar el deposito por le monto total, y enviar el comprobante al siguiente correo example@example.com o al número de whatsapp 999 666 333</p>
 		</div>
 	</div>
-
-
 
 	<footer style="text-align: center;" class="info">
       <p class="licencia">El contenido esta disponible bajo la licencia de Gragus Corp a menos que se indique lo contrario</p>
@@ -77,25 +85,33 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
-				url:'servicios/producto/get_all_products.php',
+				url:'servicios/pedido/get_procesados.php',
 				type:'POST',
 				data:{},
 				success:function(data){
 					console.log(data);
 					let html='';
+					let monto=0;
 					for (var i = 0; i < data.datos.length; i++) {
 						html+=
-						'<div class="product-box">'+
-							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
-								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
-									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
-									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
-									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
-								'</div>'+
-							'</a>'+
+						'<div class="item-pedido">'+
+							'<div class="pedido-img">'+
+								'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+							'</div>'+
+							'<div class="pedido-detalle">'+
+								'<h3>'+data.datos[i].nompro+'</h3>'+
+								'<p><b>Precio:</b> S/.'+data.datos[i].prepro+'</p>'+
+								'<p><b>Fecha:</b> '+data.datos[i].fecped+'</p>'+
+								'<p><b>Estado:</b> '+data.datos[i].estadotext+'</p>'+
+								'<p><b>Dirección:</b> '+data.datos[i].dirusuped+'</p>'+
+								'<p><b>Celular:</b> '+data.datos[i].telusuped+'</p>'+
+							'</div>'+
 						'</div>';
+						if (data.datos[i].estado=="2") {
+							monto+=parseFloat(data.datos[i].prepro);
+						}
 					}
+					document.getElementById("montototal").innerHTML=monto;
 					document.getElementById("space-list").innerHTML=html;
 				},
 				error:function(err){
@@ -103,12 +119,6 @@
 				}
 			});
 		});
-		function formato_precio(valor){
-			//10.99
-			let svalor=valor.toString();
-			let array=svalor.split(".");
-			return "S/. "+array[0]+".<span>"+array[1]+"</span>";
-		}
 	</script>
 	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

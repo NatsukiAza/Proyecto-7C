@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mi sistema E-Commerce</title>
+<title>Mi sistema E-Commerce</title>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -17,6 +17,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 me-4 h1">Aromatic</span>
@@ -29,7 +30,7 @@
                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Chats</a>
+                <a class="nav-link active" href="pedido.php">Chats</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,22 +49,20 @@
             </form>
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../ChatTReal/index.php" id="login">Iniciar sesion</a>
+                <a class="nav-link active" aria-current="page" href="login.php" id="login">Iniciar sesion</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-	
-	
+
 	<div class="main-content">
 		<div class="content-page">
+			<div class="title-section">Mis compras realizadas</div>
 			<div class="products-list" id="space-list">
 			</div>
 		</div>
 	</div>
-
-
 
 	<footer style="text-align: center;" class="info">
       <p class="licencia">El contenido esta disponible bajo la licencia de Gragus Corp a menos que se indique lo contrario</p>
@@ -77,7 +76,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
-				url:'servicios/producto/get_all_products.php',
+				url:'servicios/pedido/get_pedidos_all.php',
 				type:'POST',
 				data:{},
 				success:function(data){
@@ -85,15 +84,17 @@
 					let html='';
 					for (var i = 0; i < data.datos.length; i++) {
 						html+=
-						'<div class="product-box">'+
-							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
-								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
-									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
-									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
-									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
-								'</div>'+
-							'</a>'+
+						'<div class="caja-detalle mb5">'+
+							'<div class="img">'+
+								'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+							'</div>'+
+							'<div class="detalle">'+
+								'<h3 class="mb5">'+data.datos[i].nompro+'</h3>'+
+								'<p class="mb5">Fecha: '+data.datos[i].fecped+'</p>'+
+								'<p class="mb5">Estado: '+data.datos[i].estadotxt+'</p>'+
+								'<p class="mb5">'+data.datos[i].despro+'</p>'+
+								'<h4 class="mb5">'+formato_precio(data.datos[i].prepro)+'</h4>'+
+							'</div>'+							
 						'</div>';
 					}
 					document.getElementById("space-list").innerHTML=html;

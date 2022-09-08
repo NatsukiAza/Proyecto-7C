@@ -4,7 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mi sistema E-Commerce</title>
+<title>Mi sistema E-Commerce</title>
+<title>Mi sistema E-Commerce</title>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -48,23 +49,30 @@
             </form>
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../ChatTReal/index.php" id="login">Iniciar sesion</a>
+                <a class="nav-link active" aria-current="page" href="login.php" id="login">Iniciar sesion</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-	
-	
+
 	<div class="main-content">
 		<div class="content-page">
-			<div class="products-list" id="space-list">
-			</div>
+			<section>
+				<div class="part1">
+					<img id="idimg" src="assets/products/crepe.jpg">
+				</div>
+				<div class="part2">
+					<h2 id="idtitle">NOMBRE PRINCIPAL</h2>
+					<h1 id="idprice">$ 35.<span>99</span></h1>
+					<h3 id="iddescription">Descripcion del producto</h3>
+					<button onclick="iniciar_compra()">Comprar</button>
+				</div>
+			</section>
+			<div class="title-section">Productos destacados</div>
+			<div class="products-list" id="space-list"></div>
 		</div>
 	</div>
-
-
-
 	<footer style="text-align: center;" class="info">
       <p class="licencia">El contenido esta disponible bajo la licencia de Gragus Corp a menos que se indique lo contrario</p>
       <a style="margin-right: 5%;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Facebook</a>
@@ -72,8 +80,10 @@
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Twitter</a>
       <p style="margin-bottom: 0;">+54 9 11 5506 8746</p>
     </footer>
-
 	<script type="text/javascript" src="js/main-scripts.js"></script>
+	<script type="text/javascript">
+		var p='<?php echo $_GET["p"]; ?>';
+	</script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
@@ -84,6 +94,12 @@
 					console.log(data);
 					let html='';
 					for (var i = 0; i < data.datos.length; i++) {
+						if (data.datos[i].codpro==p) {
+							document.getElementById("idimg").src="assets/products/"+data.datos[i].rutimapro;
+							document.getElementById("idtitle").innerHTML=data.datos[i].nompro;
+							document.getElementById("idprice").innerHTML=formato_precio(data.datos[i].prepro);
+							document.getElementById("iddescription").innerHTML=data.datos[i].despro;
+						}
 						html+=
 						'<div class="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
@@ -107,7 +123,33 @@
 			//10.99
 			let svalor=valor.toString();
 			let array=svalor.split(".");
-			return "S/. "+array[0]+".<span>"+array[1]+"</span>";
+			return "$. "+array[0]+".<span>"+array[1]+"</span>";
+		}
+		function iniciar_compra(){
+			$.ajax({
+				url:'servicios/compra/validar_inicio_compra.php',
+				type:'POST',
+				data:{
+					codpro:p
+				},
+				success:function(data){
+					console.log(data);
+					if (data.state) {
+						alert(data.detail);
+					}else{
+						alert(data.detail);
+						if (data.open_login) {
+							open_login();
+						}
+					}
+				},
+				error:function(err){
+					console.error(err);
+				}
+			});
+		}
+		function open_login(){
+			window.location.href="login.php";
 		}
 	</script>
 	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
