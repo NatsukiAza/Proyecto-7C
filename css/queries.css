@@ -93,15 +93,23 @@ body{
     margin-left: 55%;
     margin-top: 17%;
     margin-bottom: 10%;
+    transition: 0.3s;
+}
 
+#izq:hover{
+    transform: scale(1.1);
 }
 
 #der{
     width: 40% !important;
-    margin-left: 5%;
+    margin-left: 5.2%;
     margin-top: 14%;
     margin-bottom: 10%;
+    transition: 0.3s;
+}
 
+#der:hover{
+    transform: scale(1.1);
 }
 
 .licencia{
@@ -213,6 +221,10 @@ body{
 .bt:hover{
     color: white;
     border: 1px solid white;
+}
+
+.nav-link{
+    color:rgba(0, 0, 0, .9) !important;
 }
 
 @media screen and (max-width: 1366px) {

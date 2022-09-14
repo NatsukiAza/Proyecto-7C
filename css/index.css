@@ -178,10 +178,15 @@ button{
 	text-decoration: none;
 }
 .product{
+	transition: 0.4s;
 	width: 100%;
 	border-radius: 10px;
 	box-shadow: 0 0 8px 3px #ccc;
 	background-color: #fff;
+}
+
+.product:hover{
+	transform: scale(1.1);
 }
 .product img{
 	width: 100%;

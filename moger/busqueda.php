@@ -63,11 +63,12 @@
 		</div>
 	</div>
 
-	<footer style="text-align: center;" class="info">
+    <footer style="text-align: center;" class="info">
       <p class="licencia">El contenido esta disponible bajo la licencia de Gragus Corp a menos que se indique lo contrario</p>
-      <a style="margin-right: 5%;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Facebook</a>
-      <a style="margin-right: 5%;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Instagram</a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Twitter</a>
+      <section class="buttons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+    </section>
       <p style="margin-bottom: 0;">+54 9 11 5506 8746</p>
     </footer>
 
