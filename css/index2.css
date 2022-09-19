@@ -19,7 +19,8 @@ button{
 	height: 94.2vh;
 }
 .body-nav-bar{
-	background: #ffc1e3;
+	width: 20%;
+	background: #F5E9EF;
 	height: 100%;
 	padding: 10px;
 	color: #1E1014;
@@ -224,14 +225,13 @@ select{
 }
 
 .adminb{
-	color: #000000;
-	background-color: #bf5f82;
+	text-align: center;
 	border-radius: 5px;
-	padding: 0px 5px 0px 5px;
+	padding: 25px 5px 20px 5px;
 }
 
 
-@media screen and (max-width:1336px) {
+@media screen and (min-width:1337px) {
 
 	.card{
 		height: 350px !important;

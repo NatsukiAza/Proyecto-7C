@@ -26,19 +26,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="moger/index.php">Tienda</a>
+              <a class="nav-link active" href="../moger/index.php">Tienda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="ChatTReal/vistas/index.php">Chats</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="moger/pedido.php">Pedidos</a>
+              <a class="nav-link active" href="../moger/pedido.php">Pedidos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="moger/historial.php">Historial</a>
+              <a class="nav-link active" href="../moger/historial.php">Historial</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="moger/carrito.php">Carrito</a>
+              <a class="nav-link active" href="../moger/carrito.php">Carrito</a>
             </li>
           </ul>
             <form class="d-flex" role="search">
