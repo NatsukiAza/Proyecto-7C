@@ -1,49 +1,25 @@
-:root{
-	--main-red: #f48fb1;
-}
-
-body,html{
+body{
 	margin: 0;
 	padding: 0;
-}
-
-body{
     background-color: #F5E9EF !important;
 	font-family: sans-serif !important;
 }
 
-header{
-	height: 40px;
-	padding: 10px;
-	width: calc(100% - 20px);
-	line-height: 40px;
-	display: flex;
-	background: var(--main-header-color);
-	position: fixed;
-	top:0;
-	left: 0;
+.tar{
+	height: 480px;
+	width: 65%;
+	margin: 3.1% 0% 0% 18%;
+	background-color: #f48fb1;
+	border-radius: 20px;
 }
-.logo-place{
-	width: 150px;
-	justify-content: center;
-	align-items: center;
-	margin-top: 7px;
-}
-.logo-place img{
-	width: 100%;
-}
-.search-place{
-	width: calc(100% - 440px);
-	display: flex;
-	padding: 0px 20px;
-}
-input{
+
+.tar input{
 	padding: 10px;
 	font-size: 15px;
 	background-color: #fefefe;
+	border-radius: 10px;
 	border:1px solid #ccc;
-	width: calc(100% - 62px);
-	font-family: 'Sen', sans-serif;
+	width: 20%;
 }
 input:placeholder{
 	color: #ccc;

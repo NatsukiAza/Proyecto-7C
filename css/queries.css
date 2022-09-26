@@ -361,7 +361,21 @@ body{
 
 }
 
-@media screen and (min-width:1337px) {
+@media screen and (max-width:1365px) {
+
+    .main-container{
+        height: 94.2hv;
+    }
+
+    .cont-menu{
+        max-width: 250px;
+        height: 94.2hv;
+        margin-top: 3%;
+    }
+
+    .container-menu{
+        height: 94vh;
+    }
 
     .bt{
         margin-left: 31% !important;
@@ -403,4 +417,45 @@ body{
     #ciz{
         margin-top: 8% !important;
     }
+
+    .sidemenu{
+        height: 94vh;
+    }
+
+	.chelo{
+		margin-left: 0.6%;
+		font-size: 45px;
+	}
+
+	.equis{
+		margin-top: -130%;
+		margin-left: 85%;
+		font-size: 20px;
+	}
+
+    .cont-menu nav{
+		transform: translateY(18%);
+	}
+
+    .mensajes{
+        height: 72%;
+    }
+
+    .card{
+		height: 350px !important;
+	}
+
+	.abajo{	
+		position:relative;
+		width:100px;
+		height:150px;
+		float:right;
+		margin-right:5px;
+	}
+
+	.abajo span{
+		position:absolute;
+		bottom:0;
+		right:0;
+	}
 }
