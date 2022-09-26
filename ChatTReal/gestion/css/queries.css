@@ -1,0 +1,126 @@
+@media screen and (max-width:920px){
+    .grupos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .publicaciones{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .uwu{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #izq{
+        margin-left: 0;
+    }
+
+    #der{
+        margin-left: 0;
+    }
+
+    .licencia{
+        text-align: left !important;
+    }
+}
+
+
+@media screen and (max-width:1024px){
+    .img1{
+        margin-left: 0.5% !important; 
+        width: 5% !important;
+        height: 20px !important;
+    }
+
+    .mainnav ul li a{
+        line-height: 50px !important;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .content{
+        padding: 0 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .toggler{
+        display: none;
+    }
+
+    .mainnav{
+        display: inline-block !important;
+        position: relative;
+        height: 10vh !important; 
+        width: 80% !important;
+        padding: 5px 0;
+    }
+
+    .mainnav ul li{
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    .mainnav ul{
+        position: relative;
+        top: 0;
+        left: 25%;
+    }
+
+    .mainnav ul li a:hover{
+        color: rgb(210, 223, 39);
+    }
+
+    .contenedor{
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .intro .contenedor{
+        flex-flow: column;
+    }
+
+    .intro h1{
+        font-size: 5em;
+    }
+
+    #cuentos{
+        height: 100vh;
+    }
+
+    .card i{
+        font-size: 1.5em;
+    }
+
+    .card h2 a:hover{
+        color: #fffdca;
+        font-size: 1.2em;
+    }
+
+    .separador{
+        padding: 2px 20px;
+        display: block;
+        width: 100%;
+        height: 46px;
+        }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .publicaciones{
+        flex-direction: column;
+        padding: 0px 0px 0px 46px;
+    }
+
+}
+
