@@ -18,31 +18,116 @@ button{
 	width: 100%;
 	height: 94.2vh;
 }
-.body-nav-bar{
-	background: #ffc1e3;
-	height: 100%;
-	padding: 10px;
-	color: #1E1014;
-}
-.body-nav-bar img{
-	padding: 20px 0;
-	width: 100%;
-}
-.body-nav-bar a{
-	margin-top: 5%;
-	border: 2px solid #bf5f82 !important;	
-	display: flex;
-	padding: 10px 10px 10px 10px;
-	color:#1E1014;
-	font-weight: 600;
-	transition: 0.3s;
-	border-radius: 4px;
+
+.sidemenu{
+	width: 15%;
+	height: 94vh;
+	border-right: 7px solid #f48fb1;
+	border-bottom-right-radius: 5%;
+	border-top-right-radius: 5%;
+	background-color: #e9cedc ;
 }
 
-.body-nav-bar a:hover{
-	color: #ffffff;
-	background:#bf5f82;
+.foto{
+	text-align: center;
+	margin-left: 20%;
+	margin-top: 15%;
+	width: 60%;
 }
+
+.foto h5{
+	font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+
+.mensajes{
+	margin: 10%;
+	height: 72%;
+	width: 80%;
+	background-color: #f48fb1;
+	border: 3px solid #F5E9EF;
+	border-top-left-radius: 20%;
+	border-top-right-radius: 20%;
+}
+
+	.equis{
+		position: absolute;
+		margin-top: -130%;
+		margin-left: 85%;
+		color: #1E1014;
+		font-size: 20px;
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	.equis:hover{
+		color: white;
+	}
+
+	.chelo{
+		position: absolute;
+		margin-left: 0.6%;
+		color: #1E1014;
+		font-size: 45px;
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	.chelo:hover{
+		color: #f48fb1;
+	}
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		margin-top: 3%;
+		position: absolute;
+		width: 100%;
+		height: 94vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		border-right: 7px solid #bf5f82;
+		border-top-right-radius: 5%;
+		border-bottom-right-radius: 5%;
+		width: 100%;
+		max-width: 250px;
+		background: #f48fb1;
+		height: 94.2vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(18%);
+	}
+	.cont-menu nav a{
+		font-size: 18px;
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #F5E9EF;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #F5E9EF;
+		background: #bf5f82;
+	}
+
+
+
 
 .mt10{
 	margin-top: 10px;
@@ -224,14 +309,13 @@ select{
 }
 
 .adminb{
-	color: #000000;
-	background-color: #bf5f82;
+	text-align: center;
 	border-radius: 5px;
-	padding: 0px 5px 0px 5px;
+	padding: 25px 5px 20px 5px;
 }
 
 
-@media screen and (max-width:1336px) {
+@media screen and (min-width:1337px) {
 
 	.card{
 		height: 350px !important;

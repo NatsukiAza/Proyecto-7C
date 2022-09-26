@@ -361,7 +361,11 @@ body{
 
 }
 
-@media screen and (max-width:1337px) {
+@media screen and (min-width:1337px) {
+
+    .bt{
+        margin-left: 31% !important;
+    }
 
     #izq{
         width: 30% !important;
