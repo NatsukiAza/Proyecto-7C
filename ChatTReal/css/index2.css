@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	width: 100%;
+	background-color: #F5E9EF !important;
+}
+button{
+	padding: 10px;
+	cursor: pointer;
+}
+.main-container{
+	display: flex;
+	width: 100%;
+	height: 94.2vh;
+}
+.body-nav-bar{
+	background: #ffc1e3;
+	height: 100%;
+	padding: 10px;
+	color: #1E1014;
+}
+.body-nav-bar img{
+	padding: 20px 0;
+	width: 100%;
+}
+.body-nav-bar a{
+	margin-top: 5%;
+	border: 2px solid #bf5f82 !important;	
+	display: flex;
+	padding: 10px 10px 10px 10px;
+	color:#1E1014;
+	font-weight: 600;
+	transition: 0.3s;
+	border-radius: 4px;
+}
+
+.body-nav-bar a:hover{
+	color: #ffffff;
+	background:#bf5f82;
+}
+
+.mt10{
+	margin-top: 10px;
+}
+
+.body-page{
+	width: calc(100% - 200px);
+	height: 100%;
+	padding: 10px;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table tbody tr{	
+	color: #121619;
+	background-color: #ffc1e3;
+}
+
+th,td{
+	padding: 5px;
+	border: 1px solid #121619;
+}
+
+
+th{
+	border-bottom: 1px solid #121619 !important;
+	background: #f48fb1;
+	color: #F5E9EF;
+}
+.td-option{
+	width: 60px;
+}
+.div-flex{
+	display: flex;
+}
+.div-td-button{
+	width: 60px;
+}	
+.div-td-button button{
+	width: 30px;
+	padding: 5px;
+}
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 20px;
+	background: rgba(50,50,50,0.5);
+}
+.body-modal{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 500px;
+	background: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	position: relative;
+}
+.btn-close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: transparent;
+	border:none;
+	outline: none;
+}
+input{
+	padding: 5px;
+	border:1px solid #666;
+}
+select{
+	padding: 5px;
+	border:1px solid #666;
+}
+.body-modal h3{
+	margin-bottom: 10px;
+}
+.body-modal .div-flex{
+	display: flex;
+	margin-bottom: 5px;
+}
+.body-modal .div-flex label{
+	width: 100px;
+}
+.body-modal .div-flex input{
+	width: calc(100% - 100px);
+}
+.body-modal .div-flex select{
+	width: calc(100% - 100px);
+}
+
+.agregar{
+	background-color: #F5E9EF;
+	border: 1px solid;
+	padding: 10px !important;
+	border-radius: 7px !important;
+	transition: 0.3s;
+}
+
+#minib{
+	border: 1px solid;
+	padding: 5px 5px 5px 5px;
+	border-radius: 7px;
+	transition: 0.3s;
+}
+
+.agregar:hover{
+	background-color: #ffc1e3;
+}
+
+#minib:hover{
+	background-color: #ffc1e3;
+}
+
+#maldito{
+	border: 1px solid;
+	margin-top: 2.3% !important;
+}
+
+.cuadritosnashei{
+	width: 10%;
+}
+
+.containerr{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-text{
+	padding: 10px 0px 5px 0px;
+}
+
+.card-link{
+	float: right;
+}
+
+.card{
+	background-color: #f48fb1 !important;
+	color: #121619 !important;
+	border-width: 2px !important;
+	border-color: #bf5f82 !important;
+	margin-left: 10.5%;
+	margin-top: 8%;
+	z-index: -2;
+	height: 220px !important;
+	width: 80% !important;
+}
+
+.tit{
+	height: 70px !important;
+	width: 100% !important;
+	z-index: -1 !important;
+	position: absolute;
+	padding: 10px 5px 5px 5px;
+	background-color: #bf5f82;
+}
+
+.card a{
+	padding: 0px 15px 0px 0px;
+	color: #1E1014 !important;
+}
+
+.card h6{
+	padding: 0px 0px 0px 15px;
+	color: #ffffff;
+}
+
+.card-body{
+	padding: 0px !important;
+}
+
+.card-body h5, .card-body p{
+	padding: 13px 0px 0px 15px;
+}
+
+.adminb{
+	color: #000000;
+	background-color: #bf5f82;
+	border-radius: 5px;
+	padding: 0px 5px 0px 5px;
+}
+
+
+@media screen and (max-width:1336px) {
+
+	.card{
+		height: 350px !important;
+	}
+
+	.abajo{	
+		position:relative;
+		width:100px;
+		height:150px;
+		float:right;
+		margin-right:5px;
+	}
+
+	.abajo span{
+		position:absolute;
+		bottom:0;
+		right:0;
+	}
+}
