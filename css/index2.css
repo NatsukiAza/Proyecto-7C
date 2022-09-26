@@ -16,12 +16,12 @@ button{
 .main-container{
 	display: flex;
 	width: 100%;
-	height: 94.2vh;
+	height: 91vh;
 }
 
 .sidemenu{
 	width: 15%;
-	height: 94vh;
+	height: 91vh;
 	border-right: 7px solid #f48fb1;
 	border-bottom-right-radius: 5%;
 	border-top-right-radius: 5%;
@@ -29,35 +29,44 @@ button{
 }
 
 .foto{
-	text-align: center;
 	margin-left: 20%;
 	margin-top: 15%;
 	width: 60%;
 }
 
 .foto h5{
+	margin-left: -12px;
+	text-align: center;
 	font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
 
 .mensajes{
 	margin: 10%;
-	height: 72%;
+	height: 66%;
 	width: 80%;
-	background-color: #f48fb1;
-	border: 3px solid #F5E9EF;
-	border-top-left-radius: 20%;
-	border-top-right-radius: 20%;
+	background-color: #F5E9EF;
+	border: 2px solid #121619;
+	border-radius: 20px;
 }
 
-	.equis{
-		position: absolute;
-		margin-top: -130%;
-		margin-left: 85%;
-		color: #1E1014;
-		font-size: 20px;
-		cursor: pointer;
-		transition: 0.3s ease-in-out;
-	}
+.nvmsg{
+	padding: 3px 7px 4px 7px;
+	color: #F5E9EF ;
+	height: 10%;
+	background-color: #121619;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.equis{
+	position: absolute;
+	margin-top: -188%;
+	margin-left: 80%;
+	color: #1E1014;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
 
 	.equis:hover{
 		color: white;
@@ -67,7 +76,7 @@ button{
 		position: absolute;
 		margin-left: 0.6%;
 		color: #1E1014;
-		font-size: 45px;
+		font-size: 30px;
 		cursor: pointer;
 		transition: 0.3s ease-in-out;
 	}
@@ -81,10 +90,10 @@ button{
 		display: none;
 	}
 	.container-menu{
-		margin-top: 3%;
+		margin-top: 4%;
 		position: absolute;
 		width: 100%;
-		height: 94vh;
+		height: 91vh;
 		top: 0;left: 0;
 		transition: all 500ms ease;
 		opacity: 0;
@@ -99,9 +108,9 @@ button{
 		border-top-right-radius: 5%;
 		border-bottom-right-radius: 5%;
 		width: 100%;
-		max-width: 250px;
+		max-width: 179px;
 		background: #f48fb1;
-		height: 94.2vh;
+		height: 91vh;
 		position: relative;
 		transition: all 500ms ease;
 		transform: translateX(-100%);
@@ -110,7 +119,7 @@ button{
 		transform: translateX(0%);
 	}
 	.cont-menu nav{
-		transform: translateY(18%);
+		transform: translateY(15%);
 	}
 	.cont-menu nav a{
 		font-size: 18px;
@@ -270,6 +279,7 @@ select{
 }
 
 .card{
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 	background-color: #f48fb1 !important;
 	color: #121619 !important;
 	border-width: 2px !important;
@@ -314,24 +324,3 @@ select{
 	padding: 25px 5px 20px 5px;
 }
 
-
-@media screen and (min-width:1337px) {
-
-	.card{
-		height: 350px !important;
-	}
-
-	.abajo{	
-		position:relative;
-		width:100px;
-		height:150px;
-		float:right;
-		margin-right:5px;
-	}
-
-	.abajo span{
-		position:absolute;
-		bottom:0;
-		right:0;
-	}
-}

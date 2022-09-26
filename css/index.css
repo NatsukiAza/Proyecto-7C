@@ -1,49 +1,58 @@
-:root{
-	--main-red: #f48fb1;
-}
-
-body,html{
+body{
 	margin: 0;
 	padding: 0;
-}
-
-body{
     background-color: #F5E9EF !important;
 	font-family: sans-serif !important;
 }
 
-header{
-	height: 40px;
-	padding: 10px;
-	width: calc(100% - 20px);
-	line-height: 40px;
+.tar{
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+	height: 480px;
+	width: 65%;
+	margin: 3.1% 0% 0% 18%;
+	background-color: #f48fb1;
+	border-radius: 20px;
+}
+
+.tar img{
+	margin: -2% 0 0 2%;
+	position: absolute;
+	width: 20%;
+}
+
+.tar div label{
+	padding-top: 10px;
 	display: flex;
-	background: var(--main-header-color);
-	position: fixed;
-	top:0;
-	left: 0;
+	flex-direction: column;
+	font-size: 20px;
 }
-.logo-place{
-	width: 150px;
-	justify-content: center;
-	align-items: center;
-	margin-top: 7px;
+
+.infon{
+	padding-top: 2%;
+	margin-left: 40%;
 }
-.logo-place img{
-	width: 100%;
+
+.infon input{
+	width: 90%;
 }
-.search-place{
-	width: calc(100% - 440px);
+
+.infoc{
+	margin-left: 5%;
+	margin-top: 6%;
+}
+
+.infoc input{
+	width: 93.5%;
+}
+
+.tar div input{
 	display: flex;
-	padding: 0px 20px;
-}
-input{
+	flex-direction: column;
 	padding: 10px;
-	font-size: 15px;
+	font-size: 20px;
 	background-color: #fefefe;
+	border-radius: 10px;
 	border:1px solid #ccc;
-	width: calc(100% - 62px);
-	font-family: 'Sen', sans-serif;
 }
 input:placeholder{
 	color: #ccc;
