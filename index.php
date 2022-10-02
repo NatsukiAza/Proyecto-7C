@@ -1,6 +1,13 @@
+<?php
+	session_start();
+?>
+
 <!doctype html>
 <html lang="es">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/queries.css">
     <meta charset="utf-8">
@@ -11,63 +18,46 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-sm">
-      <div class="container-fluid">
-          <span class="navbar-brand mb-0 me-4 h1"><a class="tots" href="index.html">Aromatic</a></span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="moger/index.php">Tienda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="ChatTReal/vistas/index.php">Chats</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="moger/pedido.php">Pedidos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="moger/historial.php">Historial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="moger/carrito.php">Carrito</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Escribe algo.." aria-label="Search">
-            <button class="btn btn-outline-light me-5" type="submit">Buscar</button>
-          </form>
-          <ul class="navbar-nav">
-          <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="ChatTReal/vistas/index.php" id="login">Iniciar sesion</a>
-            </li>
-          </ul>
+  <?php include("navbar.php"); ?>
+
+      <div style="width: 100%;" class="port">
+        <img width="100%" src="img/pagini4.jpg" alt="Portada">
+      </div>
+
+      <div class="tf">
+        <h1>Encontra Tu Fragancia Ideal</h1>
+        <h2>Perfumes, Fragancias, Aromatizantes y mas</h2>
+        <a href="">MIRA NUESTRO CATALOGO</a>
+      </div>
+
+      <div class="masv">
+        <h1>Podria interesarte...</h1>
+        <div class="productos">
+          <button type="button" id="fi"><</button>
+          <button type="button" id="fd">></button>
+
+        <a href="#" class="prod">
+          <img width="100%" src="img/sahumerio.jpg" alt="sahumerio">
+          <h1>Producto 1</h1>
+          <h2>$125</h2>
+        </a>
+        <a href="#" class="prod">
+          <img width="100%" src="img/sahumerio.jpg" alt="sahumerio">
+          <h1>Producto 2</h1>
+          <h2>$250</h2>
+        </a>
+        <a href="#" class="prod">
+          <img width="100%" src="img/sahumerio.jpg" alt="sahumerio">
+          <h1>Producto 3</h1>
+          <h2>$500</h2>
+        </a>
+
+        <a class="mm" href="#">MIRA OTROS PRODUCTOS ASI</a>
+
         </div>
       </div>
-    </nav>
 
-
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/publicidad.jpg" class="d-block w-100" alt="imagen promocional">
-          </div>
-          <div class="carousel-item active">
-            <img src="img/publi2.jpg" class="d-block w-100" alt="segunda imagen promocional">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-  
+  <div style="margin-top: 60%;">
 
       <h2 class="titulo">¡Bienvenido a Aromatic!</h2>
       <p class="subt">El aroma te transporta a lugares lejanos, a los seres queridos y amados,  a momentos especiales guardados en gratos recuerdos.
@@ -130,7 +120,7 @@
     </section>
       <p style="margin-bottom: 0;">+54 9 11 5506 8746</p>
     </footer>
-
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

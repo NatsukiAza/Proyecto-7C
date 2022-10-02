@@ -3,15 +3,238 @@ body{
     font-family: sans-serif !important;
 }
 
-.tots{
+a{
+    text-decoration: none !important;
+}
+
+/*Imagen al principio de la pag*/ 
+.port{
+    position: absolute;
+    z-index: -1;
+    margin-top: -9.45%;
+}
+
+.tf{
+    max-width: 600px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 13.9%;
+    margin-top: 4%;
+}
+
+.tf h1{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 65px;
+}
+
+.tf h2{
+    font-size: 16.5px;
+    margin-bottom: 8%;
+}
+
+.tf a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16.3px;
+    text-align: center;
+    background-color: #f48fb1;
+    color: black;
+    padding: 8px 30px 8px 30px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.tf a:hover{
+    background-color: #ffaac7 ;
+    color: #fff;
+}
+
+/*Contenedor del nav*/ 
+.esq{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Titulo Aromatic*/ 
+.cereb{
+    margin-top: -10px;
+    font-size: 1.75rem;
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
-    color: black !important;
+    color: black;
     transition: 0.4s ease-in-out;
 }
 
-.tots:hover{
-    color: white !important;
+.cereb:hover{
+    color: white;
 }
+
+/*Subtitulos*/ 
+.braz{
+    padding: 0 31% 0px 2.5%;
+}
+
+.braz a{
+    color: black;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255,0 );
+    border-radius: 10px;
+    padding: 8.5px 8.5px 8.5px 8.5px;
+}
+
+.braz a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/*Iconos*/ 
+.pier{
+    height: 100%;
+}
+
+.pier a img{
+    margin: 28% 0 0 20px;
+}
+
+/*Buscador y Lupa*/ 
+.pata{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barrab{
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+    width: 72.9%;
+    padding: 0.8% 3.5% 0.8% 1%;
+    border: 1px;
+    border-color: #dadada;
+    border-radius: 20px;
+}
+
+.lupita{
+    border-style: none;
+	border-radius: 5px;
+	padding: 13px 20px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+    height: 54.06px;
+    border-radius: 20px;
+    width: 4%;
+    margin-left: 68%;
+    background-color: rgba(247,175,199,0);
+    position: absolute;
+}
+
+.lupita img{
+    margin: -3px 0 0 0;
+}
+/*Fin de Nav*/
+
+/*Mas vendidos*/
+
+.masv{
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 17%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.masv h1{
+    height: 21.59px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 33px;
+    margin-top: -1.5%;
+    z-index: 1;
+    color: #ff89b4;
+
+}
+
+.productos{
+    border-radius: 15px;
+    margin-top: -3%;
+    padding: 5% 5% 5% 5%;
+    position: absolute;
+    min-height: 470px;
+    max-height: 470.1px;
+    width: 52%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+}
+
+.productos button{
+    position: absolute;
+    border: 0px;
+    background-color: #fff;
+    font-size: 60px;
+    margin-top: 9%;
+}
+
+#fi{
+    margin-left: -92%;
+}
+
+#fd{
+    margin-left: 92%;
+}
+
+.prod{
+    border-radius: 15px;
+    min-width: 250px !important;
+    max-width: 250.1px !important;
+    box-shadow: 5px 5px 4px 5px rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+}
+
+.prod h1{
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.prod h2{
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.prod img{
+    padding: 5px 15px 5px 15px;
+    width: 100%;
+    
+}
+
+.mm{
+    font-size: 16px;
+    position: absolute;
+    margin-top: 32.5%;
+    background-color: #f48fb1;
+    color: black;
+    transition: 0.2s ease-in-out;
+    padding: 8px 40px 8px 40px ;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 5px;
+}
+
+.mm:hover{
+    background-color: #ffaac7 ;
+    color: #fff;
+}
+
+/* fin de mas vendidos*/
+
 
 .buttons {
     min-width: 700px;
@@ -169,12 +392,6 @@ body{
     word-spacing: 100px;
 }
 
-.pani{
-    background-color: #cfcfcf;
-    width: 20%;
-    height: 883px;
-}
-
 .botonadmin{
     font-size: 75px !important;
     width: 80%;
@@ -227,154 +444,59 @@ body{
     color:rgba(0, 0, 0, .9) !important;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (min-width:1370px) {
 
-    .pani{
-        width: 20%;
-        height: 569px;
-    }
-}
-
-@media screen and (max-width:920px){
-    .grupos{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .publicaciones{
-        flex-direction: column;
-        align-items: center;
+    .barrab{
+        width: 61.7%;
+        padding: 0.8% 3% 0.8% 1%;
     }
     
+    .lupita{
+        width: 3.2%;
+        margin-left: 58.5%;
+    }
     
-    .uwu{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    .lupita img{
+        margin: -4px 0 0 -7px;
     }
 
-    #izq{
-        margin-left: 0;
+    .port{
+        margin-top: -7.2%;
     }
 
-    #der{
-        margin-left: 0;
+    .tf{
+        margin-left: 19.2%;
+        margin-top: 4%;
     }
 
-    .licencia{
-        text-align: left !important;
-    }
-}
-
-
-@media screen and (max-width:1024px){
-    .img1{
-        margin-left: 0.5% !important; 
-        width: 5% !important;
-        height: 20px !important;
+    .tf h1{
+        font-size: 80px;
     }
 
-    .mainnav ul li a{
-        line-height: 50px !important;
+    .tf h2{
+        font-size: 20.5px;
     }
-}
-
-@media screen and (min-width:1024px){
-    .content{
-        padding: 0 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .toggler{
-        display: none;
-    }
-
-    .mainnav{
-        display: inline-block !important;
-        position: relative;
-        height: 10vh !important; 
-        width: 80% !important;
-        padding: 5px 0;
-    }
-
-    .mainnav ul li{
-        display: inline-block;
-        padding-right: 20px;
-    }
-
-    .mainnav ul{
-        position: relative;
-        top: 0;
-        left: 25%;
-    }
-
-    .mainnav ul li a:hover{
-        color: rgb(210, 223, 39);
-    }
-
-    .contenedor{
-        width: 100%;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
-
-    .intro .contenedor{
-        flex-flow: column;
-    }
-
-    .intro h1{
-        font-size: 5em;
-    }
-
-    #cuentos{
-        height: 100vh;
-    }
-
-    .card i{
-        font-size: 1.5em;
-    }
-
-    .card h2 a:hover{
-        color: #fffdca;
-        font-size: 1.2em;
-    }
-
-    .separador{
-        padding: 2px 20px;
-        display: block;
-        width: 100%;
-        height: 46px;
-        }
-
-}
-
-
-@media screen and (max-width: 480px) {
     
-    .publicaciones{
-        flex-direction: column;
-        padding: 0px 0px 0px 46px;
+    .tf a{
+        font-size: 19px;
+        padding: 10px 40px 10px 40px;
     }
 
-}
-
-@media screen and (max-width:1365px) {
-
+    .masv{
+        margin-top: 22.6%;
+    }
     .main-container{
         height: 94.2hv;
     }
 
     .cont-menu{
         max-width: 250px;
-        height: 94.2hv;
-        margin-top: 3%;
+        margin-top: 0%;
+        height: 94.2vh;
     }
 
     .container-menu{
-        height: 94vh;
+        margin-top: 3%;
     }
 
     .bt{
@@ -441,6 +563,20 @@ body{
         height: 72%;
     }
 
+
+    .nvmsg{
+        margin-left: -0.1%;
+        margin-top: -0.1%;
+        padding: 12px 0 0 0;
+        font-size: 15px;
+        width: 190px;
+        height: 5%;
+    }
+
+    .nvmsg:hover{
+        font-size: 16px;
+    }
+
     .card{
 		height: 350px !important;
 	}
@@ -458,4 +594,23 @@ body{
 		bottom:0;
 		right:0;
 	}
+
+    .tar{
+        margin-top: 7%;
+        height: 600px;
+    }
+
+    .infoc{
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .infon{
+        padding-top: 4%;
+        margin-left: 40%;
+    }
+    
+    .tar input, .tar label{
+        font-size: 27px !important;
+    }
 }

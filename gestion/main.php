@@ -66,7 +66,7 @@
 			</div>
 
 			<div class="mensajes">
-			<a href="" class="nvmsg">Nuevo Mensajes</a>
+			<a href="" class="nvmsg">Nuevos Mensajes</a>
 			</div>
 
 		</div>
