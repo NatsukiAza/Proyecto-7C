@@ -1,6 +1,6 @@
 <div class="esq">
     
-    <a class="cereb" href="index.php">Aromatic</a>
+    <a class="cereb" href="../index.php">Aromatic</a>
 
     <div class="braz">
         <a href="index.php">Tienda</a>
