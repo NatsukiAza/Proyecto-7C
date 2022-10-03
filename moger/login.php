@@ -49,8 +49,8 @@
 			<div>
 				<form action="servicios/login.php" method="POST">
 					<h3>Iniciar sesión</h3>
-					<input type="text" name="emausu" placeholder="Correo">
-					<input type="password" name="pasusu" placeholder="Contraseña">
+					<input type="text" name="email" placeholder="Correo">
+					<input type="password" name="password" placeholder="Contraseña">
 					<?php
 						if (isset($_GET['e'])) {
 							switch ($_GET['e']) {
@@ -74,9 +74,9 @@
 			<div>
 				<form action="servicios/register.php" method="POST">
 					<h3>Regístrate</h3>
-					<input type="text" name="emausur" placeholder="Correo">
-					<input type="password" name="pasusur" placeholder="Contraseña">
-					<input type="password" name="pasusu2r" placeholder="Confirmar contraseña">
+					<input type="text" name="email" placeholder="Correo">
+					<input type="password" name="password" placeholder="Contraseña">
+					<input type="password" name="password" placeholder="Confirmar contraseña">
 					<?php
 						if (isset($_GET['er'])) {
 							switch ($_GET['er']) {

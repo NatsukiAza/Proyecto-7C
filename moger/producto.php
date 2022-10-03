@@ -16,7 +16,7 @@
 	<title>Aromatic - Tienda</title>
 </head>
 <body>
-
+	
 	<?php include("navbar2.php"); ?>
 
 	<div class="main-content">

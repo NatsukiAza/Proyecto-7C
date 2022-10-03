@@ -52,8 +52,8 @@
 								END
 							END estadotexto, ped.estado estadoped
 							from pedido ped
-							inner  join usuario usu
-							on ped.codusu=usu.codusu
+							inner  join users usu
+							on ped.usersid=usu.unique_id
 							inner  join producto pro
 							on ped.codpro=pro.codpro
 							where ped.estado=2 or ped.estado=3 or ped.estado=4";
@@ -62,7 +62,7 @@
 							echo 
 					'<tr>
 						<td style="text-align: center;" id="rosa">'.$row['codped'].'</td>
-						<td>'.$row['codusu'].' - '.$row['nomusu'].'</td>
+						<td>'.$row['unique_id'].' - '.$row['fname'].'</td>
 						<td id="rosa">'.$row['codpro'].' - '.$row['nompro'].'</td>
 						<td style="text-align: center;">'.$row['fecped'].'</td>
 						<td id="rosa" style="text-align: center;">'.$row['estadotexto'].'</td>
