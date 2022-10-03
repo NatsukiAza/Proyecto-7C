@@ -1,16 +1,16 @@
 <footer class="info">
       
       <div class="infopag">
-        <a class="cereb" href="index.php">Aromatic</a>
+        <a class="cereb" href="../index.php">Aromatic</a>
         <div class="redes">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img width="13px" src="img/face.png" alt="Facebook"></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img width="13px" src="img/twitter.png" alt="Twitter"></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img width="13px" src="img/insta.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img width="13px" src="../img/face.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img width="13px" src="../img/twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img width="13px" src="../img/insta.png" alt="Instagram"></a>
         </div>
 
         <div class="contac">
-          <a href=""><img width="4%" src="img/tel.png" alt="Telefono">+54 9 11 5506 8746</a>
-          <a href="https://www.google.com.ar/maps/place/Ramos+Mejía,+Provincia+de+Buenos+Aires/@-34.6538875,-58.5757019,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcc7d93bab75a3:0xaafe140bc9dea3db!8m2!3d-34.6549073!4d-58.5536355"><img width="5.5%" src="img/ubicacion.png" alt="Ubicacion">Ramos Mejia</a>
+          <a href=""><img width="4%" src="../img/tel.png" alt="Telefono">+54 9 11 5506 8746</a>
+          <a href="https://www.google.com.ar/maps/place/Ramos+Mejía,+Provincia+de+Buenos+Aires/@-34.6538875,-58.5757019,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcc7d93bab75a3:0xaafe140bc9dea3db!8m2!3d-34.6549073!4d-58.5536355"><img width="5.5%" src="../img/ubicacion.png" alt="Ubicacion">Ramos Mejia</a>
         </div>
       </div>
 
