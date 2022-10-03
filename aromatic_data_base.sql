@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-08-2022 a las 20:26:25
+-- Tiempo de generación: 03-10-2022 a las 19:33:52
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -42,7 +42,7 @@ CREATE TABLE `messages` (
 
 CREATE TABLE `pedido` (
   `codped` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
   `codpro` int(11) NOT NULL,
   `fecped` datetime NOT NULL,
   `estado` int(11) NOT NULL,
@@ -50,6 +50,16 @@ CREATE TABLE `pedido` (
   `telusuped` varchar(12) NOT NULL,
   `token` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `pedido`
+--
+
+INSERT INTO `pedido` (`codped`, `userid`, `codpro`, `fecped`, `estado`, `dirusuped`, `telusuped`, `token`) VALUES
+(1, 715396183, 20, '2022-10-03 14:26:54', 1, '', '', NULL),
+(2, 715396183, 20, '2022-10-03 14:29:41', 1, '', '', NULL),
+(3, 715396183, 22, '2022-10-03 14:29:44', 1, '', '', NULL),
+(4, 715396183, 21, '2022-10-03 14:29:46', 1, '', '', NULL);
 
 -- --------------------------------------------------------
 
@@ -94,7 +104,7 @@ CREATE TABLE `roles` (
 --
 
 CREATE TABLE `users` (
-  `user_id` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
   `unique_id` int(255) NOT NULL,
   `fname` varchar(255) NOT NULL,
   `lname` varchar(255) NOT NULL,
@@ -103,6 +113,13 @@ CREATE TABLE `users` (
   `img` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`userid`, `unique_id`, `fname`, `lname`, `email`, `password`, `img`, `status`) VALUES
+(1, 715396183, 'juan', 'juan', 'juan@juan.juan', 'a94652aa97c7211ba8954dd15a3cf838', '1664816289juan.jpg', 'Activo ahora');
 
 --
 -- Índices para tablas volcadas
@@ -136,7 +153,7 @@ ALTER TABLE `roles`
 -- Indices de la tabla `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`user_id`);
+  ADD PRIMARY KEY (`userid`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -152,7 +169,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT de la tabla `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `codped` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `codped` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
@@ -170,7 +187,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
