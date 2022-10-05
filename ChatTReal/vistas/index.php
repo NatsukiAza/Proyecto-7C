@@ -21,7 +21,6 @@
   </head>
 <body>
 
-  <?php include("navbar4.php"); ?>
 
   <div class="wrapper">
     <section class="form signup">
@@ -59,7 +58,7 @@
     </section>
   </div>
 
-	<?php include("footer4.php"); ?>
+	
 
   <script src="../js/pass-show-hide.js"></script>
   <script src="../js/signup.js"></script>

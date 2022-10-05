@@ -23,7 +23,6 @@
   
 <body>
 
-  <?php include("navbar4.php"); ?>
 
   <div class="wrapper">
     <section class="form login">
@@ -47,7 +46,6 @@
     </section>
   </div>
   
-	<?php include("footer4.php"); ?>
 
   <script src="../js/pass-show-hide.js"></script>
   <script src="../js/login.js"></script>

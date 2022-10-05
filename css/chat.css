@@ -1,3 +1,11 @@
+.c{
+	margin-top: 7%;
+	margin-bottom: 7%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
 .wrapper{
   	background: #fff;
   	max-width: 450px;

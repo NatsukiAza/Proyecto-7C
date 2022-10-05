@@ -3,6 +3,14 @@ body{
     font-family: sans-serif !important;
 }
 
+.c{
+	margin-top: 7%;
+	margin-bottom: 7%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
 a{
     text-decoration: none !important;
 }

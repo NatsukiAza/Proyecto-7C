@@ -8,8 +8,7 @@ body{
 .tar{
 	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 	height: 480px;
-	width: 65%;
-	margin: 3.1% 0% 0% 18%;
+	min-width: 985px;
 	background-color: #f48fb1;
 	border-radius: 20px;
 }
