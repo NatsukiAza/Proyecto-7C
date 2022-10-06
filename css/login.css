@@ -1,6 +1,6 @@
 .c{
   margin: 0;
-  height: 970px;
+  height: 625px;
   width: 100%;
   background-image: url("../img/backlog1.jpg");
   background-repeat: no-repeat;
@@ -21,14 +21,18 @@
 }
 
 .cajal form{
+  margin-top: 18%;
   width: 70%;
 }
 
 .cambiar{
+  margin-top: -28%;
+  position: absolute;
   width: 600px !important;
   margin-bottom: 8%;
   display: flex;
   flex-direction: row;
+  justify-content:center;
 }
 
 .cambiar a, .cambiar h1{
@@ -38,11 +42,21 @@
   line-height: 1.5;
   color: white;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.cambiar a:hover, .cambiar h1:hover{
+  color: black;
 }
 
 .current{
   color: white;
-  text-decoration: 1px solid white;
+  border-bottom: 2px solid white;
+}
+
+.current:hover{
+  border-bottom: 2px solid black;
 }
 
 .datos{
@@ -54,13 +68,61 @@
 .datos label{
   font-family: 'Roboto', sans-serif;
   color: white;
+  font-weight: bold;
 }
 
 .datos input{
-  color: black;
+  color: white;
+  transition: 0.3s ease-in-out;
   background-color: #f48fb1;
   border: 0;
   border-bottom: 1px solid white !important;
   padding: 10px 10px 5px 0;
   margin-bottom: 7%;
+}
+
+.datos input:focus {
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid black !important;
+}
+
+.datos input::placeholder {
+  color: white;
+}
+
+.b input{
+  border: 0;
+  border-radius: 25px;
+  padding: 10px 40px 10px 40px;
+  margin-right: 6%;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+  color: #f48fb1;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.b input:hover{
+  background-color: #f48fb1;
+  color: white;
+  transform: scale(1.1);
+}
+
+.b a{
+  color: white;
+  text-decoration: 1px underline white!important;
+  transition: 0.3s ease-in-out;
+}
+
+.b a:hover{
+  color: black;
+  text-decoration: none !important;
+}
+
+.foto label{
+  color: white;
+}
+
+.foto{
+  margin-bottom: 5%;
 }
