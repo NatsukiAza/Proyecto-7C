@@ -24,26 +24,28 @@
 <body>
 
   <div class="c">
-  <div class="wrapper">
-    <section class="form login">
-      <header>Chat en tiempo real</header>
+  <div class="cajal">
+    <div class="cambiar">
+    <a class="current" href="login.php">Inicia Sesion</a>
+    <h1>o</h1>
+    <a href="index.php">Registrate</a>
+    </div>
+      
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
-        <div class="error-text"></div>
-        <div class="field input">
-          <label>Dirección de correo electrónico</label>
+        <div class="error"></div>
+        <div class="datos">
+          <label>E-MAIL</label>
           <input type="text" name="email" placeholder="Introduce tu correo electrónico" required>
         </div>
-        <div class="field input">
-          <label>Contraseña</label>
+        <div class="datos">
+          <label>CONTRASEÑA</label>
           <input type="password" name="password" placeholder="Ingresa tu contraseña" required>
-          <i class="fas fa-eye"></i>
         </div>
         <div class="field button">
           <input type="submit" name="submit" value="Continuar chateando">
         </div>
       </form>
-      <div class="link">Aún no te has registrado? <a href="index.php">Regístrate ahora</a></div>
-    </section>
+    </div>
   </div>
   </div>
   
