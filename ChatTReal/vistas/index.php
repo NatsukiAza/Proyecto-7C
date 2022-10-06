@@ -22,39 +22,37 @@
 <body>
 
   <div class="c">
-  <div class="wrapper">
-    <section class="form signup">
-      <header>Chat en tiempo real</header>
+  <div class="cajal">
+    <div class="cambiar">
+    <a href="login.php">Inicia Sesion</a>
+    <h1>o</h1>
+    <a class="current" href="index.php">Registrate</a>
+    </div>
+
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
-        <div class="error-text"></div>
-        <div class="name-details">
-          <div class="field input">
-            <label>Nombre</label>
-            <input type="text" name="fname" placeholder="Nombre" required>
-          </div>
-          <div class="field input">
-            <label>Apellido</label>
-            <input type="text" name="lname" placeholder="Apellido" required>
-          </div>
-        </div>
-        <div class="field input">
-          <label>Dirección de correo electrónico</label>
+        <div class="error"></div>
+        <div class="datos">
+          <label>NOMBRE</label>
+          <input type="text" name="fname" placeholder="Introduce tu nombre" required>
+          <label>APELLIDO</label>
+          <input type="text" name="lname" placeholder="Introduce tu apellido" required>
+          <label>E-MAIL</label>
           <input type="text" name="email" placeholder="Introduce tu correo electrónico" required>
-        </div>
-        <div class="field input">
-          <label>Contraseña</label>
+          <label>CONTRASEÑA</label>
           <input type="password" name="password" placeholder="Introduzca nueva contraseña" required>
-          <i class="fas fa-eye"></i>
         </div>
-        <div class="field image">
-          <label>Foto</label>
+
+        <div class="foto">
+          <label>Ingresa tu foto</label>
           <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
         </div>
-        <div class="field button">
+
+        <div class="b">
           <input type="submit" name="submit" value="Continuar chateando">
+          <a href="login.php">Ya estas registrado?</a>
         </div>
       </form>
-      <div class="link">Ya te inscribiste? <a href="login.php">Inicia sesión ahora</a></div>
+
     </section>
   </div>
   </div>

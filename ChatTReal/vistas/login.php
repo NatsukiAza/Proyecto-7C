@@ -30,7 +30,7 @@
     <h1>o</h1>
     <a href="index.php">Registrate</a>
     </div>
-      
+
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error"></div>
         <div class="datos">
@@ -41,8 +41,9 @@
           <label>CONTRASEÑA</label>
           <input type="password" name="password" placeholder="Ingresa tu contraseña" required>
         </div>
-        <div class="field button">
-          <input type="submit" name="submit" value="Continuar chateando">
+        <div class="b">
+          <input type="submit" name="submit" value="Iniciar Sesion">
+          <a href="index.php">Todavia no tengo una cuenta</a>
         </div>
       </form>
     </div>
