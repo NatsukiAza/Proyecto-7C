@@ -3,7 +3,7 @@
 	$response=new stdClass();
 	include_once('../_conexion.php');
 
-	$codusu=$_SESSION['codusu'];
+	$unique_id=$_SESSION['unique_id'];
 	$dirusu=$_POST['dirusu'];
 	$telusu=$_POST['telusu'];
 	$tipopago=$_POST['tipopago'];
@@ -16,7 +16,7 @@
 	}
 
 	$sql="UPDATE pedido SET dirusuped='$dirusu',telusuped='$telusu',estado=$estado,token='$token'
-	where estado=1 and codusu=$codusu";
+	where estado=1 and unique_id=$unique_id";
 	$result=mysqli_query($con,$sql);
 	if ($result) {
 		$response->state=true;

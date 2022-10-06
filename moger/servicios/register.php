@@ -3,27 +3,26 @@
 //2: Email invalido
 //3: Contraseña incorrecta
 include('_conexion.php');
-$emausu=$_POST['emausur'];
-$sql="SELECT * FROM USUARIO WHERE emausu='$emausu'";
+$email=$_POST['email'];
+$sql="SELECT * FROM USUARIO WHERE email='$email'";
 $result=mysqli_query($con,$sql);
 if ($result) {
 	$row=mysqli_fetch_array($result);
 	$count=mysqli_num_rows($result);
 	if ($count==0) {
 		//Puede crear un nuevo usuario
-		$pasusu=$_POST['pasusur'];
-		$pasusu2=$_POST['pasusu2r'];
-		if ($pasusu!=$pasusu2) {
+		$password=$_POST['password'];
+		if ($password!=$password) {
 			header('Location: ../login.php?er=3');
 		}else{
-			$sql="INSERT into usuario (codusu,emausu,pasusu,estado)
-			VALUES ('','$emausu','$pasusu',1)";
+			$sql="INSERT into usuario (userid,email,password,estado)
+			VALUES ('','$email','$password',1)";
 			$result=mysqli_query($con,$sql);
-			$codusu=mysqli_insert_id($con);
+			$userid=mysqli_insert_id($con);
 			session_start();
-			$_SESSION['codusu']=$codusu;
-			$_SESSION['emausu']=$emausu;
-			$_SESSION['nomusu']='';
+			$_SESSION['userid']=$userid;
+			$_SESSION['email']=$email;
+			$_SESSION['fname']='';
 			header('Location: ../');
 		}
 	}else{

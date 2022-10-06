@@ -25,14 +25,14 @@ function estado2texto($id){
 }
 
 session_start();
-$codusu=$_SESSION['codusu'];
+$userid=$_SESSION['userid'];
 $datos=[];
 $i=0;
 $sql="select ped.*,pro.*,ped.estado estadoped
 from pedido ped
 inner join producto pro
 on ped.codpro=pro.codpro
-where ped.codusu=$codusu and ped.estado!=2
+where ped.userid=$userid and ped.estado!=2
  and ped.estado!=1";
 $result=mysqli_query($con,$sql);
 while($row=mysqli_fetch_array($result)){

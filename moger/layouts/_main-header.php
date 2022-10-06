@@ -6,9 +6,9 @@
 	</div>
 	<div class="options-place">
 		<?php
-		if (isset($_SESSION['codusu'])) {
+		if (isset($_SESSION['unique_id'])) {
 			echo
-			'<div class="item-option" onclick="mostrar_opciones()"><i class="fa fa-user-circle-o" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
+			'<div class="item-option" onclick="mostrar_opciones()"><i class="fa fa-user-circle-o" aria-hidden="true"></i><p>'.$_SESSION['fname	'].'</p></div>';
 		}else{
 		?>
 		<div class="item-option" title="Ingresar">
@@ -36,7 +36,7 @@
 </script>
 <div class="menu-opciones" id="ctrl-menu" style="display: none;">	
 	<?php
-	if (isset($_SESSION['codusu'])) {
+	if (isset($_SESSION['unique_id'])) {
 	?>
 	<ul>
 		<li>

@@ -24,15 +24,15 @@
 		<img width="100%" src="../img/usericon.png" alt="pfp">
 		<div class=infon>
 			<label for="">Nombre</label>
-				<input type="text" name="" id="" placeholder="Juan">
+				<input type="text" name="" id="" placeholder="Pablo">
 			<label for="">Apellido</label>
-				<input type="text" name="" id="" placeholder="Perez de Barradas">
+				<input type="text" name="" id="" placeholder="Manuelito">
 		</div>
 		<div class=infoc>
 			<label for="">E-mail</label>
-				<input type="text" name="" id="" placeholder="NoAgarroLaPala@gmail.com">
+				<input type="text" name="" id="" placeholder="nombre@gmail.com">
 			<label for="">Direccion</label>
-				<input type="text" name="" id="" placeholder="PalaPalinPalon">
+				<input type="text" name="" id="" placeholder="1234">
 		</div>
 	</div>
 	</div>
