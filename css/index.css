@@ -1,9 +1,189 @@
-body{
-	margin: 0;
-	padding: 0;
-    background-color: #F5E9EF !important;
-	font-family: sans-serif !important;
+/* Acompañantes del nav */
+.cubre{
+	z-index: -1;
+	position: absolute;
+	background-color: #f48fb1;
+	width: 100%;
+	height: 165px;
 }
+
+.oferta{
+	margin-top: 1.65%;
+	padding: 8px;
+	text-align: center;
+	background-color: #ffaac7;
+	color: #000;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+}
+/* fin de acompañantes del nav */
+
+/* containers */
+
+.c1{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.c2{
+
+}
+
+/* fin de containers */
+
+/* filtros */
+
+.filtros{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 20%;
+	justify-content: center;
+}
+
+.filtros h1{
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	margin-bottom: 8%;
+}
+
+.filtros h2{
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+	margin-bottom: 5%;
+}
+
+.filtros label{
+	font-size: 14px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+  
+.filtros{
+	width: 20%;
+	justify-content: center;
+}
+  
+.container {
+	margin-left: 7% !important;
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 4px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+  
+.checkmark {
+	border: 1px solid black ;
+	position: absolute;
+	top: 3px;
+	left: -10px;
+	height: 15px;
+	width: 15px;
+	background-color: #fff;
+}
+  
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+  
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+  
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+  
+.container .checkmark:after {
+	left: 3.5px;
+	top: 1px;
+	width: 5px;
+	height: 8px;
+	border: solid black;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/* fin de filtros */
+
+/* productos */
+
+.products-list{
+	display: table;
+	width: 55%;
+}
+
+.product-box{
+	display: inline-table;
+	padding: 10px;
+	width: 30%;
+}
+.product-box a{
+	text-decoration: none;
+}
+.product{
+	transition: 0.4s;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 0 8px 3px #ccc;
+	background-color: #fff;
+}
+
+.product:hover{
+	transform: scale(1.1);
+}
+.product img{
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+.detail-title{
+	padding: 5px;
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+	width: calc(100% - 10px);
+	height: 35px;
+}
+.detail-description{
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	padding: 5px;
+	width: calc(100% - 10px);
+	height: 34px;
+}
+.detail-price{
+	text-align: center;
+	font-size: 25px;
+	color: #f48fb1;
+	padding: 5px;
+	width: calc(100% - 10px);
+}
+.detail-price span{
+	font-size: 15px;
+}
+
+/* fin de productos */
 
 .tar{
 	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
@@ -164,63 +344,7 @@ input:placeholder{
 	font-size: 20px;
 	color: #666;
 }
-.products-list{
-	margin-left: 4.3%;
-	display: table;
-	width: 100%;
-}
-.product-box{
-	display: inline-table;
-	padding: 10px;
-	width: 30%;
-}
-.product-box a{
-	text-decoration: none;
-}
-.product{
-	transition: 0.4s;
-	width: 100%;
-	border-radius: 10px;
-	box-shadow: 0 0 8px 3px #ccc;
-	background-color: #fff;
-}
 
-.product:hover{
-	transform: scale(1.1);
-}
-.product img{
-	width: 100%;
-	border-radius: 10px 10px 0 0;
-}
-.detail-title{
-	padding: 5px;
-	text-align: center;
-	font-size: 18px;
-	color: #333;
-	width: calc(100% - 10px);
-	height: 35px;
-}
-.detail-description{
-	text-align: center;
-	font-size: 14px;
-	color: #333;
-	padding: 5px;
-	width: calc(100% - 10px);
-	height: 34px;
-}
-.detail-price{
-	text-align: center;
-	font-size: 25px;
-	color: #f48fb1;
-	padding: 5px;
-	width: calc(100% - 10px);
-}
-.detail-price span{
-	font-size: 15px;
-}
-a{
-	color: #fff;
-}
 .body-pedidos{
 	width: 100%;
 }

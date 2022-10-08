@@ -36,8 +36,10 @@ a{
 }
 
 .tf h2{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
     font-size: 16.5px;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
 }
 
 .tf a{
@@ -447,7 +449,7 @@ a{
     }
 
     .masv{
-        margin-top: 22.6%;
+        margin-top: 23%;
     }
     .main-container{
         height: 94.2hv;
@@ -550,7 +552,7 @@ a{
     }
 
     .c{
-        height: 970px;
+        height: 970px !important;
       }
 
 }
