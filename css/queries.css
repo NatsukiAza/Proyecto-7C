@@ -3,14 +3,6 @@ body{
     font-family: sans-serif !important;
 }
 
-.c{
-	margin-top: 7%;
-	margin-bottom: 7%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-
 a{
     text-decoration: none !important;
 }
@@ -36,8 +28,10 @@ a{
 }
 
 .tf h2{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
     font-size: 16.5px;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
 }
 
 .tf a{
@@ -447,7 +441,7 @@ a{
     }
 
     .masv{
-        margin-top: 22.6%;
+        margin-top: 23%;
     }
     .main-container{
         height: 94.2hv;
@@ -514,25 +508,6 @@ a{
 		right:0;
 	}
 
-    .tar{
-        margin-top: 7%;
-        height: 600px;
-    }
-
-    .infoc{
-        margin-left: 5%;
-        margin-top: 5%;
-    }
-
-    .infon{
-        padding-top: 4%;
-        margin-left: 40%;
-    }
-    
-    .tar input, .tar label{
-        font-size: 27px !important;
-    }
-
     .prod{
         margin-top: 0 !important;
     }
@@ -548,9 +523,5 @@ a{
     .indice div{
         margin-right: 5.7%;
     }
-
-    .c{
-        height: 970px;
-      }
 
 }
