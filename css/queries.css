@@ -3,14 +3,6 @@ body{
     font-family: sans-serif !important;
 }
 
-.c{
-	margin-top: 7%;
-	margin-bottom: 7%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-
 a{
     text-decoration: none !important;
 }
@@ -36,8 +28,10 @@ a{
 }
 
 .tf h2{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
     font-size: 16.5px;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
 }
 
 .tf a{
@@ -410,6 +404,10 @@ a{
 
 @media screen and (min-width:1370px) {
 
+    .c{
+        height: 970px !important;
+      }
+
     .barrab{
         width: 61.7%;
         padding: 0.8% 3% 0.8% 1%;
@@ -422,6 +420,31 @@ a{
     
     .lupita img{
         margin: -4px 0 0 -7px;
+    }
+
+    p{
+        font-size: 40px;
+        width: 700px;
+        margin-left: 55%;
+        margin-top: 9.5% !important;
+    }
+
+    .volver{
+        margin-left: -38.5%;
+        margin-top: -45%;
+    }
+
+    .b a{
+        margin-left: 40% !important;
+    }
+
+    .foto{
+        width: 8% !important;
+    }
+
+    #esp{
+        font-size: 16px !important;
+        margin-left: 25% !important;
     }
 
     .port{
@@ -447,7 +470,7 @@ a{
     }
 
     .masv{
-        margin-top: 22.6%;
+        margin-top: 23%;
     }
     .main-container{
         height: 94.2hv;
@@ -486,7 +509,6 @@ a{
         height: 72%;
     }
 
-
     .nvmsg{
         margin-left: -0.1%;
         margin-top: -0.1%;
@@ -514,25 +536,6 @@ a{
 		right:0;
 	}
 
-    .tar{
-        margin-top: 7%;
-        height: 600px;
-    }
-
-    .infoc{
-        margin-left: 5%;
-        margin-top: 5%;
-    }
-
-    .infon{
-        padding-top: 4%;
-        margin-left: 40%;
-    }
-    
-    .tar input, .tar label{
-        font-size: 27px !important;
-    }
-
     .prod{
         margin-top: 0 !important;
     }
@@ -549,8 +552,30 @@ a{
         margin-right: 5.7%;
     }
 
-    .c{
-        height: 970px;
-      }
+    .pan{
+        margin-top: 1.7%;
+    }
+
+    .pan img{
+        display: block;
+        position: absolute;
+        width: 4%;
+        left: 29.1%;
+        top: 19.5%;
+    }
+
+    .dat{
+        margin-top: 4.85%;
+        width: 46.5%;
+    }
+
+    .ci button{
+        margin-left: 38%;
+        margin-top: -0.6%;
+    }
+
+    #eliminar{
+        margin-left: 37.3%;
+    }
 
 }

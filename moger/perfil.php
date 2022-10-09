@@ -4,9 +4,9 @@
 <html>
 <head>
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Oswald:wght@400;500;700&family=Quicksand:wght@300;400;500;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="../css/queries.css">
@@ -17,23 +17,54 @@
 </head>
 <body>
 
+<div class="cubre"></div>
   <?php include("navbar2.php"); ?>
 
-	<div class="c">
-	<div class="tar">
-		<img width="100%" src="../img/usericon.png" alt="pfp">
-		<div class=infon>
-			<label for="">Nombre</label>
-				<input type="text" name="" id="" placeholder="Pablo">
-			<label for="">Apellido</label>
-				<input type="text" name="" id="" placeholder="Manuelito">
+	<div class="c1">
+
+	<div class="pan">
+		<h2>Hola,</h2>
+		<h1>Usuario</h1>
+		<img width="50%" src="../img/usericon.png" alt="foto">
+
+		<a href="">Datos personales</a>
+		<a href="">Mis favoritos</a>
+		<a href="">Compras realizadas</a>
+		<a href="">Cerrar Sesión</a>
+	</div>
+
+	<div class="dat">
+		<h1>Datos Personales</h1>
+		<div class="ci">
+			<button>Editar</button>
+			<h2>Informacion Personal</h2>
+			<h3>Juan Perez de Barradas</h3>	
+			<h5>Av. Larrazabal 483</h5>	
+			<h5>Liniers, CABA, 1408</h5>	
 		</div>
-		<div class=infoc>
-			<label for="">E-mail</label>
-				<input type="text" name="" id="" placeholder="nombre@gmail.com">
-			<label for="">Direccion</label>
-				<input type="text" name="" id="" placeholder="1234">
+
+		<div class=ci>
+			<button>Editar</button>
+			<h2>Opciones de contacto</h2>
+			<h6>Dejanos saber la mejor opcion para contactarte</h6>
+			<h4>E-Mail</h4>
+			<h5>Juanperezdebarradas@gmail.com</h5>	
+			<h4>Celular</h4>
+			<h5>+54 11 5506-8746</h5>	
 		</div>
+
+		<div class=ci>
+			<button>Editar</button>
+			<h2>Contraseña y seguridad</h2>
+			<h6>Administra tu configuracion de inicio de sesion y de seguridad</h6>
+		</div>
+
+		<div class=ci>
+			<button id="eliminar">Eliminar</button>
+			<h2>Eliminar mi perfil</h2>
+			<h6>Proceder va a eliminar los datos de tu perfil</h6>
+		</div>
+		
 	</div>
 	</div>
 

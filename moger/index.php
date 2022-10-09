@@ -4,9 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat&family=Oswald:wght@400;700&family=Quicksand:wght@300;400;500;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -18,14 +18,70 @@
 </head>
 <body>
 
-
+	<div class="cubre"></div>
 	<?php include("navbar2.php"); ?>
+	<div class="oferta">Conseguí un 20% de descuento en la segunda unidad de cualquier producto que compres</div>
 	
-	<div class="main-content">
-		<div class="content-page">
+	<div class="c1">
+		<div class="filtros">
+
+			<h1>Filtros</h1>
+
+			<h2>Productos</h2>
+
+			<label class="container">Perfumes
+  				<input type="checkbox">
+  				<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Aromatizadores
+  				<input type="checkbox">
+  				<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Aerosoles
+  				<input type="checkbox">
+  				<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Difusores
+  				<input type="checkbox">
+  				<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Aromas
+  				<input type="checkbox">
+  				<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Sahumerios
+  				<input type="checkbox">
+  				<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Jabones
+  				<input type="checkbox">
+  				<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Sanitizantes
+  				<input type="checkbox">
+  				<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Aceites
+  				<input type="checkbox">
+  				<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Otros
+  				<input type="checkbox">
+  				<span class="checkmark"></span>
+			</label>
+
+		</div>
 			<div class="products-list" id="space-list">
 			</div>
-		</div>
 	</div>
 
 	<?php include("footer2.php"); ?>

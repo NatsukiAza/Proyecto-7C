@@ -1,15 +1,26 @@
 .c{
   margin: 0;
-  height: 625px;
+  height: 657px;
   width: 100%;
-  background-image: url("../img/backlog1.jpg");
+  background-image: url("../img/backlog4.jpg");
   background-repeat: no-repeat;
   justify-content: left;
   display: flex;
 }
 
+p{
+  text-align: center;
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  width: 500px;
+  font-family: 'Dancing Script', cursive;
+  margin-left: 55%;
+  margin-top: 9.5% !important;
+}
+
 .cajal{
-  background: #f48fb1;
+  background: white;
   width: 45%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -23,6 +34,19 @@
 .cajal form{
   margin-top: 18%;
   width: 70%;
+}
+
+.volver{
+  margin-left: -39.3%;
+  margin-top: -43%;
+  border-radius: 100px;
+  background-color: #f48fb1;
+  width: 2%;
+  position: absolute;
+}
+
+.volver img{
+  padding: 7px 9px 7px 8px;
 }
 
 .cambiar{
@@ -40,23 +64,20 @@
   font-size: 30px;
   margin-bottom: 0;
   line-height: 1.5;
-  color: white;
+  color: #d1a4b2;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   transition: 0.3s ease-in-out;
 }
 
-.cambiar a:hover, .cambiar h1:hover{
-  color: black;
+.cambiar a:hover{
+  color: #f48fb1 !important;
+  border-bottom: 2px solid #f48fb1;
 }
 
 .current{
-  color: white;
-  border-bottom: 2px solid white;
-}
-
-.current:hover{
-  border-bottom: 2px solid black;
+  color: #f48fb1 !important;
+  border-bottom: 2px solid #f48fb1;
 }
 
 .datos{
@@ -66,17 +87,18 @@
 }
 
 .datos label{
-  font-family: 'Roboto', sans-serif;
-  color: white;
+  font-family: 'Quicksand', sans-serif;
+  color: #f48fb1;
   font-weight: bold;
 }
 
 .datos input{
-  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
   transition: 0.3s ease-in-out;
-  background-color: #f48fb1;
+  background-color: white;
   border: 0;
-  border-bottom: 1px solid white !important;
+  border-bottom: 1px solid #d1a4b2 !important;
   padding: 10px 10px 5px 0;
   margin-bottom: 7%;
 }
@@ -84,11 +106,11 @@
 .datos input:focus {
   outline: none;
   border: 0;
-  border-bottom: 1px solid black !important;
+  border-bottom: 1px solid #f48fb1 !important;
 }
 
 .datos input::placeholder {
-  color: white;
+  color: #d1a4b2;
 }
 
 .b input{
@@ -97,32 +119,57 @@
   padding: 10px 40px 10px 40px;
   margin-right: 6%;
   box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
-  color: #f48fb1;
+  color: white;
   font-weight: bold;
   transition: 0.3s ease-in-out;
+  background-color: #f48fb1;
 }
 
 .b input:hover{
-  background-color: #f48fb1;
-  color: white;
-  transform: scale(1.1);
+  background-color: #ffaac7;
 }
 
 .b a{
-  color: white;
-  text-decoration: 1px underline white!important;
+  margin-left: 20.5%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color: #d1a4b2;
+  text-decoration: 1px underline #f48fb1!important;
   transition: 0.3s ease-in-out;
 }
 
 .b a:hover{
-  color: black;
+  color: #f48fb1;
   text-decoration: none !important;
 }
 
-.foto label{
-  color: white;
+.foto input{
+  display: none;
 }
 
 .foto{
-  margin-bottom: 5%;
+  margin-top: -3%;
+  margin-left: 46%;
+  border-radius: 50px;
+  background-color: #f48fb1;
+  padding: 9px;
+  width: 10%;
+  margin-bottom: 3%;
+}
+
+.foto:hover{
+  cursor: pointer;
+}
+
+.foto img:hover{
+  cursor: pointer;
+}
+
+.log{
+  margin-top: -12.5% !important;
+}
+
+#esp{
+  font-size: 14px;
+  margin-left: 5.5%;
 }

@@ -7,9 +7,9 @@
   <!DOCTYPE html>
   <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat&family=Oswald:wght@400;700&family=Quicksand:wght@300;400;500;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/queries.css">
     <link rel="stylesheet" href="../../css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
@@ -21,8 +21,11 @@
   </head>
 <body>
 
+  <p>Adquirí los productos desde la comodidad de tu hogar y aromatiza todos tus espacios con las mejores fragancias.</p>
+
   <div class="c">
   <div class="cajal">
+    <a class="volver" href="../../index.php"><img width="100%"src="../../img/flecha.png" alt="Volver"></a>
     <div class="cambiar">
     <a href="login.php">Inicia Sesion</a>
     <h1>o</h1>
@@ -33,22 +36,24 @@
         <div class="error"></div>
         <div class="datos">
           <label>NOMBRE</label>
-          <input type="text" name="fname" placeholder="Introduce tu nombre" required>
+          <input type="text" name="fname" placeholder="Ingresa tu nombre" required>
           <label>APELLIDO</label>
-          <input type="text" name="lname" placeholder="Introduce tu apellido" required>
+          <input type="text" name="lname" placeholder="Ingresa tu apellido" required>
           <label>E-MAIL</label>
-          <input type="text" name="email" placeholder="Introduce tu correo electrónico" required>
+          <input type="text" name="email" placeholder="Ingresa un correo electrónico" required>
           <label>CONTRASEÑA</label>
-          <input type="password" name="password" placeholder="Introduzca nueva contraseña" required>
+          <input type="password" name="password" placeholder="Ingresa una contraseña" required>
         </div>
 
         <div class="foto">
-          <label>Ingresa tu foto</label>
-          <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
+        <label for="file-input">
+          <img width="100%" src="../../img/camera.png" alt="Foto">
+        </label>
+          <input id="file-input" type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" require>
         </div>
 
         <div class="b">
-          <input type="submit" name="submit" value="Continuar chateando">
+          <input type="submit" name="submit" value="Registrate">
           <a href="login.php">Ya estas registrado?</a>
         </div>
       </form>
