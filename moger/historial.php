@@ -21,7 +21,19 @@
 	<?php include("navbar2.php"); ?>
 
 	<div class="c1">
-		<div class="content-page">
+
+	<div class="pan">
+		<h2>Hola,</h2>
+		<h1>Usuario</h1>
+		<img width="50%" src="../img/usericon.png" alt="foto">
+
+		<a href="perfil.php">Datos personales</a>
+		<a href="favoritos.php">Mis favoritos</a>
+		<a href="historial.php">Compras realizadas</a>
+		<a href="">Cerrar Sesión</a>
+	</div>
+
+		<div class="dat">
 			<div class="title-section">Mis compras realizadas</div>
 			<div class="products-list" id="space-list">
 			</div>

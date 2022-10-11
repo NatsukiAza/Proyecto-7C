@@ -34,37 +34,12 @@
 	</div>
 
 	<div class="dat">
-		<h1>Datos Personales</h1>
-		<div class="ci">
-			<button>Editar</button>
-			<h2>Informacion Personal</h2>
-			<h3>Juan Perez de Barradas</h3>	
-			<h5>Av. Larrazabal 483</h5>	
-			<h5>Liniers, CABA, 1408</h5>	
+		<h1>Mis Favoritos</h1>
+		<div class="nf">
+			<h2>Todavia no marcaste ningun producto como favorito, cuando lo hagas, aparecera aquí</h2>
+			<img width="100%" src="../img/cora.png" alt="Corazon">
 		</div>
 
-		<div class=ci>
-			<button>Editar</button>
-			<h2>Opciones de contacto</h2>
-			<h6>Dejanos saber la mejor opcion para contactarte</h6>
-			<h4>E-Mail</h4>
-			<h5>Juanperezdebarradas@gmail.com</h5>	
-			<h4>Celular</h4>
-			<h5>+54 11 5506-8746</h5>	
-		</div>
-
-		<div class=ci>
-			<button>Editar</button>
-			<h2>Contraseña y seguridad</h2>
-			<h6>Administra tu configuracion de inicio de sesion y de seguridad</h6>
-		</div>
-
-		<div class=ci>
-			<button id="eliminar">Eliminar</button>
-			<h2>Eliminar mi perfil</h2>
-			<h6>Proceder va a eliminar los datos de tu perfil</h6>
-		</div>
-		
 	</div>
 	</div>
 

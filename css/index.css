@@ -240,6 +240,25 @@
 	margin-bottom: 4%;
 }
 
+.nf{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.nf h2{
+	font-size: 15px;
+	color: #6d747a;
+}
+
+.nf img{
+	margin-top: 2%;
+	margin-left: 45%;
+	opacity: 30%;
+	width: 10%;
+}
+
 .ci{
 	margin-bottom: 2%;
 	margin-left: 7%;
