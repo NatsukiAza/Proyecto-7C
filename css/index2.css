@@ -2,25 +2,62 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	max-width: 1920px;
 }
-body{
-	font-family: sans-serif !important;
+
+#c3{
 	width: 100%;
-	background-color: #F5E9EF !important;
+	display: flex;
+	justify-content: center;
 }
+
+#li, #ld{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#i{
+	width: 80%;
+	padding: 38px;
+	border-radius: 50px;
+	box-shadow: rgba(42, 52, 61, 0.2) 0 4px 10px 4px;
+}
+
+#i:first-child{
+	margin-bottom: 10%;
+}
+
+#i h1{
+	font-size: 25px;
+	margin-bottom: 0;
+}
+
+#i h2{
+	font-size: 16px;
+	margin-bottom: 6% !important;
+}
+
+#i p{
+	font-size: 14px;
+	margin-bottom: 4%;
+}
+
 button{
 	padding: 10px;
 	cursor: pointer;
 }
+
 .main-container{
 	display: flex;
 	width: 100%;
-	height: 91vh;
 }
 
 .sidemenu{
 	width: 15%;
-	height: 91vh;
+	height: 100vh;
 	border-right: 7px solid #f48fb1;
 	border-bottom-right-radius: 5%;
 	border-top-right-radius: 5%;
@@ -102,10 +139,8 @@ button{
 	}
 	.container-menu{
 		z-index: 1;
-		margin-top: 4%;
 		position: absolute;
 		width: 100%;
-		height: 91vh;
 		top: 0;left: 0;
 		transition: all 500ms ease;
 		opacity: 0;
@@ -123,7 +158,7 @@ button{
 		width: 100%;
 		max-width: 179px;
 		background: #f48fb1;
-		height: 91vh;
+		height: 100vh;
 		position: relative;
 		transition: all 500ms ease;
 		transform: translateX(-100%);
@@ -281,54 +316,6 @@ select{
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-}
-
-.card-text{
-	padding: 10px 0px 5px 0px;
-}
-
-.card-link{
-	float: right;
-}
-
-.card{
-	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
-	background-color: #f48fb1 !important;
-	color: #121619 !important;
-	border-width: 2px !important;
-	border-color: #bf5f82 !important;
-	margin-left: 10.5%;
-	margin-top: 8%;
-	z-index: -2;
-	height: 220px !important;
-	width: 80% !important;
-}
-
-.tit{
-	height: 70px !important;
-	width: 100% !important;
-	z-index: -1 !important;
-	position: absolute;
-	padding: 10px 5px 5px 5px;
-	background-color: #bf5f82;
-}
-
-.card a{
-	padding: 0px 15px 0px 0px;
-	color: #1E1014 !important;
-}
-
-.card h6{
-	padding: 0px 0px 0px 15px;
-	color: #ffffff;
-}
-
-.card-body{
-	padding: 0px !important;
-}
-
-.card-body h5, .card-body p{
-	padding: 13px 0px 0px 15px;
 }
 
 .adminb{

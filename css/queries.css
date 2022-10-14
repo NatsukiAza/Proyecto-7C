@@ -61,6 +61,16 @@ a{
 }
 
 /*Titulo Aromatic*/ 
+
+.cubre{
+	z-index: -1;
+	position: absolute;
+	background-color: #f48fb1;
+	width: 100%;
+	height: 165px;
+	box-shadow: rgba(42, 52, 61, 0.2) 0 4px 10px 4px;
+}
+
 .cereb{
     margin-top: -10px;
     font-size: 1.75rem;
