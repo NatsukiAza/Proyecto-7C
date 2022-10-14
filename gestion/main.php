@@ -17,8 +17,6 @@
 </head>
 <body>
 
-<?php include("navbar3.php"); ?>
-
 	<div class="main-container">
 
 		<?php include("layout/_directorios.php"); ?>
@@ -36,68 +34,57 @@
 
 		</div>
 
-		<div class="containerr">
-		<div class="card">
-  				<div class="card-body">
-				  <div class="tit">
-				  </div>	
-					<h5 class="card-title">Nuevos Pedidos</h5>
-    				<h6 class="card-subtitle mb-2">Ejemplo</h6>
-    				<p class="card-text">Ejemplo</p>
-					<p class="card-text">Ejemplo</p>
-    				<div class="abajo">
-						<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
-					</div>
-  				</div>
+		<div id="c3">
+
+			<div id="li">
+			<div id="i">
+				<div class="tit">
+				</div>	
+				<h1 class="card-title">Nuevos Pedidos</h5>
+    			<h2 class="card-subtitle mb-2">Ejemplo</h6>
+    			<p class="card-text">Ejemplo</p>
+				<p class="card-text">Ejemplo</p>
+    			<div class="abajo">
+					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+				</div>
+  			</div>
+
+			<div id="i">
+				<h5 class="card-title">Ventas Hechas</h5>
+    			<h6 class="card-subtitle mb-2">Ejemplo</h6>
+    			<p class="card-text">Ejemplo</p>
+				<p class="card-text">Ejemplo</p>
+				<div class="abajo">
+					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+				</div>
+			</div>
 			</div>
 
-			<div class="card">
-  				<div class="card-body">
-				  <div class="tit">
-				  </div>	
-				  <h5 class="card-title">Ventas Hechas</h5>
-    				<h6 class="card-subtitle mb-2">Ejemplo</h6>
-    				<p class="card-text">Ejemplo</p>
-					<p class="card-text">Ejemplo</p>
-					<div class="abajo">
-						<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
-					</div>
-  				</div>
-			</div>
-		</div>
-		
-		<div class="containerr">
-			<div class="card">
-  				<div class="card-body">
-				  <div class="tit">
-				  </div>	
-				  <h5 class="card-title">Productos con poco stock</h5>
-    				<h6 class="card-subtitle mb-2">Ejemplo</h6>
-    				<p class="card-text">Ejemplo</p>
-					<p class="card-text">Ejemplo</p>
-    				<div class="abajo">
-						<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
-					</div>
-  				</div>
-			</div>
+			<div id="ld">
+			<div id="i">
+				<div class="tit">
+				</div>	
+				<h5 class="card-title">Productos con poco stock</h5>
+    			<h6 class="card-subtitle mb-2">Ejemplo</h6>
+    			<p class="card-text">Ejemplo</p>
+				<p class="card-text">Ejemplo</p>
+    			<div class="abajo">
+					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+				</div>
+  			</div>
 
-			<div class="card">
-  				<div class="card-body">
-				  <div class="tit">
-				  </div>	
-				  <h5 class="card-title">Ventas realizadas en el Mes</h5>
-    				<h6 class="card-subtitle mb-2">Ejemplo</h6>
-    				<p class="card-text">Ejemplo</p>
-					<p class="card-text">Ejemplo</p>
-    				<div class="abajo">
-						<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
-					</div>
-  				</div>
+			<div id="i">
+				<h5 class="card-title">Ventas realizadas en el Mes</h5>
+    			<h6 class="card-subtitle mb-2">Ejemplo</h6>
+    			<p class="card-text">Ejemplo</p>
+				<p class="card-text">Ejemplo</p>
+    			<div class="abajo">
+					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+				</div>
+  			</div>
 			</div>
 		</div>
 	</div>
-
-	<?php include("footer3.php"); ?>
 
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
