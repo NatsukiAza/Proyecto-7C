@@ -36,17 +36,9 @@
 
 		<div id="c3">
 
-			<div id="li">
-			<div id="i">
-				<div class="tit">
-				</div>	
-				<h1 class="card-title">Nuevos Pedidos</h5>
-    			<h2 class="card-subtitle mb-2">Ejemplo</h6>
-    			<p class="card-text">Ejemplo</p>
-				<p class="card-text">Ejemplo</p>
-    			<div class="abajo">
-					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
-				</div>
+			<div id="s">
+			<div id="g">
+				<h1 class="card-title">Grafico de ventas hechas</h1>
   			</div>
 
 			<div id="i">
@@ -60,7 +52,31 @@
 			</div>
 			</div>
 
-			<div id="ld">
+			<div id="s">
+			<div id="i">
+				<div class="tit">
+				</div>	
+				<h5 class="card-title">Productos con poco stock</h5>
+    			<h6 class="card-subtitle mb-2">Ejemplo</h6>
+    			<p class="card-text">Ejemplo</p>
+				<p class="card-text">Ejemplo</p>
+    			<div class="abajo">
+					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+				</div>
+  			</div>
+
+			<div id="i">
+				<h5 class="card-title">Ventas realizadas en el Mes</h5>
+    			<h6 class="card-subtitle mb-2">Ejemplo</h6>
+    			<p class="card-text">Ejemplo</p>
+				<p class="card-text">Ejemplo</p>
+    			<div class="abajo">
+					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+				</div>
+  			</div>
+			</div>
+
+		<div id="s">
 			<div id="i">
 				<div class="tit">
 				</div>	
@@ -84,6 +100,8 @@
   			</div>
 			</div>
 		</div>
+
+
 	</div>
 
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
