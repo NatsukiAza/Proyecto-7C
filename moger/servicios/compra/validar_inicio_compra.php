@@ -11,7 +11,7 @@ if (!isset($_SESSION['unique_id'])) {
 	$unique_id=$_SESSION['unique_id'];
 	$codpro=$_POST['codpro'];
 	$sql="INSERT INTO pedido
-	(usersid,codpro,fecped,estado,dirusuped,telusuped)
+	(user_id,codpro,fecped,estado,dirusuped,telusuped)
 	VALUES
 	($unique_id,$codpro,now(),1,'','')";
 	$result=mysqli_query($con,$sql);

@@ -16,7 +16,7 @@
 	}
 
 	$sql="UPDATE pedido SET dirusuped='$dirusu',telusuped='$telusu',estado=$estado,token='$token'
-	where estado=1 and unique_id=$unique_id";
+	where estado=1 and user_id=$unique_id";
 	$result=mysqli_query($con,$sql);
 	if ($result) {
 		$response->state=true;
