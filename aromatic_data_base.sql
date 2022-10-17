@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-08-2022 a las 20:26:25
+-- Tiempo de generación: 17-10-2022 a las 19:47:00
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -51,6 +51,18 @@ CREATE TABLE `pedido` (
   `token` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `pedido`
+--
+
+INSERT INTO `pedido` (`codped`, `user_id`, `codpro`, `fecped`, `estado`, `dirusuped`, `telusuped`, `token`) VALUES
+(1, 336153552, 20, '2022-10-17 13:28:27', 5, 'dsad', '4343', ''),
+(2, 336153552, 20, '2022-10-17 13:28:42', 5, 'dsad', '4343', ''),
+(3, 336153552, 21, '2022-10-17 14:24:00', 2, 'ytty', '4554', ''),
+(4, 336153552, 21, '2022-10-17 14:24:02', 4, 'ytty', '4554', ''),
+(5, 336153552, 20, '2022-10-17 14:24:06', 5, 'ytty', '4554', ''),
+(6, 336153552, 20, '2022-10-17 14:24:07', 2, 'ytty', '4554', '');
+
 -- --------------------------------------------------------
 
 --
@@ -72,9 +84,13 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`codpro`, `nompro`, `despro`, `prepro`, `estado`, `rutimapro`, `prodst`) VALUES
-(20, 'Aceite Esencial Patchouly', 'Construido entorno a un patchouly con facetas verdes y madera, que evoluciona hacia notas balsámicas', '155.00', 1, '20220818193111.jpg', 60),
-(21, 'Aceite Esencial Palo Santo', 'Embriagadora fragancia amaderada con mezcla de notas balsámicas y orientales que energiza y sorprend', '155.00', 1, '20220818193146.jpg', 60),
-(22, 'Aceite Esencial Nag Champa', 'Una fragancia exuberante, con una salida de patchouly que cede progresivamente hacia un fondo que re', '155.00', 1, '20220818193212.jpg', 60);
+(20, 'Aceite Esencial Patchouly', 'Construido entorno a un patchouly con facetas verdes y madera, que evoluciona hacia notas balsÃ¡mica', '155.00', 1, '20221017193654.jpg', 60),
+(21, 'Aceite Esencial Palo Santo', 'Embriagadora fragancia amaderada con mezcla de notas balsÃ¡micas y orientales que energiza y sorpren', '155.00', 1, '20221017193717.jpg', 60),
+(22, 'Aceite Esencial Nag Champa', 'Una fragancia exuberante, con una salida de patchouly que cede progresivamente hacia un fondo que re', '155.00', 1, '20221017193810.jpg', 60),
+(23, 'Vela Dublín 200 Gr', 'Los aceites esenciales que uso son de primera calidad, logrando que el aroma se sienta en todo el am', '1199.99', 1, '20221017194042.jpg', 100),
+(24, 'Hornito Para Velas', 'Incluye: 2 velas de noche + 10 velas pills aromáticas. Material: Cerámica. Medidas: 11 x 7 cm.', '2480.0', 1, '20221017194217.jpg', 20),
+(25, 'Box Empresarial', '1 Aromatizante de 250 ml. 1 Difusor de 250 ml. 1 Vela Dublín de 200 gr.', '3510.34', 1, '20221017194322.jpg', 10),
+(26, 'Vela Estambul', '1 kg. Medidas: 16 x 8 cm', '780.0', 1, '20221017194440.jpg', 67);
 
 -- --------------------------------------------------------
 
@@ -103,6 +119,13 @@ CREATE TABLE `users` (
   `img` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`user_id`, `unique_id`, `fname`, `lname`, `email`, `password`, `img`, `status`) VALUES
+(1, 336153552, 'n', 'N', 'n@n.n', '7b8b965ad4bca0e41ab51de7b31363a1', '1666023574n.jpg', 'Activo ahora');
 
 --
 -- Índices para tablas volcadas
@@ -152,13 +175,13 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT de la tabla `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `codped` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `codped` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `codpro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `codpro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
@@ -170,7 +193,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
