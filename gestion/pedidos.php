@@ -53,7 +53,7 @@
 							END estadotexto, ped.estado estadoped
 							from pedido ped
 							inner  join users usu
-							on ped.unique_id=usu.unique_id
+							on ped.user_id=usu.unique_id
 							inner  join producto pro
 							on ped.codpro=pro.codpro
 							where ped.estado=2 or ped.estado=3 or ped.estado=4";
