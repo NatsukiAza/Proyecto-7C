@@ -7,7 +7,7 @@
 			<a href="main.php">Inicio</a></li>
 			<a href="pedidos.php">Pedidos</a></li>
 			<a href="productos.php">Productos</a></li>
-			<a href="#">Estadisticas</a></li>
+			<a href="historial.php">Historial</a></li>
 			<a href="index.php">Salir</a></li>
 		</nav>
 		<label class="equis" for="btn-menu">X</label>
