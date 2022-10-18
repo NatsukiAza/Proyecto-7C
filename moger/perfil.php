@@ -1,4 +1,5 @@
 <?php
+	session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,6 +39,9 @@
 		<div class="ci">
 			<button>Editar</button>
 			<h2>Informacion Personal</h2>
+			<?php
+			
+			?>
 			<h3>Juan Perez de Barradas</h3>	
 			<h5>Av. Larrazabal 483</h5>	
 			<h5>Liniers, CABA, 1408</h5>	

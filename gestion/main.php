@@ -47,7 +47,7 @@
     			<p class="card-text">Ejemplo</p>
 				<p class="card-text">Ejemplo</p>
 				<div class="abajo">
-					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+					<span><a href="historial.php" class="card-link">Ver mas</a></span>
 				</div>
 			</div>
 			</div>
@@ -71,7 +71,7 @@
     			<p class="card-text">Ejemplo</p>
 				<p class="card-text">Ejemplo</p>
     			<div class="abajo">
-					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+					<span><a href="historial.php" class="card-link">Ver mas</a></span>
 				</div>
   			</div>
 			</div>
