@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-10-2022 a las 19:47:00
+-- Tiempo de generación: 19-10-2022 a las 21:38:22
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -125,7 +125,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `unique_id`, `fname`, `lname`, `email`, `password`, `img`, `status`) VALUES
-(1, 336153552, 'n', 'N', 'n@n.n', '7b8b965ad4bca0e41ab51de7b31363a1', '1666023574n.jpg', 'Activo ahora');
+(1, 336153552, 'n', 'N', 'n@n.n', '7b8b965ad4bca0e41ab51de7b31363a1', '1666023574n.jpg', 'Desconectado ahora');
 
 --
 -- Índices para tablas volcadas
