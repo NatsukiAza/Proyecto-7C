@@ -36,36 +36,13 @@
 		<a href="">Cerrar Sesión</a>
 	</div>
 
-	
-
-	<div class="dat" id="space-list">
-
-	<script type="text/javascript">
-		$(document).ready(function(){	
-			$.ajax({
-				url:'servicios/usuario.php',
-				type:'POST',
-				data:{},
-				success:function(data){
-					console.log(data);
-					let html='';
-							document.getElementById("nombre").innerHTML=data.datos[0].fname;
-							document.getElementById("apellido").innerHTML=data.datos[0].lname;
-						
-					document.getElementById("space-list").innerHTML=html;
-				},
-				error:function(err){
-					console.error(err);
-				}
-			});
-		});
-		</script>
+	<div class="dat">
 
 		<h1>Datos Personales</h1>
 		<div class="ci">
 			<button>Editar</button>
 			<h2>Informacion Personal</h2>
-			<h3 id=nombre>Juan Perez de Barradas</h3>	
+			<h3>Juan Perez de Barradas</h3>	
 			<h5>Av. Larrazabal 483</h5>	
 			<h5>Liniers, CABA, 1408</h5>	
 		</div>

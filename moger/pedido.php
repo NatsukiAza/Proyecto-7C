@@ -29,7 +29,7 @@
 			<div class="body-pedidos" id="space-list">
 			</div>
 			<h3>Datos de pago</h3>
-			<div class="p-line"><div>MONTO TOTAL:</div>S/.&nbsp;<span id="montototal"></span></div>
+			<div class="p-line"><div>MONTO TOTAL:</div>$&nbsp;<span id="montototal"></span></div>
 			<div class="p-line"><div>Banco:</div>BCP</div>
 			<div class="p-line"><div>N° de Cuenta:</div>191-45678945-006</div>
 			<div class="p-line"><div>Representante:</div>Encargado de ventas</div>
@@ -63,6 +63,8 @@
 								'<p><b>Estado:</b> '+data.datos[i].estadotext+'</p>'+
 								'<p><b>Dirección:</b> '+data.datos[i].dirusuped+'</p>'+
 								'<p><b>Celular:</b> '+data.datos[i].telusuped+'</p>'+
+								'<button class="btn-delete-cart" onclick="delete_product('+data.datos[i].codped+')">Eliminar</button>'+
+							'</div>'+
 							'</div>'+
 						'</div>';
 						if (data.datos[i].estado=="2") {
@@ -77,6 +79,28 @@
 				}
 			});
 		});
+
+		function delete_product(codped){
+			$.ajax({
+				url:'servicios/pedido/delete_pedido.php',
+				type:'POST',
+				data:{
+					codped:codped,
+				},
+				success:function(data){
+					console.log(data);
+					if (data.state) {
+						window.location.reload();
+					}else{
+						alert(data.detail);
+					}
+				},
+				error:function(err){
+					console.error(err);
+				}
+			});
+		}
+
 	</script>
 	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

@@ -32,15 +32,12 @@
 			<br>
 			<input class="ipt-procom" type="text" id="telusu" placeholder="Celular">
 			<br>
-			<h4>Tipos de pago</h4>
+			<h4>Tipo de pago</h4>
 			<div class="metodo-pago">
 				<input type="radio" name="tipopago" value="1" id="tipo1">
-				<label for="tipo1">Pago por transferencia</label>
+				<label for="tipo1">Efectivo</label>
 			</div>
-			<div class="metodo-pago">
-				<input type="radio" name="tipopago" value="2" id="tipo2">
-				<label for="tipo2">Pago con tarjeta de crédito/débito</label>
-			</div>
+			
 			<button onclick="procesar_compra()" style="margin-top: 5px;">Procesar compra</button>
 		</div>
 	</div>
@@ -117,14 +114,10 @@
 			let dirusu=document.getElementById("dirusu").value;
 			let telusu=$("#telusu").val();
 			let tipopago=1;
-			if (document.getElementById("tipo2").checked) {
-				tipopago=2;
-			}
 			if (dirusu=="" || telusu=="") {
 				alert("Complete los campos");
 			}else{
-				if (!document.getElementById("tipo1").checked &&
-					!document.getElementById("tipo2").checked) {
+				if (!document.getElementById("tipo1").checked) {
 					alert("Seleccione un método de pago!");
 				}else{
 					if (tipopago==2) {
