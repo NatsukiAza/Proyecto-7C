@@ -2,13 +2,13 @@
 	include("../config/conexion.php");
 	$response=new stdClass();
 
-	$codpro=$_POST['codpro'];
-	$sql="select * from pedido where codpro=$codpro";
+	$user_id=$_POST['user_id'];
+	$sql="select * from users where user_id=$user_id";
 	$result=mysqli_query($con,$sql);
 	$row=mysqli_fetch_array($result);
 	$contador=mysqli_num_rows($result);
 	if ($contador>0) {
-		$sql="update producto set estado=0 where codpro=$codpro";
+		$sql="update users set status='Desconectado ahora' where user_id=$user_id";
 		$result=mysqli_query($con,$sql);
 		if ($result) {
 			$response->state=true;
@@ -17,19 +17,19 @@
 			$response->detail="No se puede eliminar el producto";
 		}
 	}else{
-		$sql="select rutimapro from producto where codpro=$codpro";
+		$sql="select img from users where user_id=$user_id";
 		$result=mysqli_query($con,$sql);
 		$row=mysqli_fetch_array($result);
-		$rutimapro=$row['rutimapro'];
+		$img=$row['img'];
 
-		$sql="delete from producto
-		where codpro=$codpro";
+		$sql="delete from users
+		where user_id=$user_id";
 		$result=mysqli_query($con,$sql);
 		if ($result) {
 			$response->state=true;
 			//recuerda que debes redireccionar al nombre de proyecto correcto
 			// ejm: sistema-ecommerce-master
-			unlink("../moger/assets/products/".$rutimapro);
+			unlink("../ChatTReal/modelo/images/".$img);
 		}else{
 			$response->state=false;
 			$response->detail="No se puede eliminar el producto";
