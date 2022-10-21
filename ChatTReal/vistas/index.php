@@ -25,7 +25,7 @@
 
   <div class="c">
   <div class="wrapper" id="cajal">
-    <section class="form signup">
+    <section class="form signup" id="flex">
     <a class="volver" href="../../index.php"><img width="100%"src="../../img/flecha.png" alt="Volver"></a>
     <div class="cambiar">
     <a href="login.php">Inicia Sesion</a>
@@ -33,7 +33,7 @@
     <a class="current" href="index.php">Registrate</a>
     </div>
 
-      <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+      <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off" id="flex" style="flex-direction: column;">
         <div class="error-text" id="error"></div>
         <div class="field input" id="datos">
           <label>NOMBRE</label>

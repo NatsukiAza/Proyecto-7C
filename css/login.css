@@ -8,6 +8,16 @@
   display: flex;
 }
 
+
+
+#flex{
+  flex-direction: row ;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  width: 100%;
+}
+
 p{
   text-align: center;
   color: white;
@@ -27,7 +37,6 @@ p{
  	box-shadow: 0 0 128px 0 rgba(0,0,0,0.1), 0 32px 64px -25px rgba(0,0,0,0.5);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -113,11 +122,17 @@ p{
   color: #d1a4b2;
 }
 
+#b{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 #b input{
   border: 0;
   border-radius: 25px;
   padding: 10px 40px 10px 40px;
-  margin-right: 6%;
   box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
   color: white;
   font-weight: bold;
@@ -130,7 +145,6 @@ p{
 }
 
 #b a{
-  margin-left: 20.5%;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   color: #d1a4b2;
@@ -143,13 +157,12 @@ p{
   text-decoration: none !important;
 }
 
-.foto input{
+#foto input{
   display: none;
 }
 
 #foto{
   margin-top: -3%;
-  margin-left: 46%;
   border-radius: 50px;
   background-color: #f48fb1;
   padding: 9px;
@@ -168,8 +181,4 @@ p{
 .log{
   margin-top: -12.5% !important;
 }
-
-#esp{
-  font-size: 14px;
-  margin-left: 5.5%;
-}
+ 
