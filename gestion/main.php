@@ -68,7 +68,8 @@
 				<tbody>
 					<?php
 					$i = 0;
-						$sql="SELECT * from producto";
+					
+						$sql="SELECT * from producto where prodst<30";
 						$resultado=mysqli_query($con,$sql);
 						for ($i=0;$i<3;$i++)	 {
 						if ($row=mysqli_fetch_array($resultado)) {
