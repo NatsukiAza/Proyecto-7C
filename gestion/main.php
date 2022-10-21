@@ -57,11 +57,33 @@
 				<div class="tit">
 				</div>	
 				<h5 class="card-title">Productos con poco stock</h5>
-    			<h6 class="card-subtitle mb-2">Ejemplo</h6>
-    			<p class="card-text">Ejemplo</p>
-				<p class="card-text">Ejemplo</p>
-    			<div class="abajo">
-					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
+    			<table id="maldito" class="mt10">
+				<thead>
+					<tr>
+						<th style="text-align: center; width: 7%;">Código</th>
+						<th style="text-align: center; width: 15%">Nombre</th>
+						<th style="text-align: center; width: 4%">Stock</th>
+					</tr>
+				</thead>				
+				<tbody>
+					<?php
+					$i = 0;
+						$sql="SELECT * from producto";
+						$resultado=mysqli_query($con,$sql);
+						for ($i=0;$i<3;$i++)	 {
+						if ($row=mysqli_fetch_array($resultado)) {
+							echo 
+					'<tr>
+						<td class="gorod"; style="text-align: center;" id="rosa">'.$row['codpro'].'</td>
+						<td class="animals"; style="padding-left: 10px">'.$row['nompro'].'</td>
+						<td class="sendra"; style="padding-left: 10px">'.$row['prodst'].'</td>	
+						</td>
+					</tr>';
+						}}
+						
+					?>
+				</tbody>
+			</table>
 				</div>
   			</div>
 
