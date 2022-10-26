@@ -19,7 +19,10 @@
 }
 
 .c2{
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 /* fin de containers */
@@ -116,14 +119,21 @@
 /* productos */
 
 .products-list{
+	margin: 4% 0 2% 0;
 	display: table;
 	width: 47%;
+}
+
+.products-list2{
+	margin: 2% 0 2% 0;
+	display: table;
+	width: 90%;
 }
 
 .product-box{
 	display: inline-table;
 	padding: 10px;
-	width: 30%;
+	width: 33.33%;
 }
 .product-box a{
 	text-decoration: none;
@@ -144,6 +154,7 @@
 	border-radius: 10px 10px 0 0;
 }
 .detail-title{
+	margin-bottom: 10%;
 	padding: 5px;
 	text-align: center;
 	font-size: 18px;
@@ -361,10 +372,12 @@
 	margin-left: 5px;
 }
 .main-content{
+	display: flex;
+	justify-content: center;
 	width: 100%;
 }
 .content-page{
-	margin-top: 4%;
+	margin-top: 2.15%;
 	margin-bottom: 2%;
 	padding: 10px;
 	width: calc(100% - 20px);
@@ -373,21 +386,25 @@
 
 .content1 section{
 	display: flex;
-	background: #fff;
 }
 
 .content-page section{
+	justify-content: center;
 	display: flex;
-	background: #fff;
 }
 .part1{
-	padding: 10px;
+	padding: 50px;
 	width: calc(60% - 20px);
+	border-right: 1px solid #ddd;
 }
 .part2{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 3%;
 	padding: 10px;
 	width: calc(40% - 20px);
-	border-left: 1px solid #ddd;
+
 }
 .part1 img{
 	width: 100%;
@@ -421,6 +438,7 @@
 	font-size: 16px;
 }
 .title-section{
+	margin-top: 5%;
 	padding: 10px 0; 
 	font-size: 20px;
 	color: #666;

@@ -103,7 +103,6 @@
 								'<div class="product">'+
 									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
-									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
 								'</div>'+
 							'</a>'+

@@ -47,10 +47,10 @@
         </div>
 
         <div class="field image" id="foto">
-        <label>
+        <label for="file-input">
           <img width="100%" src="../../img/camera.png" alt="Foto">
         </label>
-          <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" require>
+          <input id="file-input" type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" require>
         </div>
 
         <div class="field button" id="b">

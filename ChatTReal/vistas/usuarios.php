@@ -26,6 +26,8 @@
 
   <?php include("navbar4.php"); ?>
 
+
+  <div id="c">
   <div class="wrapper">
     <section class="users">
       <header>
@@ -54,7 +56,7 @@
       </div>
     </section>
   </div>
-
+  </div>
   <?php include("footer4.php"); ?>
 
   <script src="../js/usuarios.js"></script>

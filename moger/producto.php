@@ -17,7 +17,8 @@
 	<title>Aromatic - Tienda</title>
 </head>
 <body>
-
+	
+	<div class="cubre"></div>
 	<?php include("navbar2.php"); ?>
 
 	<div class="main-content">
@@ -33,8 +34,12 @@
 					<button onclick="iniciar_compra()">Comprar</button>
 				</div>
 			</section>
+
 			<div class="title-section">Productos destacados</div>
-			<div class="products-list" id="space-list"></div>
+			<div class="c2">
+			<div class="products-list2" id="space-list"></div>
+			</div>
+
 		</div>
 	</div>
 
@@ -66,7 +71,6 @@
 								'<div class="product">'+
 									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
-									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
 								'</div>'+
 							'</a>'+
