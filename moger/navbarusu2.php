@@ -1,10 +1,10 @@
         <div class="esq">
         <a class="cereb" href="../index.php">Aromatic</a>
         <div class="braz">
-            <a href="moger/index.php">Tienda</a>
-            <a href="moger/pedido.php">Pedidos</a>
-            <a href="moger/historial.php">Historial</a>
-            <a href="ChatTReal/vistas/index.php">Chats</a>
+            <a href="index.php">Tienda</a>
+            <a href="pedido.php">Pedidos</a>
+            <a href="historial.php">Historial</a>
+            <a href="../ChatTReal/vistas/index.php">Chats</a>
         </div>
         
         <div class="pier">
@@ -19,6 +19,6 @@
     <div class="pata">
     
         <input type="search" name="barrab" class="barrab">
-        <button type="submit" class="lupita"> <img width="170%" src="img/lupa.png" alt="Buscar"> </button>
+        <button type="submit" class="lupita"> <img width="170%" src="../img/lupa.png" alt="Buscar"> </button>
     
     </div> 
