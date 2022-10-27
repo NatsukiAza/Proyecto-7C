@@ -1,9 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Oswald:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	max-width: 1920px;
 }
+
+#col{
+	display: flex;
+	flex-direction: column;
+}
+
+#anav{
+	width: 100%;
+	height: 53px;
+	background-color: #f48fb1;
+	display: flex;
+	align-items: center;
+}
+
+#anav a:first-child{
+	margin-left: 8%;
+}
+
+#anav a{
+	padding-right: 40px;
+	color: #000;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 500;
+	transition: 0.3s ease-in-out;
+}
+
+#anav a:hover{
+	color: #fff;
+}
+
+#main-container{
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+#tit{
+	padding-top: 24px;
+	padding-bottom: 24px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+#fc{
+	width: 90%;
+}
+
+#c{
+	border: 1px solid #dedfe0;
+	border-radius: 8px;
+}
+
+#mc{
+	padding: 16px;
+	width: 100%;
+	height: 40%;
+	background-color: #ffc1e3;
+}
+
+#bc{
+	justify-content: space-around;
+	padding: 16px;
+	display: flex;
+	flex-direction: row;
+}
+
+#mc h1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 15.6px;
+	margin-bottom: 3%;
+}
+
+#mc h2{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	padding-bottom: 4%;
+}
+
+#bc h1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+#bc h2{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	color: #74788d;
+}
+
+
 
 #c3{
 	width: 100%;
@@ -20,12 +115,7 @@
 }
 
 #g{
-	width: 90%;
-	min-height: 215px;
-	max-height: 215px;
-	padding: 38px;
-	border-radius: 50px;
-	box-shadow: rgba(42, 52, 61, 0.2) 0 4px 10px 4px;
+
 }
 
 #g h1{
@@ -37,9 +127,11 @@
 }
 
 #i{
+	min-height: 215px;
+    max-height: 215px;
 	width: 90%;
 	padding: 38px;
-	border-radius: 50px;
+	border-radius: 5px;
 	box-shadow: rgba(42, 52, 61, 0.2) 0 4px 10px 4px;
 }
 
@@ -62,14 +154,17 @@
 	margin-bottom: 4%;
 }
 
+#ini{
+	border: 0;
+}
+
+#ini thead{
+	background-color: white;
+}
+
 button{
 	padding: 10px;
 	cursor: pointer;
-}
-
-.main-container{
-	display: flex;
-	width: 100%;
 }
 
 .sidemenu{
@@ -133,102 +228,32 @@ button{
 	transition: 0.3s ease-in-out;
 }
 
-	.equis:hover{
-		color: white;
-	}
-
-	.chelo{
-		position: absolute;
-		margin-left: 0.6%;
-		color: #1E1014;
-		font-size: 30px;
-		cursor: pointer;
-		transition: 0.3s ease-in-out;
-	}
-
-	.chelo:hover{
-		color: #f48fb1;
-	}
-
-	/*Menù lateral*/
-	#btn-menu{
-		display: none;
-	}
-	.container-menu{
-		z-index: 1;
-		position: absolute;
-		width: 100%;
-		top: 0;left: 0;
-		transition: all 500ms ease;
-		opacity: 0;
-		visibility: hidden;
-	}
-	#btn-menu:checked ~ .container-menu{
-		opacity: 1;
-		visibility: visible;
-	}
-	.cont-menu{
-		z-index: 1;
-		border-right: 7px solid #bf5f82;
-		border-top-right-radius: 5%;
-		border-bottom-right-radius: 5%;
-		width: 100%;
-		max-width: 179px;
-		background: #f48fb1;
-		height: 100vh;
-		position: relative;
-		transition: all 500ms ease;
-		transform: translateX(-100%);
-	}
-	#btn-menu:checked ~ .container-menu .cont-menu{
-		transform: translateX(0%);
-	}
-	.cont-menu nav{
-		transform: translateY(15%);
-	}
-	.cont-menu nav a{
-		font-size: 18px;
-		display: block;
-		text-decoration: none;
-		padding: 20px;
-		color: #F5E9EF;
-		border-left: 5px solid transparent;
-		transition: all 400ms ease;
-	}
-	.cont-menu nav a:hover{
-		border-left: 5px solid #F5E9EF;
-		background: #bf5f82;
-	}
-
-
-
-
-.mt10{
-	margin-top: 10px;
-}
-
 .body-page{
 	width: calc(100% - 200px);
 	height: 100%;
 	padding: 10px;
 }
-table{
-	width: 100%;
-	border-collapse: collapse;
-}
 
-table tbody tr{	
+#maldito tbody tr{	
 	color: #121619;
 	background-color: #ffc1e3;
 }
 
-th,td{
+#maldito{
+	border: 1px solid black !important;
+	width: 100%;
+	border: 0;
+	margin-top: 2.3% !important;
+}
+
+#maldito th, #maldito td{
+	border-right: 1px solid #121619;
 	padding: 5px;
-	border: 1px solid #121619;
 }
 
 
-th{
+#maldito th{
+	border-right: 0 !important;
 	border-bottom: 1px solid #121619 !important;
 	background: #f48fb1;
 	color: #F5E9EF;
@@ -318,11 +343,6 @@ select{
 
 #minib:hover{
 	background-color: #ffc1e3;
-}
-
-#maldito{
-	border: 1px solid;
-	margin-top: 2.3% !important;
 }
 
 .cuadritosnashei{

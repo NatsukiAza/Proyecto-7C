@@ -17,31 +17,44 @@
 </head>
 <body>
 
-	<div class="main-container">
+<?php include("layout/_directorios.php"); ?>
 
-		<?php include("layout/_directorios.php"); ?>
+<div id="main-container">
 
-		<div class="sidemenu">
-
-			<div class="foto">
-				<img width="100%" src="../img/usericon.png" alt="Icono">
-				<h5 style="padding-top: 10px;" >Administrador</h5>
-			</div>
-
-			<div class="mensajes">
-			<a href="" class="nvmsg">Nuevos Mensajes</a>
-			</div>
-
-		</div>
+	<h1 id="tit">PANEL DE CONTROL</h1>
 
 		<div id="c3">
 
-			<div id="s">
-			<div id="g">
-				<h1 class="card-title">Grafico de ventas hechas</h1>
+			<div id="fc">
+
+			<div id="c">
+
+				<div id="mc">
+					<h1>Bienvenida de vuelta !</h1>
+					<h2>Panel del administrador</h2>
+				</div>
+
+				<div id="bc">
+					<div id="col">
+						<img src="" alt="">
+						<h1 id="esp">Administrador</h1>
+					</div>
+
+					<div id="col">
+						<h1>Numero</h1>
+						<h2>Productos</h2>
+					</div>
+
+					<div id="col">
+						<h1>$Numero</h1>
+						<h2>Ingresos</h2>
+					</div>
+
+				</div>
+
   			</div>
 
-			<div id="i">
+			<div id="c">
 				<h5 class="card-title">Ventas Hechas</h5>
     			<h6 class="card-subtitle mb-2">Ejemplo</h6>
     			<p class="card-text">Ejemplo</p>
@@ -50,14 +63,15 @@
 					<span><a href="historial.php" class="card-link">Ver mas</a></span>
 				</div>
 			</div>
+
 			</div>
 
+
 			<div id="s">
+
 			<div id="i">
-				<div class="tit">
-				</div>	
 				<h5 class="card-title">Productos con poco stock</h5>
-    			<table id="maldito" class="mt10">
+    			<table id="ini">
 				<thead>
 					<tr>
 						<th style="text-align: center; width: 7%;">Código</th>
@@ -84,9 +98,8 @@
 						
 					?>
 				</tbody>
-			</table>
-				</div>
-  			</div>
+				</table>
+			</div>
 
 			<div id="i">
 				<h5 class="card-title">Ventas realizadas en el Mes</h5>
@@ -123,7 +136,6 @@
   			</div>
 			</div>
 		</div>
-
 
 	</div>
 
