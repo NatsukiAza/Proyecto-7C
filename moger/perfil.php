@@ -23,92 +23,52 @@
 
 <div class="cubre"></div>
   <?php include("navbar2.php"); 
-  $sql="SELECT * from users where $unique_id = unique_id";
-  $resultado=mysqli_query($con,$sql);
-  while ($row=mysqli_fetch_array($resultado)) {
-	   
-  echo 
-  '<div class="c1">
-
-	<div class="pan">
-		<h2>Hola,</h2>
-		<h1>Usuario</h1>
-		<img width="50%" src="../img/usericon.png" alt="foto">
-
-		<a href="perfil.php">Datos personales</a>
-		<a href="historial.php">Compras realizadas</a>
-		<a href="">Cerrar Sesión</a>
-	</div>
-	<?php
-	<div class="dat">
-
-		<h1>Datos Personales</h1>
-		<div class="ci">
-			<button>Editar</button>
-			<h2>Informacion Personal</h2>
-			<h3>'.$row['user_id'].'</h3>	
-			<h5>Av. Larrazabal 483</h5>	
-			<h5>Liniers, CABA, 1408</h5>	
-		</div>
-
-		<div class=ci>
-			<button>Editar</button>
-			<h2>Opciones de contacto</h2>
-			<h6>Dejanos saber la mejor opcion para contactarte</h6>
-			<h4>E-Mail</h4>
-			<h5>Juanperezdebarradas@gmail.com</h5>	
-			<h4>Celular</h4>
-			<h5>+54 11 5506-8746</h5>	
-		</div>
-
-		<div class=ci>
-			<button>Editar</button>
-			<h2>Contraseña y seguridad</h2>
-			<h6>Administra tu configuracion de inicio de sesion y de seguridad</h6>
-		</div>
-
-		<div class=ci>
-			<button id="eliminar">Eliminar</button>
-			<h2>Eliminar mi perfil</h2>
-			<h6>Proceder va a eliminar los datos de tu perfil</h6>
-		</div>
-		
-	</div>
-	</div>
-	<table id="maldito" class="mt10">
-	<div class="main-container">
-	
-		<div class="body-page">
-			<h2 style="text-align: center; margin-top: 1.7%; color: #bf5f82;"><b>Cuentas de usuario</b></h2>
-			<input id="searchbar" onkeyup="search_animal()" type="text"
-        name="search" placeholder="Buscar un producto"></li>
-			<table id="maldito" class="mt10">
-				<thead>
-					<tr>
-						<th style="text-align: center; width: 10%;">Codigo usuario</th>
-						<th style="text-align: center; width: 15%">ID Usuario</th>
-						<th style="text-align: center;">Nombre</th>
-						<th style="text-align: center; width: 20%">Apellido</th>
-						<th style="text-align: center; width: 20%">email</th>
-						<th style="text-align: center; width: 3%" class="td-option">Opciones</th>
-					</tr>
-				</thead>				
-				<tbody>
-					
-						
-					<tr>
-						<td class="gorod"; style="text-align: center;" id="rosa">'.$row['user_id'].'</td>
-						<td class="animals"; style="padding-left: 10px">'.$row['unique_id'].'</td>
-						<td class="krovi"; style="padding-left: 10px" id="rosa">'.$row['fname'].'</td>
-						<td class="der"; style="padding-left: 10px">'.$row['lname'].'</td>
-						<td class="sendra"; style="padding-left: 10px">'.$row['email'].'</td>
-						<td class="zetsubo"; style="padding-left: 11px" id="rosa" class="td-option">
-							<div class="revelation"; style="margin-right: 0%;" class="div-flex div-td-button">
-								<button class="nuketon"; id="minib" onclick="delete_usuario('.$row['user_id'].')"><i class="fa fa-trash" aria-hidden="true"></i></button>
-							</div>
-						</td>
-					</tr>';
-						}
+  if (!isset($_SESSION['unique_id'])) {
+	header('location: index.php');
+}
+else{
+	$sql="SELECT * from users where $unique_id = unique_id";
+	$resultado=mysqli_query($con,$sql);
+	while ($row=mysqli_fetch_array($resultado)) {
+		 
+	echo 
+	'<div class="c1">
+  
+	  <div class="pan">
+		  <h2>Hola,</h2>
+		  <h1>Usuario</h1>
+		  <img width="50%" src="../img/usericon.png" alt="foto">
+  
+		  <a href="perfil.php">Datos personales</a>
+		  <a href="historial.php">Compras realizadas</a>
+		  <a href="">Cerrar Sesión</a>
+	  </div>
+	  <?php
+	  <div class="dat">
+  
+		  <h1>Datos Personales</h1>
+		  <div class="ci">
+			  <button>Editar</button>
+			  <h2>Informacion Personal</h2>
+			  <h3>'.$row['fname'].'</h3>	
+			  <h5>'.$row['lname'].'</h5>	
+		  </div>
+  
+		  <div class=ci>
+			  <h4>E-Mail</h4>
+			  <h5>'.$row['email'].'</h5>	
+		  </div>
+  
+		  <div class=ci>
+			  <button id="eliminar">Eliminar</button>
+			  <h2>Eliminar mi perfil</h2>
+			  <h6>Proceder va a eliminar los datos de tu perfil</h6>
+		  </div>
+		  
+	  </div>
+	  </div>';
+						  }}
+  
 					?>
 				</tbody>
 			</table>
