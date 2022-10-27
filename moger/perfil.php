@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	$unique_id=$_SESSION['unique_id'];
+	include('servicios/_conexion.php');	
 ?>
 	<!DOCTYPE html>
 	<html>
@@ -21,9 +22,13 @@
 <body>
 
 <div class="cubre"></div>
-  <?php include("navbar2.php"); ?>
-
-	<div class="c1">
+  <?php include("navbar2.php"); 
+  $sql="SELECT * from users where $unique_id = unique_id";
+  $resultado=mysqli_query($con,$sql);
+  while ($row=mysqli_fetch_array($resultado)) {
+	   
+  echo 
+  '<div class="c1">
 
 	<div class="pan">
 		<h2>Hola,</h2>
@@ -31,18 +36,17 @@
 		<img width="50%" src="../img/usericon.png" alt="foto">
 
 		<a href="perfil.php">Datos personales</a>
-		<a href="favoritos.php">Mis favoritos</a>
 		<a href="historial.php">Compras realizadas</a>
 		<a href="">Cerrar Sesión</a>
 	</div>
-
+	<?php
 	<div class="dat">
 
 		<h1>Datos Personales</h1>
 		<div class="ci">
 			<button>Editar</button>
 			<h2>Informacion Personal</h2>
-			<h3>Juan Perez de Barradas</h3>	
+			<h3>'.$row['user_id'].'</h3>	
 			<h5>Av. Larrazabal 483</h5>	
 			<h5>Liniers, CABA, 1408</h5>	
 		</div>
@@ -71,10 +75,82 @@
 		
 	</div>
 	</div>
+	<table id="maldito" class="mt10">
+	<div class="main-container">
+	
+		<div class="body-page">
+			<h2 style="text-align: center; margin-top: 1.7%; color: #bf5f82;"><b>Cuentas de usuario</b></h2>
+			<input id="searchbar" onkeyup="search_animal()" type="text"
+        name="search" placeholder="Buscar un producto"></li>
+			<table id="maldito" class="mt10">
+				<thead>
+					<tr>
+						<th style="text-align: center; width: 10%;">Codigo usuario</th>
+						<th style="text-align: center; width: 15%">ID Usuario</th>
+						<th style="text-align: center;">Nombre</th>
+						<th style="text-align: center; width: 20%">Apellido</th>
+						<th style="text-align: center; width: 20%">email</th>
+						<th style="text-align: center; width: 3%" class="td-option">Opciones</th>
+					</tr>
+				</thead>				
+				<tbody>
+					
+						
+					<tr>
+						<td class="gorod"; style="text-align: center;" id="rosa">'.$row['user_id'].'</td>
+						<td class="animals"; style="padding-left: 10px">'.$row['unique_id'].'</td>
+						<td class="krovi"; style="padding-left: 10px" id="rosa">'.$row['fname'].'</td>
+						<td class="der"; style="padding-left: 10px">'.$row['lname'].'</td>
+						<td class="sendra"; style="padding-left: 10px">'.$row['email'].'</td>
+						<td class="zetsubo"; style="padding-left: 11px" id="rosa" class="td-option">
+							<div class="revelation"; style="margin-right: 0%;" class="div-flex div-td-button">
+								<button class="nuketon"; id="minib" onclick="delete_usuario('.$row['user_id'].')"><i class="fa fa-trash" aria-hidden="true"></i></button>
+							</div>
+						</td>
+					</tr>';
+						}
+					?>
+				</tbody>
+			</table>
+			<hr>
+		</div>
+	</div>
 
 	<?php include("footer2.php"); ?>
 	
-	
+	<script type="text/javascript">
+		function show_modal(id){
+			document.getElementById(id).style.display="block";
+		}
+		function hide_modal(id){
+			document.getElementById(id).style.display="none";
+		}
+		function delete_usuario(user_id){
+			var c=confirm("Estas seguro de eliminar el producto de codigo "+user_id+"?");
+			if (c) {
+				let fd=new FormData();
+				fd.append('user_id',user_id);
+				let request=new XMLHttpRequest();
+				request.open('POST','api/delete_product.php',true);
+				request.onload=function(){
+					if (request.readyState==4 && request.status==200) {
+						let response=JSON.parse(request.responseText);
+						console.log(response);
+						if (response.state) {
+							alert("Producto eliminado");
+							window.location.reload();
+						}else{
+							alert(response.detail);
+						}
+					}
+				}
+				request.send(fd);
+			}
+		}
+
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="animals.js"></script>
 	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	</body>
 </html>

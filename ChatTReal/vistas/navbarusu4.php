@@ -4,14 +4,13 @@
             <a href="../../moger/index.php">Tienda</a>
             <a href="../../moger/pedido.php">Pedidos</a>
             <a href="../../moger/historial.php">Historial</a>
-            <a href="index.php">Chats</a>
-            <a href="../../gestion/index.php">Gestion</a>
+            <a href="index.php">Chats</a> 
         </div>
         
         <div class="pier">
     
-            <a href="moger/carrito.php"><img height="30%" src="../../img/carritob.png" alt="Carrito"></a>
-            <a href="moger/perfil.php"><img height="30%" src="../../img/usericon3.png" alt="Usuario"></a>
+            <a href="../../moger/carrito.php"><img height="30%" src="../../img/carritob.png" alt="Carrito"></a>
+            <a href="../../moger/perfil.php"><img height="30%" src="../../img/usericon3.png" alt="Usuario"></a>
     
         </div>
     </div>
