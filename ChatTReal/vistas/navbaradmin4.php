@@ -10,8 +10,8 @@
         
         <div class="pier">
     
-            <a href="moger/carrito.php"><img height="30%" src="../../img/carritob.png" alt="Carrito"></a>
-            <a href="moger/perfil.php"><img height="30%" src="../../img/usericon3.png" alt="Usuario"></a>
+            <a href="../../moger/carrito.php"><img height="30%" src="../../img/carritob.png" alt="Carrito"></a>
+            <a href="../../moger/perfil.php"><img height="30%" src="../../img/usericon3.png" alt="Usuario"></a>
     
         </div>
     </div>

@@ -1,26 +1,9 @@
-<div class="esq">
-    
-    <a class="cereb" href="../index.php">Aromatic</a>
-
-    <div class="braz">
-        <a href="../moger/index.php">Tienda</a>
-        <a href="../moger/pedido.php">Pedidos</a>
-        <a href="../moger/historial.php">Historial</a>
-        <a href="../ChatTReal/vistas/index.php">Chats</a>
-    </div>
-    
-    <div class="pier">
-
-        <a href="../moger/carrito.php"><img height="30%" src="../img/carrito.png" alt="Carrito"></a>
-        <a href="../moger/perfil.php"><img height="30%" src="../img/usericon2.png" alt="Usuario"></a>
-
-    </div>
-</div>
-
-
-<div class="pata">
-
-    <input type="search" name="barrab" class="barrab">
-    <button type="submit" class="lupita"> <img width="170%" src="../img/lupa.png" alt="Buscar"> </button>
-
-</div>
+<?php 
+    $unique_id=$_SESSION['unique_id'];
+    if(336153552==$unique_id){  
+        include("navbaradmin3.php");
+    }
+    else{
+        include("navbarusu3.php");
+    }
+  ?>
