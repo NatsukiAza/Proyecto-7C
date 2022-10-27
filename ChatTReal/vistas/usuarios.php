@@ -24,8 +24,8 @@
 
 <body>
 
+  <div class="cubre"></div>
   <?php include("navbar4.php"); ?>
-
 
   <div id="c">
   <div class="wrapper">

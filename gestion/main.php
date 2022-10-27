@@ -36,8 +36,8 @@
 
 				<div id="bc">
 					<div id="col">
-						<img src="" alt="">
-						<h1 id="esp">Administrador</h1>
+						<img width="65px" src="../img/usericon.png" alt="fotousuario">
+						<h1>Administrador</h1>
 					</div>
 
 					<div id="col">
@@ -55,20 +55,56 @@
   			</div>
 
 			<div id="c">
-				<h5 class="card-title">Ventas Hechas</h5>
-    			<h6 class="card-subtitle mb-2">Ejemplo</h6>
-    			<p class="card-text">Ejemplo</p>
-				<p class="card-text">Ejemplo</p>
-				<div class="abajo">
-					<span><a href="historial.php" class="card-link">Ver mas</a></span>
+				<div id="p">
+					<h5 class="card-title">Ventas Hechas</h5>
+    				<h6 class="card-subtitle mb-2">Ejemplo</h6>
+    				<p class="card-text">Ejemplo</p>
+					<p class="card-text">Ejemplo</p>
+					<div class="abajo">
+						<span><a href="historial.php" class="card-link">Ver mas</a></span>
+					</div>
 				</div>
 			</div>
 
 			</div>
 
-
 			<div id="s">
 
+			<div id="r">
+
+				<div id="c2">
+					<h1>Ventas</h5>
+    				<h2>Numero</h6>
+  				</div>
+
+				<div id="c2">
+					<h1>Ventas</h5>
+    				<h2>Numero</h6>
+  				</div>
+
+				<div id="c2">
+					<h1>Ventas</h5>
+    				<h2>Numero</h6>
+				</div>
+
+			</div>
+
+
+			<div id="c4">
+				<h1>Ventas</h5>
+    			<h2>Numero</h6>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
+
+						<!--
 			<div id="i">
 				<h5 class="card-title">Productos con poco stock</h5>
     			<table id="ini">
@@ -80,7 +116,7 @@
 					</tr>
 				</thead>				
 				<tbody>
-					<?php
+				<?php
 					$i = 0;
 					
 						$sql="SELECT * from producto where prodst<30";
@@ -101,45 +137,4 @@
 				</table>
 			</div>
 
-			<div id="i">
-				<h5 class="card-title">Ventas realizadas en el Mes</h5>
-    			<h6 class="card-subtitle mb-2">Ejemplo</h6>
-    			<p class="card-text">Ejemplo</p>
-				<p class="card-text">Ejemplo</p>
-    			<div class="abajo">
-					<span><a href="historial.php" class="card-link">Ver mas</a></span>
-				</div>
-  			</div>
-			</div>
-
-		<div id="s">
-			<div id="i">
-				<div class="tit">
-				</div>	
-				<h5 class="card-title">Productos con poco stock</h5>
-    			<h6 class="card-subtitle mb-2">Ejemplo</h6>
-    			<p class="card-text">Ejemplo</p>
-				<p class="card-text">Ejemplo</p>
-    			<div class="abajo">
-					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
-				</div>
-  			</div>
-
-			<div id="i">
-				<h5 class="card-title">Ventas realizadas en el Mes</h5>
-    			<h6 class="card-subtitle mb-2">Ejemplo</h6>
-    			<p class="card-text">Ejemplo</p>
-				<p class="card-text">Ejemplo</p>
-    			<div class="abajo">
-					<span><a href="pedidos.php" class="card-link">Ver mas</a></span>
-				</div>
-  			</div>
-			</div>
-		</div>
-
-	</div>
-
-	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
-</html>
+			-->
