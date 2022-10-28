@@ -82,6 +82,22 @@
 	padding: 20px;
 }
 
+#c5{
+	height: 197px;
+	margin-right: 24px;
+	margin-bottom: 24px;
+	border: 1px solid #dedfe0;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+#c5 h1{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15.6px;
+    color: #74788d;
+}
+
 #c4{
 	height: 287px;
 	width: 96.9% !important	;
@@ -222,14 +238,6 @@
 	margin-bottom: 4%;
 }
 
-#ini{
-	border: 0;
-}
-
-#ini thead{
-	background-color: white;
-}
-
 .body-page{
 	width: calc(100% - 200px);
 	height: 100%;
@@ -261,7 +269,22 @@
 	font-weight: 600;
 }
 
+#tini{
+	text-align: center;
+	margin-left: 15%;
+	margin-top: 10%;
+}
 
+#tini th, #tini td{
+	font-size: 13px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+
+#tini th{
+	width: 50%;
+	font-weight: 600;
+}
 
 .td-option{
 	width: 60px;
