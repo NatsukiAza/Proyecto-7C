@@ -5,7 +5,7 @@
 <html>
 <head>
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -17,8 +17,6 @@
 	<title>Aromatic - Panel de control</title>
 </head>
 <body>
-
-<?php include("navbar3.php"); ?>
 
 	<div class="modal" id="modal-producto" style="display: none;">
 		<div class="body-modal">
@@ -93,13 +91,27 @@
 			<button onclick="update_producto()">Actualizar</button>
 		</div>
 	</div>
-	<div class="main-container">
+
+
+
+
 		<?php include("layout/_directorios.php"); ?>
-		<div class="body-page">
-			<h2 style="text-align: center; margin-top: 1.7%; color: #bf5f82;"><b>Mis productos</b></h2>
-			<input id="searchbar" onkeyup="search_animal()" type="text"
+
+
+		<div id="main-container">
+
+		<h1 id="tit">PANEL DE CONTROL</h1>
+
+		<div id="tabla">
+	
+		<div id="row">
+		<h1>PRODUCTOS</h1>
+		<input id="searchbar" onkeyup="search_animal()" type="text"
         name="search" placeholder="Buscar un producto"></li>
-			<table id="maldito" class="mt10">
+		</div>
+
+
+			<table id="maldito">
 				<thead>
 					<tr>
 						<th style="text-align: center; width: 7%;">Código</th>
@@ -133,8 +145,9 @@
 					?>
 				</tbody>
 			</table>
-			<hr>
+
 			<button class="agregar" onclick="show_modal('modal-producto')">Agregar nuevo</button>
+		
 		</div>
 	</div>
 

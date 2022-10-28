@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -17,23 +17,25 @@
 </head>
 <body>
 
-<?php include("navbar3.php"); ?>
+<?php include("layout/_directorios.php"); ?>
 
-	<div class="main-container">
-		<?php include("layout/_directorios.php"); ?>
-		<div class="body-page">
-			<h2 style="text-align: center; margin-top: 1.7%;">Inicio / Pendientes de despacho</h2>
-			<table id="maldito" class="mt10">
+	<div id="main-container">
+
+	<h1 id="tit">PANEL DE CONTROL</h1>
+
+		<div id="tabla">
+			<h1>PEDIDOS</h1>
+			<table id="maldito">
 				<thead>
 					<tr>
-						<th style="text-align: center; width: 6%;">Código</th>
-						<th style="text-align: center; width: 15%;">Usuario</th>
-						<th style="text-align: center; width: 20%;">Producto</th>
-						<th style="text-align: center; width: 15%;">Fecha</th>
-						<th style="text-align: center; width: 9%;">Estado</th>
-						<th style="text-align: center; width: 12%;">Dirección</th>
-						<th style="text-align: center;">Teléfono</th>
-						<th style="text-align: center; width: 6%;">Opciones</th>
+						<th style="width: 6%;">Código</th>
+						<th style="width: 15%;">Usuario</th>
+						<th style="width: 20%;">Producto</th>
+						<th style="width: 15%;">Fecha</th>
+						<th style="width: 9%;">Estado</th>
+						<th style="width: 12%;">Dirección</th>
+						<th>Teléfono</th>
+						<th style="width: 6%;">Opciones</th>
 					</tr>
 				</thead>				
 				<tbody>
@@ -86,7 +88,7 @@
 				</tbody>
 			</table>
 		</div>
-	</div>
+		</div>
 
 	<?php include("footer3.php"); ?>
 

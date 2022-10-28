@@ -83,6 +83,7 @@
 }
 
 #c4{
+	height: 287px;
 	width: 96.9% !important	;
 	margin-right: 24px;
 	margin-bottom: 24px;
@@ -175,16 +176,25 @@
 	font-size: 19.5px;
 }
 
-#g{
-
+#tabla{
+	width: 100%;
+	border: 1px solid #dedfe0;
+	border-radius: 8px;
+	padding: 20px;	
+	margin-bottom: 5%;
 }
 
-#g h1{
-	font-size: 20px;
+#tabla h1{
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 24px;
+	font-family: 'Poppins', sans-serif;
 }
 
-#g:first-child{
-	margin-bottom: 10%;
+#row{
+	display: flex;
+	align-items: baseline;
+    justify-content: space-between;
 }
 
 #i{
@@ -220,72 +230,6 @@
 	background-color: white;
 }
 
-button{
-	padding: 10px;
-	cursor: pointer;
-}
-
-.sidemenu{
-	width: 15%;
-	height: 100vh;
-	border-right: 7px solid #f48fb1;
-	border-bottom-right-radius: 5%;
-	border-top-right-radius: 5%;
-	background-color: #e9cedc ;
-}
-
-.foto{
-	margin-left: 20%;
-	margin-top: 15%;
-	width: 60%;
-}
-
-.foto h5{
-	margin-left: -12px;
-	text-align: center;
-	font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
-}
-
-.mensajes{
-	margin: 10%;
-	height: 66%;
-	width: 80%;
-	background-color: #F5E9EF;
-	border: 2px solid #121619;
-	border-radius: 20px;
-}
-
-.nvmsg{
-	z-index: 0;
-	margin-top: -0.3%;
-	padding: 8px 0 0 0;
-	text-align: center;
-	position: absolute;
-	font-size: 13px;
-	color: #F5E9EF ;
-	width: 136px;
-	height: 5%;
-	background-color: #121619;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	transition: 0.2s ease-in-out;
-}
-
-.nvmsg:hover{
-	color: #f48fb1;
-	font-size: 14px;
-}
-
-.equis{
-	position: absolute;
-	margin-top: -188%;
-	margin-left: 80%;
-	color: #1E1014;
-	font-size: 20px;
-	cursor: pointer;
-	transition: 0.3s ease-in-out;
-}
-
 .body-page{
 	width: calc(100% - 200px);
 	height: 100%;
@@ -294,28 +238,31 @@ button{
 
 #maldito tbody tr{	
 	color: #121619;
-	background-color: #ffc1e3;
 }
 
 #maldito{
-	border: 1px solid black !important;
 	width: 100%;
 	border: 0;
-	margin-top: 2.3% !important;
 }
 
 #maldito th, #maldito td{
-	border-right: 1px solid #121619;
-	padding: 5px;
+	text-align: center;
+	padding: 12px;
+	border-bottom: 1px solid #eff2f7;
+	font-size: 13px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
 }
-
 
 #maldito th{
 	border-right: 0 !important;
-	border-bottom: 1px solid #121619 !important;
-	background: #f48fb1;
-	color: #F5E9EF;
+	border-color: #d7dade !important;
+	background-color: #eff2f7;
+	font-weight: 600;
 }
+
+
+
 .td-option{
 	width: 60px;
 }

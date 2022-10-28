@@ -90,7 +90,7 @@
 			</div>
 
 
-			<div id="c4">
+			<div id="c4"> 
 				<h1>Ventas</h5>
     			<h2>Numero</h6>
 			</div>

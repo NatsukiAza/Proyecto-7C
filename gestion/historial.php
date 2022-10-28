@@ -17,23 +17,27 @@
 </head>
 <body>
 
-<?php include("navbar3.php"); ?>
-
-	<div class="main-container">
 		<?php include("layout/_directorios.php"); ?>
-		<div class="body-page">
-			<h2 style="text-align: center; margin-top: 1.7%;">Historial de ventas</h2>
-			<table id="maldito" class="mt10">
+
+		<div id="main-container">
+
+		<h1 id="tit">PANEL DE CONTROL</h1>
+
+		<div id="tabla">
+
+		<h1>HISTORIAL</h1>
+
+			<table id="maldito">
 				<thead>
 					<tr>
-						<th style="text-align: center; width: 6%;">Código</th>
-						<th style="text-align: center; width: 15%;">Usuario</th>
-						<th style="text-align: center; width: 20%;">Producto</th>
-						<th style="text-align: center; width: 15%;">Fecha</th>
-						<th style="text-align: center; width: 9%;">Estado</th>
-						<th style="text-align: center; width: 12%;">Dirección</th>
-						<th style="text-align: center;">Teléfono</th>
-						<th style="text-align: center; width: 6%;">Opciones</th>
+						<th style="width: 6%;">Código</th>
+						<th style="width: 15%;">Usuario</th>
+						<th style="width: 20%;">Producto</th>
+						<th style="width: 15%;">Fecha</th>
+						<th style="width: 9%;">Estado</th>
+						<th style="width: 12%;">Dirección</th>
+						<th>Teléfono</th>
+						<th style="width: 6%;">Opciones</th>
 					</tr>
 				</thead>				
 				<tbody>

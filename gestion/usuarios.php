@@ -18,8 +18,6 @@
 </head>
 <body>
 
-<?php include("navbar3.php"); ?>
-
 	<div class="modal" id="modal-producto" style="display: none;">
 		<div class="body-modal">
 			<button class="btn-close" onclick="hide_modal('modal-producto')"><i class="fa fa-times" aria-hidden="true"></i></button>
@@ -93,17 +91,28 @@
 			<button onclick="update_producto()">Actualizar</button>
 		</div>
 	</div>
-	<div class="main-container">
+
+
+
+
 		<?php include("layout/_directorios.php"); ?>
-		<div class="body-page">
-			<h2 style="text-align: center; margin-top: 1.7%; color: #bf5f82;"><b>Cuentas de usuario</b></h2>
-			<input id="searchbar" onkeyup="search_animal()" type="text"
-        name="search" placeholder="Buscar un producto"></li>
-			<table id="maldito" class="mt10">
+
+		<div id="main-container">
+
+		<h1 id="tit">PANEL DE CONTROL</h1>
+
+		<div id="tabla">
+
+		<div id="row">
+		<h1>USUARIO</h1>
+		<input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Buscar un producto"></li>
+		</div>
+
+			<table id="maldito">
 				<thead>
 					<tr>
-						<th style="text-align: center; width: 10%;">Codigo usuario</th>
-						<th style="text-align: center; width: 15%">ID Usuario</th>
+						<th style="text-align: center; width: 10%;">Codigo</th>
+						<th style="text-align: center; width: 15%">ID</th>
 						<th style="text-align: center;">Nombre</th>
 						<th style="text-align: center; width: 20%">Apellido</th>
 						<th style="text-align: center; width: 20%">email</th>
@@ -132,7 +141,6 @@
 					?>
 				</tbody>
 			</table>
-			<hr>
 		</div>
 	</div>
 
