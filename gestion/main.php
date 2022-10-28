@@ -95,8 +95,20 @@
 
 				<div id="c2">
 					<h1>Ventas</h5>
-    				<h2>Numero</h6>
+					<?php 
+					
+					$pog="SELECT count(estado) as amogus FROM table aromatic_data_base where estado=5";
+						$consultas = mysqli_query($con, $pog);
+						if(mysqli_num_rows($consultas)>0)	
+							{
+								$consultas = mysqli_query($con, $pog);
+							}
+
+				
+					echo ('<h1>' . $consultas['amogus'] . '</h1>');
+					?>
   				</div>
+				  
 
 				<div id="c2">
 					<h1>Ventas</h5>
@@ -153,4 +165,43 @@
 	<script type="text/javascript" src="../ChatTReal/js/jquery-3.4.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
+<<<<<<< Updated upstream
 </html>
+=======
+</html>
+
+						
+			<div id="i">
+				<h5 class="card-title">Productos con poco stock</h5>
+    			<table id="ini">
+				<thead>
+					<tr>
+						<th style="text-align: center; width: 7%;">Código</th>
+						<th style="text-align: center; width: 15%">Nombre</th>
+						<th style="text-align: center; width: 4%">Stock</th>
+					</tr>
+				</thead>				
+				<tbody>
+				<?php
+					$i = 0;
+					
+						$sql="SELECT * from producto where prodst<30";
+						$resultado=mysqli_query($con,$sql);
+						for ($i=0;$i<3;$i++)	 {
+						if ($row=mysqli_fetch_array($resultado)) {
+							echo 
+					'<tr>
+						<td class="gorod"; style="text-align: center;" id="rosa">'.$row['codpro'].'</td>
+						<td class="animals"; style="padding-left: 10px">'.$row['nompro'].'</td>
+						<td class="sendra"; style="padding-left: 10px">'.$row['prodst'].'</td>	
+						</td>
+					</tr>';
+						}}
+						
+					?>
+				</tbody>
+				</table>
+			</div>
+
+	
+>>>>>>> Stashed changes
