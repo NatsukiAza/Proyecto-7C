@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
     <link rel="stylesheet" type="text/css" href="../css/queries.css">
+	<link rel="stylesheet" href="../css/chat.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
@@ -123,14 +124,14 @@
 						$resultado=mysqli_query($con,$sql);
 						$pofavo2 = mysqli_fetch_row($resultado);
 						
-						$fechadevencimiento = date("n")+1;
+						$fechadevencimiento = date("n");
 						$hoy = date("n"); 
 						
 						if($hoy != $fechadevencimiento){
 							$pofavo2[0]=0;
 						}
 					echo 
-					'<h2>'.$pofavo2[0].' and '.$fechadevencimiento.' and '.$hoy.'</h2>'
+					'<h2>'.$pofavo2[0].'</h2>'
 					?>
   				</div>
 
