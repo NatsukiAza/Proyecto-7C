@@ -5,5 +5,5 @@
 	<a href="productos.php">Productos</a></li>
 	<a href="historial.php">Historial</a></li>
 	<a href="usuarios.php">Usuarios</a></li>
-	<a href="index.php">Salir</a></li>
+	<a href="../index.php">Salir</a></li>
 </div>

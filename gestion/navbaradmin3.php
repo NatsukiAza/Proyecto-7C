@@ -5,7 +5,7 @@
             <a href="../moger/pedido.php">Pedidos</a>
             <a href="../moger/historial.php">Historial</a>
             <a href="../ChatTReal/vistas/index.php">Chats</a>
-            <a href="../gestion/index.php">Gestion</a>
+            <a href="../gestion/main.php">Gestion</a>
         </div>
         
         <div class="pier">
@@ -19,7 +19,7 @@
     
     <div class="pata">
     
-        <input type="search" name="barrab" class="barrab">
-        <button type="submit" class="lupita"> <img width="170%" src="img/lupa.png" alt="Buscar"> </button>
+         <!-- <input type="search" name="barrab" class="barrab">
+        <button type="submit" class="lupita"> <img width="170%" src="img/lupa.png" alt="Buscar"> </button> -->
     
     </div> 

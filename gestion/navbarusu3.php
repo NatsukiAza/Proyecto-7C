@@ -18,7 +18,7 @@
     
     <div class="pata">
     
-        <input type="search" name="barrab" class="barrab">
-        <button type="submit" class="lupita"> <img width="170%" src="img/lupa.png" alt="Buscar"> </button>
+         <!-- <input type="search" name="barrab" class="barrab">
+        <button type="submit" class="lupita"> <img width="170%" src="img/lupa.png" alt="Buscar"> </button> -->
     
     </div> 

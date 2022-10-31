@@ -124,14 +124,14 @@
 						$resultado=mysqli_query($con,$sql);
 						$pofavo2 = mysqli_fetch_row($resultado);
 						
-						$fechadevencimiento = date("n")+1;
+						$fechadevencimiento = date("n");
 						$hoy = date("n"); 
 						
 						if($hoy != $fechadevencimiento){
 							$pofavo2[0]=0;
 						}
 					echo 
-					'<h2>'.$pofavo2[0].' and '.$fechadevencimiento.' and '.$hoy.'</h2>'
+					'<h2>'.$pofavo2[0].'</h2>'
 					?>
   				</div>
 
