@@ -1,5 +1,7 @@
 <?php
 	session_start();
+	include('servicios/_conexion.php');	
+	include_once "../ChatTReal/modelo/config.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,7 +21,8 @@
 <body>
 
 	<div class="cubre"></div>
-	<?php include("navbar2.php"); ?>
+	<?php include("navbar2.php"); 
+	?>
 
 	<div class="c1">
 
@@ -30,8 +33,8 @@
 
 		<a href="perfil.php">Datos personales</a>
 		<a href="historial.php">Compras realizadas</a>
-		<a href="">Cerrar Sesión</a>
-	</div>
+		<a href="../ChatTReal/modelo/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Cerrar sesión</a>
+		</div>
 
 		<div class="hist">
 			<h1>Mis compras realizadas</h1>
