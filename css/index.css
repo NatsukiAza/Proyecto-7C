@@ -18,6 +18,14 @@
 	justify-content: center;
 }
 
+.cd{
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+	margin-left: 12%;
+    margin-right: 12%;
+}
+
 .c2{
 	display: flex;
 	justify-content: center;
@@ -28,6 +36,14 @@
 /* fin de containers */
 
 /* filtros */
+
+.hist{
+	display: flex;
+	flex-direction: column;
+	margin-top: 6.8%;
+	margin-bottom: 3%;
+	width: 57.5%;
+}
 
 .filtros{
 	margin-top: 5%;
@@ -117,6 +133,20 @@
 /* fin de filtros */
 
 /* productos */
+
+
+.hist h1{
+    font-size: 28px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    margin-left: 7%;
+    margin-bottom: 4%;
+}
+
+.hist-list{
+	margin-left: 7%;
+	width: 92.5%;
+}
 
 .products-list{
 	margin: 4% 0 2% 0;
@@ -446,9 +476,11 @@
 
 .body-pedidos{
 	width: 100%;
+	margin-bottom: 2%;
 }
 .item-pedido{
 	display: flex;
+	border-radius: 5px;
 	border: 1px #ccc solid;
 	margin-bottom: 5px;
 	background: #fff;
@@ -468,9 +500,31 @@
 	margin: 5px 0;
 }
 .ipt-procom{
+	transition: 0.2s ease-in-out;
+	border: 0;
+    border-bottom: 1px solid #ccc !important;
 	width: 250px;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 }
+
+.ipt-procom:focus {
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #f48fb1 !important;
+  }
+
+#compra{
+	margin-left: 85%;
+	padding: 5px 10px;
+	background-color: transparent;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#compra:focus{
+	color: #f48fb1;
+}
+
 .p-line{
 	display: flex;
 }
@@ -519,6 +573,9 @@ input[type="radio"]{
 	padding: 10px 15px;
 }
 .caja-detalle{
+	margin-bottom: 2% !important;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 	width: 100%;
 	display: flex;
 	background: #fff;
@@ -540,10 +597,15 @@ input[type="radio"]{
 	margin-bottom: 5px!important;
 }
 .btn-delete-cart{
-	padding: 5px 0;
-	text-decoration: underline;
-	color: blue;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+	color: red;
+	text-decoration: none;
 	background: transparent;
+	position: absolute;
+	margin-left: 51%;
+	margin-top: -13.5%;
 }
 .menu-movil{
 	display: none;

@@ -27,7 +27,7 @@
   <div class="cubre"></div>
   <?php include("navbar4.php"); ?>
 
-  <div id="c">
+  <div id="cc">
   <div class="wrapper">
     <section class="chat-area">
       <header>

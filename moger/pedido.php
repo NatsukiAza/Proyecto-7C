@@ -21,9 +21,10 @@
 </head>
 <body>
 
+	<div class="cubre"></div>
 	<?php include("navbar2.php"); ?>
 
-	<div class="main-content">
+	<div class="cd">
 		<div class="content-page">
 			<h3>Mis pedidos</h3>
 			<div class="body-pedidos" id="space-list">

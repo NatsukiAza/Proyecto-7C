@@ -5,8 +5,8 @@
 <html>
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat&family=Oswald:wght@400;700&family=Quicksand:wght@300;400;500;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Oswald:wght@400;500;700&family=Quicksand:wght@300;400;500;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="../css/queries.css">
@@ -29,14 +29,13 @@
 		<img width="50%" src="../img/usericon.png" alt="foto">
 
 		<a href="perfil.php">Datos personales</a>
-		<a href="favoritos.php">Mis favoritos</a>
 		<a href="historial.php">Compras realizadas</a>
 		<a href="">Cerrar Sesión</a>
 	</div>
 
-		<div class="dat">
-			<div class="title-section">Mis compras realizadas</div>
-			<div class="products-list" id="space-list">
+		<div class="hist">
+			<h1>Mis compras realizadas</h1>
+			<div class="hist-list" id="space-list">
 			</div>
 		</div>
 	</div>
@@ -55,7 +54,7 @@
 					let html='';
 					for (var i = 0; i < data.datos.length; i++) {
 						html+=
-						'<div class="caja-detalle mb5">'+
+						'<div class="caja-detalle">'+
 							'<div class="img">'+
 								'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
 							'</div>'+
@@ -63,7 +62,6 @@
 								'<h3 class="mb5">'+data.datos[i].nompro+'</h3>'+
 								'<p class="mb5">Fecha: '+data.datos[i].fecped+'</p>'+
 								'<p class="mb5">Estado: '+data.datos[i].estadotxt+'</p>'+
-								'<p class="mb5">'+data.datos[i].despro+'</p>'+
 								'<h4 class="mb5">'+formato_precio(data.datos[i].prepro)+'</h4>'+
 							'</div>'+							
 						'</div>';
@@ -79,7 +77,7 @@
 			//10.99
 			let svalor=valor.toString();
 			let array=svalor.split(".");
-			return "S/. "+array[0]+".<span>"+array[1]+"</span>";
+			return "$ "+array[0]+".<span>"+array[1]+"</span>";
 		}
 	</script>
 	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

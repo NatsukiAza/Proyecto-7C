@@ -21,9 +21,10 @@
 </head>
 <body>
 
+	<div class="cubre"></div>
 	<?php include("navbar2.php"); ?>
 
-	<div class="main-content">
+	<div class="cd">
 		<div class="content-page">
 			<h3>Mi carrito</h3>
 			<div class="body-pedidos" id="space-list">
@@ -38,7 +39,7 @@
 				<label for="tipo1">Efectivo</label>
 			</div>
 			
-			<button onclick="procesar_compra()" style="margin-top: 5px;">Procesar compra</button>
+			<button id="compra" onclick="procesar_compra()" style="margin-top: 5px;">Procesar compra</button>
 		</div>
 	</div>
 

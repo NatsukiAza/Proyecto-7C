@@ -22,6 +22,7 @@
 <body>
 
 <div class="cubre"></div>
+
   <?php include("navbar2.php"); 
   if (!isset($_SESSION['unique_id'])) {
 	header('location: index.php');
@@ -43,7 +44,7 @@ else{
 		  <a href="historial.php">Compras realizadas</a>
 		  <a href="">Cerrar Sesión</a>
 	  </div>
-	  <?php
+
 	  <div class="dat">
   
 		  <h1>Datos Personales</h1>
