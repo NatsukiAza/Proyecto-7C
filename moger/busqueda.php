@@ -87,13 +87,13 @@
 					let html='';
 					for (var i = 0; i < data.datos.length; i++) {
 						html+=
-						'<div class="product-box">'+
+						'<div id="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
 									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
-									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
+									'<div id="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
-									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
+									'<div id="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
 								'</div>'+
 							'</a>'+
 						'</div>';

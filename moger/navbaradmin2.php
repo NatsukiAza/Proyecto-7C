@@ -19,7 +19,8 @@
     
     <div class="pata">
     
-        <input type="search" name="barrab" class="barrab">
+        <input type="search" name="barrab" class="barrab" id="searchbar" onkeyup="search_animal()" type="text"
+        name="search">
         <button type="submit" class="lupita"> <img width="170%" src="img/lupa.png" alt="Buscar"> </button>
     
     </div> 

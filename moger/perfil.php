@@ -2,7 +2,8 @@
 	session_start();
 	$unique_id=$_SESSION['unique_id'];
 	include('servicios/_conexion.php');	
-?>
+	include_once "../ChatTReal/modelo/config.php";
+?> 
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -42,7 +43,7 @@ else{
   
 		  <a href="perfil.php">Datos personales</a>
 		  <a href="historial.php">Compras realizadas</a>
-		  <a href="">Cerrar Sesión</a>
+		  <a href="../ChatTReal/modelo/logout.php?logout_id='.$row['unique_id'].'" class="logout">Cerrar sesión</a>
 	  </div>
 
 	  <div class="dat">

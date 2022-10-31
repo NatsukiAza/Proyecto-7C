@@ -98,12 +98,12 @@
 					let html='';
 					for (var i = 0; i < data.datos.length; i++) {
 						html+=
-						'<div class="product-box">'+
-							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
+						'<div class="der"; id="product-box">'+
+							'<a class="gorod"; href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
 									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
-									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
-									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
+									'<div class="animals"; id="detail-title">'+data.datos[i].nompro+'</div>'+
+									'<div class="krovi" id="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
 								'</div>'+
 							'</a>'+
 						'</div>';
@@ -122,6 +122,7 @@
 			return "$ "+array[0]+".<span>"+array[1]+"</span>";
 		}
 	</script>
+	<script src=js/animals.js>
 	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
