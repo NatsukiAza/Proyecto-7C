@@ -46,11 +46,11 @@
 }
 
 .filtros{
-	margin-top: 5%;
+	margin-top: 7%;
 	margin-bottom: 5%;
 	justify-content: center;
 	margin-right: 8%;
-	width: 7%;
+	width: 9%;
 }
 
 .filtros h1{
@@ -149,9 +149,9 @@
 }
 
 .products-list{
-	margin: 4% 0 2% 0;
+	margin: 6% 0 2% 0;
 	display: table;
-	width: 47%;
+	width: 55%;
 }
 
 .products-list2{
