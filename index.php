@@ -66,7 +66,7 @@
     <div class="future" id="izq">
 
       <h1>¿Que es Aromatic?</h1>
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ultricies odio. Mauris id pharetra lectus, id iaculis ante. Ut turpis dui, lobortis eget aliquam quis, cursus in dui. Aenean vehicula velit lorem, vitae imperdiet odio eleifend ac. Donec viverra posuere fringilla. Fusce consequat metus metus, at tempor leo suscipit vitae. Donec efficitur nisl mauris, quis viverra urna placerat non. Maecenas imperdiet urna vel justo ultrices accumsan. Aliquam tristique gravida eros id sollicitudin. Donec ut luctus nulla. Fusce imperdiet eleifend lacus congue blandit. In hac habitasse platea dictumst. Praesent orci lorem, posuere rhoncus blandit a, suscipit in est. Nam lacus nisl, blandit et tempor in, interdum sed erat.</h3>
+      <h3>Aromatic es un sistema de ventas centrado en vender productos aromatizantes y decorativos para el hogar, trabajamos junto a Saphirus para vender estos productos y hacer posible que lleguen a tus manos. Aromatic fue hecho por Gragus Corp. Inc. una de diseño y elaboración de paginas web</h3>
 
     </div>
 
@@ -78,7 +78,7 @@
     <div class="future" id="der">
 
       <h1>Envios</h1>
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ultricies odio. Mauris id pharetra lectus, id iaculis ante. Ut turpis dui, lobortis eget aliquam quis, cursus in dui. Aenean vehicula velit lorem, vitae imperdiet odio eleifend ac. Donec viverra posuere fringilla. Fusce consequat metus metus, at tempor leo suscipit vitae. Donec efficitur nisl mauris, quis viverra urna placerat non. Maecenas imperdiet urna vel justo ultrices accumsan. Aliquam tristique gravida eros id sollicitudin. Donec ut luctus nulla. Fusce imperdiet eleifend lacus congue blandit. In hac habitasse platea dictumst. Praesent orci lorem, posuere rhoncus blandit a, suscipit in est. Nam lacus nisl, blandit et tempor in, interdum sed erat.</h3>
+      <h3>Aromatic cuenta con una politica de envios de encuentro, es decir que, los puntos de envio son puestos por el administrador de la pagina y seran lugares publicos en los que tanto el administrador como el cliente puedan llegar y les quede comodo. En ese lugar acordado el cliente pagara el producto por el metodo de pago deseado y se le entregara dicho producto para que asi se complete el envio</h3>
 
     </div>
 

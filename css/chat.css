@@ -6,10 +6,12 @@
 	justify-content: center;
 }
 
-.wraperr{
+.wrapperr{
+  display: flex;
+  flex-direction: column;
   background: #fff;
-  	max-width: 450px;
-  	width: 100%;
+  max-width: 650px;
+  width: 100%;
 }
 
 .wrapper{
@@ -155,7 +157,7 @@ font-weight: 400;
 }
 .users header .logout{
   display: block;
-  background: #2196f3;
+  background: #f48fb1;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   color: #fff;
   outline: none;
@@ -201,13 +203,13 @@ font-weight: 400;
   cursor: pointer;
   border: none;
   background: #fff;
-  color: #2196f3;
+  color: #f48fb1;
   outline: none;
   border-radius: 0 5px 5px 0;
   transition: all 0.2s ease;
 }
 .users .search button.active{
-  background: #2196f3;
+  background: #f48fb1;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   color: #fff;
 }
@@ -254,7 +256,7 @@ font-weight: 400;
   padding: 18px 30px;
 }
 .chat-area header .back-icon{
-  color: #2196f3;
+  color: #f48fb1;
   font-size: 18px;
 }
 .chat-area header img{
@@ -301,7 +303,7 @@ font-weight: 400;
   max-width: calc(100% - 130px);
 }
 .outgoing .details p{
-  background: #2196f3;
+  background: #f48fb1;
   color: #fff;
   border-radius: 18px 18px 0 18px;
 }
@@ -342,7 +344,7 @@ font-weight: 400;
   width: 55px;
   border: none;
   outline: none;
-  background: #2196f3;
+  background: #f48fb1;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   font-size: 19px;
   cursor: pointer;

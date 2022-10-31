@@ -169,6 +169,17 @@
 	width: 100%;
 }
 
+.bar{
+	transition: 0.3s ease-in-out;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.bar:focus{
+	outline: 0;
+	border-bottom: 1px solid #f48fb1;
+}
+
 #r{
 	width: 100%;
 	display: flex;
@@ -270,25 +281,34 @@
 }
 
 #tini{
-	text-align: center;
-	margin-left: 15%;
+	width: 100%;
 	margin-top: 10%;
 }
 
-#tini th, #tini td{
+#tini td{
 	font-size: 13px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
-}
-
-#tini th{
 	width: 50%;
-	font-weight: 600;
 }
 
 .td-option{
 	width: 60px;
 }
+
+.td-option button{
+	border: 0;
+	border-radius: 10px;
+	padding: 4px 8px;
+	transition: 0.3s ease-in-out;
+	background-color: #f48fb1;
+	color: #fff;
+}
+
+.td-option button:hover{
+	background-color: #dd7d9d;
+}
+
 .div-flex{
 	display: flex;
 }
@@ -351,11 +371,17 @@ select{
 }
 
 .agregar{
-	background-color: #F5E9EF;
-	border: 1px solid;
-	padding: 10px !important;
-	border-radius: 7px !important;
-	transition: 0.3s;
+	font-size: 14px;
+	margin-top: 2%;
+	border: 0;
+	border-radius: 10px;
+	padding: 4px 8px;
+	transition: 0.3s ease-in-out;
+	background-color: #ccc;
+}
+
+.agregar:hover{
+	color: #f48fb1;
 }
 
 #minib{
@@ -365,12 +391,8 @@ select{
 	transition: 0.3s;
 }
 
-.agregar:hover{
-	background-color: #ffc1e3;
-}
-
 #minib:hover{
-	background-color: #ffc1e3;
+	background-color: #f48fb1;
 }
 
 .cuadritosnashei{

@@ -18,83 +18,6 @@
 </head>
 <body>
 
-	<div class="modal" id="modal-producto" style="display: none;">
-		<div class="body-modal">
-			<button class="btn-close" onclick="hide_modal('modal-producto')"><i class="fa fa-times" aria-hidden="true"></i></button>
-			<h3>Añadir producto</h3>
-			<input type="text" id="codigo" style="display: none;">
-			<div class="div-flex">
-				<label>Nombre</label>
-				<input type="text" id="nombre">
-			</div>
-			<div class="div-flex">
-				<label>Descripción</label>
-				<input type="text" id="descripcion">
-			</div>
-			<div class="div-flex">
-				<label>Precio</label>
-				<input type="number" id="precio">
-			</div>
-			<div class="div-flex">
-				<label>Stock</label>
-				<input type="number" id="stock">
-			</div>
-			<div class="div-flex">
-				<label>Estado</label>
-				<select id="estado">
-					<option value="1">Activo</option>
-					<option value="0">Inactivo</option>
-				</select>
-			</div>
-			<div class="div-flex">
-				<input type="file" id="imagen">
-			</div>
-			<button onclick="save_producto()">Guardar</button>
-		</div>
-	</div>
-	<div class="modal" id="modal-producto-edit" style="display: none;">
-		<div class="body-modal">
-			<button class="btn-close" onclick="hide_modal('modal-producto-edit')"><i class="fa fa-times" aria-hidden="true"></i></button>
-			<h3>Editar producto</h3>
-			<div class="div-flex">
-				<label>Código</label>
-				<input type="text" id="codigo-e" disabled>
-			</div>
-			<div class="div-flex">
-				<label>Nombre</label>
-				<input type="text" id="nombre-e">
-			</div>
-			<div class="div-flex">
-				<label>Descripción</label>
-				<input type="text" id="descripcion-e">
-			</div>
-			<div class="div-flex">
-				<label>Precio</label>
-				<input type="number" id="precio-e">
-			</div>
-			<div class="div-flex">
-				<label>Stock</label>
-				<input type="text" id="stock-e">
-			<input type="text" id="rutimapro-aux" style="display: none;">
-			<div class="div-flex">
-				<label>Estado</label>
-				<select id="estado-e">
-					<option value="1">Activo</option>
-					<option value="0">Inactivo</option>
-				</select>
-			</div>
-			<img id="rutimapro" src="" style="width: 200px;margin: 5px auto;">
-			<div class="div-flex">
-				<input type="file" id="imagen-e">
-			</div>
-			</div>
-			<button onclick="update_producto()">Actualizar</button>
-		</div>
-	</div>
-
-
-
-
 		<?php include("layout/_directorios.php"); ?>
 
 		<div id="main-container">
@@ -105,7 +28,7 @@
 
 		<div id="row">
 		<h1>USUARIO</h1>
-		<input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Buscar un producto"></li>
+		<input class="bar" id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Buscar un producto"></li>
 		</div>
 
 			<table id="maldito">

@@ -106,7 +106,7 @@
 	
 		<div id="row">
 		<h1>PRODUCTOS</h1>
-		<input id="searchbar" onkeyup="search_animal()" type="text"
+		<input class="bar" id="searchbar" onkeyup="search_animal()" type="text"
         name="search" placeholder="Buscar un producto"></li>
 		</div>
 
