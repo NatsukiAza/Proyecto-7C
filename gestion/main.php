@@ -43,13 +43,25 @@
 					</div>
 
 					<div id="col">
-						<h1>Numero</h1>
-						<h2>Productos</h2>
+						<h1>Usuarios</h1>
+						<?php
+						$sql = "SELECT count(fname) FROM users";
+					$resultado=mysqli_query($con,$sql);
+					$pofavo = mysqli_fetch_row($resultado);
+					echo  
+					'<h1>'.$pofavo[0].'</h1>' 
+						?>
 					</div>
 
 					<div id="col">
-						<h1>$Numero</h1>
-						<h2>Ingresos</h2>
+						<h1>Productos</h1>
+						<?php
+						$sql = "SELECT count(codpro) FROM producto";
+					$resultado=mysqli_query($con,$sql);
+					$pofavo = mysqli_fetch_row($resultado);
+					echo  
+					'<h1>'.$pofavo[0].'</h1>' 
+						?>
 					</div>
 
 				</div>
@@ -96,28 +108,51 @@
 				<div id="c2">
 					<h1>Ventas</h5>
 					<?php 
-					
-					$pog="SELECT count(estado) as amogus FROM table aromatic_data_base where estado=5";
-						$consultas = mysqli_query($con, $pog);
-						if(mysqli_num_rows($consultas)>0)	
-							{
-								$consultas = mysqli_query($con, $pog);
-							}
-
-				
-					echo ('<h1>' . $consultas['amogus'] . '</h1>');
-					?>
+					$sql = "SELECT count(estado) FROM pedido where estado=5";
+					$resultado=mysqli_query($con,$sql);
+					$pofavo = mysqli_fetch_row($resultado);
+					echo  
+					'<h1>'.$pofavo[0].'</h1>' 
+					  ?>
   				</div>
 				  
 
 				<div id="c2">
-					<h1>Ventas</h5>
-    				<h2>Numero</h6>
+					<h1>Ventas en un mes</h5>
+    				<?php
+						$sql = "SELECT count(estado) FROM pedido where estado=5";
+						$resultado=mysqli_query($con,$sql);
+						$pofavo2 = mysqli_fetch_row($resultado);
+						
+						$fechadevencimiento = date("n")+1;
+						$hoy = date("n"); 
+						
+						if($hoy != $fechadevencimiento){
+							$pofavo2[0]=0;
+						}
+					echo 
+					'<h1>'.$pofavo2[0].' and '.$fechadevencimiento.' and '.$hoy.'</h1>'
+					?>
   				</div>
 
 				<div id="c2">
-					<h1>Ventas</h5>
-    				<h2>Numero</h6>
+					<h1>Ventas pendientes</h5>
+    				<?php
+						$sql = "SELECT count(estado) FROM pedido where estado<5 and estado>2";
+						$resultado=mysqli_query($con,$sql);
+						$pofavo3 = mysqli_fetch_row($resultado);
+						$desanio = 2022;
+						$anio = date("Y"); 
+						if($anio != $desanio){
+							$pofavo3[0]=0;
+							$ayer++;
+							if($ayer=13){
+								$ayer = 1;
+							}
+						}
+					echo  
+					'<h1>'.$pofavo3[0].'</h1>'
+					?>
 				</div>
 
 			</div>
@@ -137,14 +172,6 @@
 			$row = mysqli_fetch_assoc($sql);
 		  }
 		?>
-		<img src="../ChatTReal/modelo/images/<?php echo $row['img']; ?>" alt="">
-		<div class="details">
-		  <span><?php echo $row['fname']. " " . $row['lname'] ?></span>
-		  <p><?php echo $row['status']; ?></p>
-		</div>
-	  </div>
-	  <a href="../ChatTReal/modelo/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Cerrar sesión</a>
-	</header>
 	<div class="search">
 	  <span class="text">Seleccione un usuario para iniciar el chat</span>
 	  <input type="text" placeholder="Ingrese el nombre para buscar ...">
@@ -165,43 +192,12 @@
 	<script type="text/javascript" src="../ChatTReal/js/jquery-3.4.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
-<<<<<<< Updated upstream
+
 </html>
-=======
 </html>
 
 						
-			<div id="i">
-				<h5 class="card-title">Productos con poco stock</h5>
-    			<table id="ini">
-				<thead>
-					<tr>
-						<th style="text-align: center; width: 7%;">Código</th>
-						<th style="text-align: center; width: 15%">Nombre</th>
-						<th style="text-align: center; width: 4%">Stock</th>
-					</tr>
-				</thead>				
-				<tbody>
-				<?php
-					$i = 0;
-					
-						$sql="SELECT * from producto where prodst<30";
-						$resultado=mysqli_query($con,$sql);
-						for ($i=0;$i<3;$i++)	 {
-						if ($row=mysqli_fetch_array($resultado)) {
-							echo 
-					'<tr>
-						<td class="gorod"; style="text-align: center;" id="rosa">'.$row['codpro'].'</td>
-						<td class="animals"; style="padding-left: 10px">'.$row['nompro'].'</td>
-						<td class="sendra"; style="padding-left: 10px">'.$row['prodst'].'</td>	
-						</td>
-					</tr>';
-						}}
-						
-					?>
-				</tbody>
-				</table>
-			</div>
+		
 
 	
->>>>>>> Stashed changes
+
