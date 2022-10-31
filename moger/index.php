@@ -20,7 +20,7 @@
 
 	<div class="cubre"></div>
 	<?php include("navbar2.php"); ?>
-	<div class="oferta">Conseguí un 20% de descuento en la segunda unidad de cualquier producto que compres</div>
+	<!-- <div class="oferta">Conseguí un 20% de descuento en la segunda unidad de cualquier producto que compres</div> -->
 	
 	<div class="c1">
 		<div class="filtros">
