@@ -62,7 +62,7 @@ else{
 		  </div>
   
 		  <div class=ci>
-			  <button id="eliminar">Eliminar</button>
+			  <button id="eliminar" onclick="delete_usuario('.$unique_id.')">Eliminar</button>
 			  <h2>Eliminar mi perfil</h2>
 			  <h6>Proceder va a eliminar los datos de tu perfil</h6>
 		  </div>
@@ -88,18 +88,18 @@ else{
 			document.getElementById(id).style.display="none";
 		}
 		function delete_usuario(user_id){
-			var c=confirm("Estas seguro de eliminar el producto de codigo "+user_id+"?");
+			var c=confirm("Estas seguro de eliminar el usuario de codigo "+user_id+"?");
 			if (c) {
 				let fd=new FormData();
 				fd.append('user_id',user_id);
 				let request=new XMLHttpRequest();
-				request.open('POST','api/delete_product.php',true);
+				request.open('POST','../gestion/api/delete_usuario.php',true);
 				request.onload=function(){
 					if (request.readyState==4 && request.status==200) {
 						let response=JSON.parse(request.responseText);
 						console.log(response);
 						if (response.state) {
-							alert("Producto eliminado");
+							alert("usuario eliminado");
 							window.location.reload();
 						}else{
 							alert(response.detail);

@@ -27,32 +27,32 @@
       <div class="tf">
         <h1>Encontra Tu Fragancia Ideal</h1>
         <h2>Perfumes, Fragancias, Aromatizantes y mas</h2>
-        <a href="">MIRA NUESTRO CATALOGO</a>
+        <a href="moger/index.php">MIRA NUESTRO CATALOGO</a>
       </div>
 
       <div class="masv">
         <h1>Podria interesarte...</h1>
         <div class="productos">
-          <button type="button" id="fi"><</button>
-          <button type="button" id="fd">></button>
+          <!-- <button type="button" id="fi"><</button>
+          <button type="button" id="fd">></button> -->
 
-        <a href="#" class="prod">
+        <a href="moger/index.php" class="prod">
           <img width="100%" src="img/sahumerio.jpg" alt="sahumerio">
           <h1>Producto 1</h1>
           <h2>$125</h2>
         </a>
-        <a href="#" class="prod">
+        <a href="moger/index.php" class="prod">
           <img width="100%" src="img/sahumerio.jpg" alt="sahumerio">
           <h1>Producto 2</h1>
           <h2>$250</h2>
         </a>
-        <a href="#" class="prod">
+        <a href="moger/index.php" class="prod">
           <img width="100%" src="img/sahumerio.jpg" alt="sahumerio">
           <h1>Producto 3</h1>
           <h2>$500</h2>
         </a>
 
-        <a class="mm" href="#">MIRA OTROS PRODUCTOS ASI</a>
+        <a class="mm" href="moger/index.php">MIRA OTROS PRODUCTOS ASI</a>
 
         </div>
       </div>

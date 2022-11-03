@@ -28,7 +28,7 @@
 
 		<div id="row">
 		<h1>USUARIO</h1>
-		<input class="bar" id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Buscar un producto"></li>
+		<input class="bar" id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Buscar un usuario"></li>
 		</div>
 
 			<table id="maldito">
@@ -50,13 +50,13 @@
 							echo 
 					'<tr>
 						<td class="gorod"; style="text-align: center;" id="rosa">'.$row['user_id'].'</td>
-						<td class="animals"; style="padding-left: 10px">'.$row['unique_id'].'</td>
-						<td class="krovi"; style="padding-left: 10px" id="rosa">'.$row['fname'].'</td>
+						<td class="krovi"; style="padding-left: 10px">'.$row['unique_id'].'</td>
+						<td class="animals"; style="padding-left: 10px" id="rosa">'.$row['fname'].'</td>
 						<td class="der"; style="padding-left: 10px">'.$row['lname'].'</td>
 						<td class="sendra"; style="padding-left: 10px">'.$row['email'].'</td>
 						<td class="zetsubo"; style="padding-left: 11px" id="rosa" class="td-option">
 							<div class="revelation"; style="margin-right: 0%;" class="div-flex div-td-button">
-								<button class="nuketon"; id="minib" onclick="delete_usuario('.$row['user_id'].')"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								<button class="nuketon"; id="minib" onclick="delete_usuario('.$row['unique_id'].')"><i class="fa fa-trash" aria-hidden="true"></i></button>
 							</div>
 						</td>
 					</tr>';
@@ -79,23 +79,8 @@
 		function delete_usuario(user_id){
 			var c=confirm("Estas seguro de eliminar el producto de codigo "+user_id+"?");
 			if (c) {
-				let fd=new FormData();
-				fd.append('user_id',user_id);
-				let request=new XMLHttpRequest();
-				request.open('POST','api/delete_product.php',true);
-				request.onload=function(){
-					if (request.readyState==4 && request.status==200) {
-						let response=JSON.parse(request.responseText);
-						console.log(response);
-						if (response.state) {
-							alert("Producto eliminado");
-							window.location.reload();
-						}else{
-							alert(response.detail);
-						}
-					}
-				}
-				request.send(fd);
+				$sql="delete users where user_id=$user_id";
+				$result=mysqli_query($con,$sql);
 			}
 		}
 
