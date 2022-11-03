@@ -79,8 +79,10 @@
 		function delete_usuario(user_id){
 			var c=confirm("Estas seguro de eliminar el producto de codigo "+user_id+"?");
 			if (c) {
-				$sql="delete users where user_id=$user_id";
+				<?php
+				$sql= "delete from users where user_id=$user_id";
 				$result=mysqli_query($con,$sql);
+				?>
 			}
 		}
 

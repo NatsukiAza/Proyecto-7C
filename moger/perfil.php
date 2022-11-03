@@ -62,7 +62,7 @@ else{
 		  </div>
   
 		  <div class=ci>
-			  <button id="eliminar" onclick="delete_usuario('.$unique_id.')">Eliminar</button>
+			  <button id="eliminar" onclick="delete_usuario('.$unique_id.')"">Eliminar</button>
 			  <h2>Eliminar mi perfil</h2>
 			  <h6>Proceder va a eliminar los datos de tu perfil</h6>
 		  </div>
@@ -87,29 +87,14 @@ else{
 		function hide_modal(id){
 			document.getElementById(id).style.display="none";
 		}
-		function delete_usuario(user_id){
-			var c=confirm("Estas seguro de eliminar el usuario de codigo "+user_id+"?");
+		function delete_usuario(unique_id){
+			var c=confirm("Estas seguro de eliminar el producto de codigo "+unique_id+"?");
 			if (c) {
-				let fd=new FormData();
-				fd.append('user_id',user_id);
-				let request=new XMLHttpRequest();
-				request.open('POST','../gestion/api/delete_usuario.php',true);
-				request.onload=function(){
-					if (request.readyState==4 && request.status==200) {
-						let response=JSON.parse(request.responseText);
-						console.log(response);
-						if (response.state) {
-							alert("usuario eliminado");
-							window.location.reload();
-						}else{
-							alert(response.detail);
-						}
-					}
-				}
-				request.send(fd);
+				alert("<?php 
+				$sql="delete from users where unique_id=$unique_id";
+				$result=mysqli_query($con,$sql); ?>");
 			}
 		}
-
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="animals.js"></script>

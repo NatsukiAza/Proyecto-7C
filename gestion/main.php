@@ -114,18 +114,12 @@
 				  
 
 				<div id="c2">
-					<h1>Ventas en un mes</h1>
+					<h1>Por entregar</h1>
     				<?php
-						$sql = "SELECT count(estado) FROM pedido where estado=5";
+						$sql = "SELECT count(estado) FROM pedido where estado=4";
 						$resultado=mysqli_query($con,$sql);
 						$pofavo2 = mysqli_fetch_row($resultado);
-						
-						$fechadevencimiento = date("n");
-						$hoy = date("n"); 
-						
-						if($hoy != $fechadevencimiento){
-							$pofavo2[0]=0;
-						}
+	
 					echo 
 					'<h2>'.$pofavo2[0].'</h2>'
 					?>
