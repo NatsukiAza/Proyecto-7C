@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-10-2022 a las 21:38:22
+-- Tiempo de generación: 15-11-2022 a las 20:27:09
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -21,6 +21,22 @@ SET time_zone = "+00:00";
 -- Base de datos: `aromatic_data_base`
 --
 
+DELIMITER $$
+--
+-- Procedimientos
+--
+CREATE DEFINER=`root`@`localhost` PROCEDURE `can-prod` ()  SELECT count(codpro) FROM producto$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `cant-usuarios` ()  SELECT count(fname) FROM users$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `select-user` (IN `usu` INT(255))  SELECT * FROM users WHERE unique_id = usu$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `update-status-login` (IN `st` VARCHAR(255), IN `uid` INT(255))  UPDATE users SET status = st WHERE unique_id = uid$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `usuarios-email` (IN `mail` VARCHAR(255))  SELECT * FROM users WHERE email = mail$$
+
+DELIMITER ;
+
 -- --------------------------------------------------------
 
 --
@@ -33,6 +49,14 @@ CREATE TABLE `messages` (
   `outgoing_msg_id` int(255) NOT NULL,
   `msg` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `messages`
+--
+
+INSERT INTO `messages` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`) VALUES
+(1, 336153552, 1585487200, 'juan'),
+(2, 1585487200, 336153552, 'juan');
 
 -- --------------------------------------------------------
 
@@ -125,7 +149,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `unique_id`, `fname`, `lname`, `email`, `password`, `img`, `status`) VALUES
-(1, 336153552, 'n', 'N', 'n@n.n', '7b8b965ad4bca0e41ab51de7b31363a1', '1666023574n.jpg', 'Desconectado ahora');
+(1, 336153552, 'n', 'N', 'n@n.n', '7b8b965ad4bca0e41ab51de7b31363a1', '1666023574n.jpg', 'Activo ahora'),
+(2, 1585487200, 'juan', 'juan', 'juan@gmail.com', 'a94652aa97c7211ba8954dd15a3cf838', '1668539941carrito.png', 'Activo ahora');
 
 --
 -- Índices para tablas volcadas
@@ -169,7 +194,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `pedido`
@@ -193,7 +218,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
